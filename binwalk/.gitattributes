@@ -1,0 +1,7 @@
+lib/*       binary
+
+program/*   binary
+
+*.cmd       text eol=crlf
+
+README.md        eol=crlf
