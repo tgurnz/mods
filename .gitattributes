@@ -1,0 +1,25 @@
+#explicit binary content (reduced diff).
+
+*.backup binary
+
+*.exe binary
+
+*.dll binary
+
+*.sfx binary
+
+*.chm binary
+
+
+*.pdn binary
+
+*.gif binary
+
+*.png binary
+
+
+*.cmd text eol=crlf
+
+*.reg text eol=crlf
+
+*.ini text eol=crlf
