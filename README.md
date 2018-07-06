@@ -33,7 +33,6 @@ or improve it, download <a href="https://github.com/eladkarako/manifest/">github
 <a href="CodeBlocks/"        ><img width="24" height="24" alt="" src="CodeBlocks/resources/icon.png"        />&nbsp;CodeBlocks/</a>  <sub><em>(fully portable, With MingW built-in)</em></sub><br/>
 <a href="cURL/"              ><img width="24" height="24" alt="" src="cURL/resources/icon.png"              />&nbsp;cURL/</a><br/>
 <a href="F.lux/"             ><img width="24" height="24" alt="" src="F.lux/resources/icon.png"             />&nbsp;F.lux/</a><br/>
-<a href="CutePDF/"           ><img width="24" height="24" alt="" src="CutePDF/resources/icon.png"           />&nbsp;CutePDF/</a><br/>
 <a href="Cygwin/"            ><img width="24" height="24" alt="" src="Cygwin/resources/icon.png"            />&nbsp;Cygwin/</a><br/>
 <a href="DependencyWalker/"  ><img width="24" height="24" alt="" src="DependencyWalker/resources/icon.png"  />&nbsp;DependencyWalker/</a>  <sub><em>(Depends)</em></sub><br/>
 <a href="DOSBox/"            ><img width="24" height="24" alt="" src="DOSBox/resources/icon.png"            />&nbsp;DOSBox/</a><br/>

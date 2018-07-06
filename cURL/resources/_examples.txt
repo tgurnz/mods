@@ -1,0 +1,56 @@
+@echo off
+
+call curl.exe                                 ^
+--continue-at "-"                             ^
+--cookie "NAME1=VALUE1; NAME2=VALUE2"         ^
+--header "X-From: eladkarako.com"             ^
+--http2                                       ^
+--insecure                                    ^
+--ipv4                                        ^
+--location-trusted                            ^
+--max-redirs "2"                              ^
+--output "tmp\file.zip"                           ^
+--referer "eladkarako.com"                    ^
+--remote-time                                 ^
+--request "GET"                               ^
+--ssl                                         ^
+--ssl-allow-beast                             ^
+--ssl-no-revoke                               ^
+--tls-max "1.2"                               ^
+--user "music:music"                          ^
+--user-agent "Mozilla/5.0 Chrome"             ^
+--verbose                                     ^
+"%~1"
+
+
+
+
+
+
+
+
+@echo off
+  set "URL=http://list.iblocklist.com/?fileformat=p2p&archiveformat=gz&list=npkuuhuxcsllnhoamkvm"
+
+
+  set "ARGS="
+  set  ARGS=%ARGS% --head
+  set  ARGS=%ARGS% --ipv4
+  set  ARGS=%ARGS% --user-agent "Mozilla/5.0 Chrome"
+  set  ARGS=%ARGS% --insecure --ssl-no-revoke --location-trusted
+  set  ARGS=%ARGS% --silent --output nul
+::set  ARGS=%ARGS% --verbose
+  set  ARGS=%ARGS% --write-out "%%{url_effective}"
+  set  ARGS=%ARGS% "%URL%"
+
+  set "OUT="
+  for /f "tokens=*" %%a in ('call curl.exe %ARGS% 2^>^&1') do ( set "OUT=%%a" )
+
+echo.
+echo.
+echo.
+echo.
+echo "%URL%"
+echo "%OUT%"
+
+pause

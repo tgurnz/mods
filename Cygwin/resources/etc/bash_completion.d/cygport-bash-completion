@@ -1,0 +1,26 @@
+# -*- sh -*- cygport completion by Reini Urban <rurban@x-ray.at>
+
+_cygport()
+{
+	local cur commands
+
+	COMPREPLY=()
+	cur=${COMP_WORDS[COMP_CWORD]}
+
+	commands='download fetch wget get \
+		prep unpack oldpatch compile build make \
+		check test inst install list dep depends \
+		package pkg package-test pkg-test diff mkdiff mkpatch \
+		upload stage announce almostall all clean finish \
+		help info version homepage website'
+
+	if [[ $COMP_CWORD -eq 1 ]] ; then
+		# first arg: source file completion
+		_filedir 'cygport'
+	else
+		# 2nd++ arg: commands
+		COMPREPLY=( $( compgen -W "$commands" -- $cur ) )
+	fi
+	return 0
+}
+complete -F _cygport -o default cygport
