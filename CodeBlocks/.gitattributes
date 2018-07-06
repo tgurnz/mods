@@ -1,0 +1,5 @@
+*.exe         binary
+*.dll         binary
+*.ini.origin  text    eol=crlf
+*.cmd         text    eol=crlf
+README.md             eol=crlf
