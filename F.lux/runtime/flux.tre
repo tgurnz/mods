@@ -1,0 +1,107 @@
+#define buttonfont
+Property fontname Calibri
+Property fontsize 14
+Property typecolor DD000000 DD000000 DD000000
+
+#define font
+Property fontname Calibri
+Property fontsize 14
+
+flux/topbar: flux/mainframe
+Property windrag 1
+
+flux/settings: root
+Property setvisible 0
+
+flux/hours: root
+Property fontname Calibri
+Property fontsize 14
+
+flux/herfstudios: root
+Property webtarget http://stereopsis.com/flux/#comments
+
+flux/change: root
+buttonfont
+Property hidetarget flux/change
+Property showtarget flux/done
+Property showtarget flux/settings
+Property hidetarget flux/wave
+Property hidetarget flux/warm
+#Property hidetarget flux/hours
+
+flux/done: root
+buttonfont
+Property pushtarget flux/change
+Property setvisible 0
+
+flux/warm: flux/fill
+flux/wave: flux/fill
+flux/sun: flux/wave
+flux/moon: flux/wave
+
+
+flux/preview: flux/wave
+flux/previewlabel: flux/preview
+Property setvisible 0
+
+flux/latitude: flux/wave
+font
+
+flux/changeloc2: flux/latitude
+XConstraint 1, 1, 14
+YConstraint 0.5, 0.5, 2
+Property alias flux/changeloc
+Property textcursor 1
+
+flux/disable: root
+Property showtarget flux/check
+Property hitchildren 1
+
+flux/check: flux/disable
+Property setvisible 0
+
+flux/disabletext: flux/disable
+
+flux/nightlabel: flux/settings
+flux/daylabel: flux/settings
+flux/loc: flux/settings
+font
+
+flux/changeloc: flux/settings
+buttonfont
+
+flux/grad: flux/settings
+flux/grid: flux/settings
+flux/lab1: flux/settings
+flux/lab2: flux/settings
+
+flux/nighttext: flux/settings
+font
+flux/daytext: flux/settings
+font
+
+flux/slider1: flux/settings
+Property slider 32
+flux/slider2: flux/settings
+Property slider 32
+
+flux/thumb1: flux/slider1
+YConstraint 0.5, 0.5, 0
+XConstraint 1, 1, 0
+
+flux/thumb2: flux/slider2
+YConstraint 0.5, 0.5, 0
+XConstraint 0, 0, 0
+
+flux/slowlabel: flux/slow
+flux/fastlabel: flux/fast
+
+flux/fast: flux/fastslow
+Property setpressed 1
+Property hitchildren 1
+
+flux/slow: flux/fastslow
+Property hitchildren 1
+
+flux/fastslow: flux/settings
+flux/speedlabel: flux/settings

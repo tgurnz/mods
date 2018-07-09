@@ -24,6 +24,7 @@ or improve it, download <a href="https://github.com/eladkarako/manifest/">github
 <a href="AWiconsPro/"        ><img width="24" height="24" alt="" src="AWiconsPro/resources/icon.png"        />&nbsp;AWiconsPro/</a><br/>
 <a href="Babylon/"           ><img width="24" height="24" alt="" src="Babylon/resources/icon.png"           />&nbsp;Babylon/</a><br/>
 <a href="binwalk/"           ><img width="24" height="24" alt="" src="binwalk/resources/icon.png"           />&nbsp;binwalk/</a><br/>
+<a href="BusyBox/"           ><img width="24" height="24" alt="" src="BusyBox/resources/icon.png"           />&nbsp;BusyBox/</a><br/>
 <a href="CCleaner/"          ><img width="24" height="24" alt="" src="CCleaner/resources/icon.png"          />&nbsp;CCleaner/</a><br/>
 <a href="Matrix_ks/"         ><img width="24" height="24" alt="" src="Matrix_ks/resources/icon.png"         />&nbsp;Matrix_ks/</a><br/>
 <a href="NetLimiter/"        ><img width="24" height="24" alt="" src="NetLimiter/resources/icon.png"        />&nbsp;NetLimiter/</a><br/>
@@ -51,7 +52,6 @@ or improve it, download <a href="https://github.com/eladkarako/manifest/">github
 <a href="Orbitdownloader/"   ><img width="24" height="24" alt="" src="Orbitdownloader/resources/icon.png"   />&nbsp;Orbitdownloader/</a><br/>
 <a href="PaintNet4/"         ><img width="24" height="24" alt="" src="PaintNet4/resources/icon.png"         />&nbsp;PaintNet4/</a><br/>
 <a href="PeerBlock/"         ><img width="24" height="24" alt="" src="PeerBlock/resources/icon.png"         />&nbsp;PeerBlock/</a><br/>
-<a href="PigZ/"              ><img width="24" height="24" alt="" src="PigZ/resources/icon.png"              />&nbsp;PigZ/</a> <sub><em>(Parallel Implementation of GZip)</em></sub><br/>
 <a href="PosteRazor/"        ><img width="24" height="24" alt="" src="PosteRazor/resources/icon.png"        />&nbsp;PosteRazor/</a><br/>
 <a href="ProcessExplorer/"   ><img width="24" height="24" alt="" src="ProcessExplorer/resources/icon.png"   />&nbsp;ProcessExplorer/</a><br/>
 <a href="PuTTY/"             ><img width="24" height="24" alt="" src="PuTTY/resources/icon.png"             />&nbsp;PuTTY/</a><br/>
