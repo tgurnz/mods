@@ -1,0 +1,128 @@
+﻿================ Ventana principal ================
+
+version|Limpieza y actualización del entorno de ejecución de Java (JRE) versión
+
+Update Java Runtime|Actualizar JRE
+Remove JRE|Desinstalar y limpiar
+Update JavaRa Definitions|Actualizar definiciones
+Additional Tasks|Tareas adicionales
+
+
+================ Comunes ================
+
+Previous|Anterior
+Next|Siguiente
+Finish|Terminar
+
+Settings|Ajustes
+About JavaRa|Acerca de JavaRa
+
+
+================ Actualizar entorno ================
+
+step 1 - select update method|Primer paso - Selección del método de actualización
+JavaRa can update JRE by either performing an online version check, ordownloading and re-installing the program - regardless of version.|8888
+JavaRa can update JRE by either performing an online version check, or downloading and re-installing the program - regardless of version.
+JavaRa le permite actualizar el entorno de ejecución de Java (JRE) bien comparando la versión instalada con la versión en línea, o bien descargando e instalando el programa de nuevo. Ambos independientemente de la versión.
+Use Jucheck.exe tool|Usar el comprobador propio de JRE (Jucheck.exe)
+Perform online version check|Realizar la comprobación de la versión en linea
+Download and install latest version|Descargar e instalar la ultima versión
+
+step 2 - perform cleanup routine|Segundo paso - Rutina de limpieza
+>>>>>>The removal routine will delete files, folder and registry entries that are known to be associated with the older versions of the Java Runtime Environment
+>>>>>>Esta rutina borrará ficheros, carpetas y entradas de registro conocidas por estar relacionadas con JRE.
+Perform Cleanup Routine|Realizar limpieza
+Removal Routine Complete|Rutina de eliminación completada
+Cleanup routine completed successfully.|Limpieza completada satisfactoriamente. 
+items have been deleted.|elementos han sido eliminados.
+
+step 2 - download new version|Segundo paso - Descarga de la nueva versión
+Would you like to download and install the latest version of JRE? |¿Desea descargar e instalar la última versión de JRE?
+Use this interface.|Aquí dispone de dos modos.
+Java Manual Download|Descarga manual de Java
+Download|Descargar
+Error|Error
+An error occurred while downloading file. Possible causes:|Un error a ocurrido descargando el fichero. Posibles causas:
+1) File doesn't exist|1) El fichero no existe
+2) Remote server error|2) Error en el servidor remoto
+Cancelled.|Cancelado
+Download has been cancelled.|La descarga ha sido cancelada.
+
+step 3 - completed.|Tercer paso - Completado
+The process is complete. Select an option to continue.|El proceso ha concluido. Seleccione ahora entre las siguientes opciones.
+Close this wizard|Cerrar este asistente
+Exit JavaRa|Salir de JavaRa
+Run|Ejecutar
+
+
+================ Limpiar entorno ================
+
+step 1 - run the uninstaller|Primer paso - Ejecutar el desinstalador
+We recommend that you try running the Java Runtime Environment's built-in|Recomendamos intentar primero usar el desinstalador de JRE antes de continuar.
+uninstaller before you continue.|Seleccionar en el siguiente menú deplegable la versión a desinstalar antes de seguir.
+Run Uninstaller|Desinstalar
+Please select a version of JRE to remove.|Por favor, seleccionar una versión de JRE.
+
+step 2 - perform removal routine|Segundo paso - Realizar limpieza profunda
+Definitions Not Available|Definiciones no disponibles
+The JavaRa definitions have been removed.|El fichero de definiciones de JavaRa ha sido eliminado.
+You need to download them before continuing.|Necesita descargarlo antes de continuar.
+The removal routine will delete files, folder and registry entries that are known to be associated with the Java Runtime Environment. It is recommended youupdate the program definitions prior to running.|Esta rutina borrará ficheros, carpetas y entradas del registro específicas.                   Para una mejor limpieza, actualizar el fichero con las últimas definiciones desde la ventana principal de JavaRa antes de seguir.
+Perform Removal Routine|Limpiar
+Removal routine completed successfully.|Limpieza completada satisfactoriamente. 
+
+================ Actualizar definiciones ================
+
+update JavaRa definitions|Actualizar las definiciones de JavaRa
+Would you like to download and install the latest version of the JavaRa definitions? These are used to find and remove every last trace of JRE.|¿Quieres descargar e instalar el fichero de definiciones de JavaRa más actual? Estas sirven para encontrar y eliminar las trazas o restos sueltos de JRE.
+Download|Descargar
+Download|Descargar
+JavaRa definitions updated successfully|Definiciones actualizadas correctamente
+An error was encountered.|Se ha producido un error
+Could not make a connection to download server. Please see our online help for assistance.|No se ha podido conectar con el servidor de descargas. Por favor, consulte nuestra ayuda en línea para ayudarle.
+This error can be caused by incorrect proxy settings or a security product conflict.|Este error puede deberse a una configuración incorrecta en el proxy o en su cortafuegos.
+
+
+================ Tareas adicionales ================
+
+Remove startup entry|Desactivar el inicio del entorno de ejecución de Java (JRE) del arranque del sistema operativo
+Check Java version|Comprobar la versión de Java
+Remove Outdated JRE Firefox Extensions|Eliminar las extensiones obsoletas del entorno de ejecución de Java (JRE) para Firefox
+Clean JRE Temp Files|Limpiar ficheros temporales de JRE
+You didn't select any tasks to be performed.|No ha seleccionado ninguna tarea a realizar.
+Selected tasks completed successfully.|Las tareas seleccionadas fueron llevadas a cabo satisfactoriamente.
+
+
+================ Ajustes del programa ================
+
+program settings|Ajustes del programa
+Automatically check for updates|Comprobar actualizaciones automáticamente
+Preserve Window height/width|Recordar tamaño de la ventana
+Program Language|Idioma del programa
+Save|Guardar
+Back|Atrás
+
+
+================ Acerca de JavaRa ================
+
+about JavaRa|Acerca de JavaRa
+
+
+
+JavaRa support is available at the following locations:|Obtendra asistencia técnica para JavaRa en:
+language settings|Ajustes de idiomas
+Launch online check|Ejecutar la comprobación en línea
+Only complete this step if you want to remove newest JRE version| Complete este paso, unicamente si realmente desea eliminar la versión más actual instalada del entorno de ejecución de Java (JRE)
+Remove Older Versions|Eliminar versiones antiguas
+Save Settings|Guardar ajustes
+Selected tasks|Tareas seleccionadas
+step 2 - completed.|Segundo paso - Completado.
+step 2 - completed|Segundo paso - Completado
+step 3 - download new version|Tercer paso - Descarga de la nueva versión
+step 4 - completed.|Cuarto paso - Completado
+Support|Asistencia técnica
+The removal routine will delete files, folder and registry entries that are known to be associated with the Java Runtime Environment. It is recommended you update the program definitions prior to running.|La limpieza eliminará los archivos, carpetas y entradas del registro que estén asociados con el entorno de ejecución de Java (JRE). Le recomendamos encarecidamente que actualice las definiciones de JavaRa antes de proceder.
+We recommend that you try running the Java Runtime Environment's built-in uninstaller before you continue.|Le recomendamos que intente ejecutar el programa de desinstalación propio del entorno de ejecución de Java (JRE) antes de proceder.
+Would you like to download and install the latest version of JavaRa definitions? These are used to find and remove every last trace of JRE.|¿Desea descargar e instalar la última versión de las definiciones de JavaRa? Son necesarias para encontrar y eliminar cualquier rastro del ejecución de Java (JRE).
+Would you like to download and install the latest version of JRE?|¿Desea descargar e instalar la última versión del entorno de ejecución de Java (JRE)?
+Would you like to open the Oracle online JRE version checker?|¿Desea abrir el comprobador de versión en línea del entorno de ejecución de Java (JRE) proporcionado por Oracle?

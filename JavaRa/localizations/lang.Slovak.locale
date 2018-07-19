@@ -1,0 +1,96 @@
+﻿//* translated by: J.Hasaralejko
+//* email: lacream3@gmail.com
+
+JavaRa definitions updated successfully|Definície JavaRa úspešne aktualizované
+Automatically check for updates|Automaticky kontrolovať aktualizáce
+Could not locate jucheck.exe|Nedá sa nájsť jucheck.exe
+Java Update Checking Utility (jucheck.exe) could not be found on your system.|V tvojom systéme nebol nájdený Java Update Checking Utility (jucheck.exe).
+Remove JRE|Odobrať JRE
+Update Java Runtime|Aktualizovať Java Runtime
+Remove Older Versions|Odobrať staré verzie
+Update JavaRa Definitions|Aktualizovať definície JavaRa
+Additional Tasks|Ďalšie úlohy
+Settings|Nastavenie
+Support|Podpora
+About JavaRa|О aplikácii JavaRa
+Back|Späť
+Previous|Späť
+Next|Ďalšie
+Save Settings|Uložiť nastavenie
+Program Language|Jazyk
+step 1 - select update method|krok 1 - vyberte režim aktualizácie
+JavaRa can update JRE by either performing an online version check, or|JavaRa môže aktualizovať JRE overením dostupnosti novej verzie
+downloading and re-installing the program - regardless of version.|alebo stiahnutím a preinštalovaním aplikácie v najnovšej verzi.
+Use Jucheck.exe tool|Použiť nástroj jucheck.exe
+Perform online version check|Vykonať online kontrolu
+Download and install latest version|Stiahnúť a nainštalovať najnovšiu verziu
+Would you like to open the Oracle online JRE version checker?|Chcete otvoriť Oracle online kontrolu verzie JRE?
+Launch online check|Spustiť online kontrolu
+step 2 - completed|krok 2 - dokončené
+step 2 - completed.|krok 2 - dokončené.
+step 2 - download new version|krok 2 - stiahnúť novú verziu
+step 3 - completed.|krok 3 - dokončené.
+Would you like to download and install the latest version of JRE? |Chcete stiahnúť a nainštalovať najnovšiu verziu JRE? 
+Use this interface.|Použiť toto rozhranie.
+The process is complete. Select an option to continue.|Proces je dokončený. Vyberte požadovanú možnosť, ktorou chcete pokračovať.
+Close this wizard|Zatvoriť tohto sprievodcu
+Exit JavaRa|Ukončiť JavaRa
+Finish|Dokončiť
+step 1 - run the uninstaller|krok 1 - spustiť odinštalovanie
+We recommend that you try running the Java Runtime Environment's built-in|Pred pokračováním doporučujeme skúsiť spustiť 
+uninstaller before you continue.|vstavaný odinštalátor JRE.
+Run Uninstaller|Spustiť odinštalovanie
+Only complete this step if you want to remove the newest JRE version|Dokončite tento krok v prípade, že chcete odebrať najnovšiu verziu JRE
+step 2 - perform removal routine|krok 2 - odstránenie JRE
+step 2 - perform cleanup routine|krok 2 - vyčistenie systému
+Perform Cleanup Routine|Vykonať vyčistenie
+The removal routine will delete files, folder and registry entries that are known|Čistenie vymaže súbory, zložky a záznamy z registra
+to be associated with the older versions of the Java Runtime Environment|súvisiace zo staršími verziami JRE.
+to be associated with the Java Runtime Environment. It is recommended you |súvisiace s JRE. Pred zahájením tejto akcie
+update the program definitions prior to running.|doporučujeme aktualizovať definície aplikácie.
+Perform Removal Routine|Vyčistiť systém
+step 3 - download new version|krok 3 - stiahnutie novej verzie
+Download|Stiahnúť
+Java Manual Download|Ručne stiahnúť Java
+step 4 - completed.|krok 4 - dokončené.
+update JavaRa definitions|aktualizovať definície JavaRa
+Would you like to download and install the latest version of the JavaRa |Chcete stiahnúť a nainštalovať najnovšiu verziu definícii JavaRa? 
+definitions? These are used to find and remove every last trace of JRE.|Sú používané pre nájdenie a odstránenie všetkých zvyškov JRE ze systému.
+Remove startup entry|Zrušiť automatické spúšťanie pri štarte systému
+Check Java version|Zistiť verziu Java
+Remove Outdated JRE Firefox Extensions|Odstrániť zastaralé Firefox rozšírenie JRE
+Run|Spustiť
+Selected tasks completed successfully.|Vybrané úlohy boli úspešne dokončené.
+About JavaRa|О aplikácii JavaRa
+Create a log file|Uložiť záznam do súboru
+program settings|nastavenie aplikácie
+You didn't select any tasks to be performed.|Nevybrali ste žiadnú úlohu.
+JavaRa 2.0 loaded without incident. Checking system...|JavaRa 2.0 načítaná bez problémov. Kontrolovanie systému...
+Operating System:|Operačný systém:
+Save|Uložiť
+Please select a version of JRE to remove.|Prosím, vyberte verziu JRE, ktorú chcete odstrániť.
+Your changes will take effect when JavaRa is restarted.|Zmeny sa prejavia po reštartovaní JavaRa.
+Removal routine completed successfully.|Čistenie úspešne dokončené.
+items have been deleted.|položiek vymazaných.
+Removal Routine Complete|Čistenie dokončené
+Syntax Error. /SILENT is a secondary option to be used in combination with other command line options.|Chyba syntaxu. /SILENT je druhý argument používaný s ostatnými.
+It should not be the first option used, nor should it be used alone. Use /? for more information|
+Syntax Error.|Chyba syntaxu
+Removes all JRE related registry keys, files and directories|Odobraté všetké kľúče z registra, súbory a zložky súvisiace s JRE
+Removes only JRE registry keys from previous version.|Odoberie iba JRE predchádzajúcich verzií
+Run the built-in uninstaller for all versions of JRE detected|Spustiť vstavaný odinštalátor všetkých detekovaných verzií JRE
+Downloads a new copy of the JavaRa definitions.|Stiahne novú kópiu definícií JavaRa.
+Hides the graphical user interface and suppresses all dialog|Schová grafické rozhranie a potlačí všetké dialógové
+messages and error reports.|okná a chybové správy.
+Displays this help dialog|Zobrazí nápovedu
+Example: JavaRa /UPDATEDEFS /SILENT|Príklad: JavaRa /UPDATEDEFS /SILENT
+Example: JavaRa /UNINSTALLALL /SILENT|Príklad: JavaRa /UNINSTALLALL /SILENT
+Command Line Parameters| Parametre príkazového riadku 
+Unsupported argument. Please use /PURGE, /CLEAN, /UNINSTALLALL, or /UPDATEDEFS|Nepodporovaný argument, prosím použijte /PURGE, /CLEAN, /UNINSTALLALL alebo /UPDATEDEFS
+with, or without /SILENT.|z možností /SILENT.
+Option Not Supported.|Nepodporovaná možnosť
+Clean JRE Temp Files|Vymazať dočasné súbory JRE
+No uninstaller found. Please press 'next' to continue|Nenájdený žiaden odinštalátor. Prosím kliknite na 'Další' pre pokračovanie
+Download|Stiahnuť
+version 2.6|verzia 2.6
+Preserve Window height/width|Zachovať výšku okna/šírku
