@@ -1,0 +1,54 @@
+Windows Registry Editor Version 5.00
+
+
+;; ----------------------------------------------------------------------------
+;; -  this file is used by windows registry, which is a WINDOWS application,  -
+;; -  so make sure the line endings are "\r\n" (CR+LF),                       -
+;; -  and not just "\n" (LF).                                                 -
+;; ----------------------------------------------------------------------------
+
+;; also delete C:\Users\Elad\AppData\Roaming\Locate32\
+
+;this remove leftovers from portable or real-installations. 
+;  you should remove those, but keep in mind to do this while Locate32 is not running (regular or portable-mode)
+;  (since the portable-mode still uses the registry... and if you'll remove this you'll loose all your portable settings)
+[-HKEY_CURRENT_USER\Software\Update]
+
+[-HKEY_CURRENT_USER\Software\Update-portable]
+
+[-HKEY_LOCAL_MACHINE\Software\Update]
+
+[-HKEY_LOCAL_MACHINE\Software\Update-portable]
+
+
+;this removes leftovers from real installation.
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Tracing\locate32_RASAPI32]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Tracing\locate32_RASMANCS]
+
+
+;this removes folder hooks for "find" and "update" actions in the shell
+;   it might be important to you, but it can be easily restored by removing/re-checking the checkbox
+;   in Locate32 dialog after the first run. Can be safely removed.
+[-HKEY_CLASSES_ROOT\CLSID\{20D04FE0-3AEA-1069-A2D8-08002B30309D}\shell\locate]
+
+[-HKEY_CLASSES_ROOT\CLSID\{20D04FE0-3AEA-1069-A2D8-08002B30309D}\shell\updatedb]
+
+[-HKEY_CLASSES_ROOT\CLSID\{450D8FBA-AD25-11D0-98A8-0800361B1103}\shell\locate]
+
+[-HKEY_CLASSES_ROOT\Directory\shell\locate]
+
+[-HKEY_CLASSES_ROOT\Drive\shell\locate]
+
+
+;you don't have to remove those, but you could.
+[HKEY_CURRENT_USER\Software\Classes\Local Settings\Software\Microsoft\Windows\Shell\MuiCache]
+"D:\\Software\\Locate32\\locate.exe"=-
+"D:\\Software\\Locate32\\locate32.exe"=-
+"D:\\Software\\Locate32\\Updtdb32.exe"=-
+
+;you can remove those too but you have to re-set each EXE to run as admin again.
+;[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers]
+;"D:\\Software\\Locate32\\locate.exe"=-
+;"D:\\Software\\Locate32\\locate32.exe"=-
+;"D:\\Software\\Locate32\\Updtdb32.exe"=-
