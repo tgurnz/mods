@@ -1,0 +1,45 @@
+:TITLE 4t Tray Minimizer Help
+:BASE 4t-min.hlp
+1 Overview=owerview@4t-min.hlp
+1 What's new?=Whats_new@4t-min.hlp
+1 Free/Pro version=TrialFull_versi@4t-min.hlp
+1 How to order?=How_to_order@4t-min.hlp
+1 What is...
+2 the hidden application?=WhatIsHiddenApplication@4t-min.hlp
+2 the hiding options?=WhatIsHidingoptions@4t-min.hlp
+2 the favorite application?=WhatIsFavorite@4t-min.hlp
+1 How to...
+2 minimize the application(s) to tray?=HThideAnyApplication@4t-min.hlp
+2 restore the hidden application(s)?=HTrestore@4t-min.hlp
+2 launch the favorite application?=HTLaunchFavorite@4t-min.hlp
+2 group the hidden instances of the application into the same tray icon?=HTGrouping@4t-min.hlp
+2 How to customize...
+3 the hiding options?=HTCusomizeHidingoptions@4t-min.hlp
+3 the keyboard shortcuts?=HTCustProgSKeys@4t-min.hlp
+3 the startup options of 4t Tray Minimizer?=HTCustStartOptions@4t-min.hlp
+1 User Interface
+2 Main Window=MainWindow@4t-min.hlp
+2 Taskbar status area (System tray)=SystemTrayIcon@4t-min.hlp
+2 Options Dialog
+3 Overview=OptionsDialogOverwiev@4t-min.hlp
+3 Hiding page=OptionDialogHidingPage@4t-min.hlp
+3 Favorites page=OptionDialogApplicationsPage@4t-min.hlp
+3 Shell page=OptionDialogStartupPage@4t-min.hlp
+3 Titlebar page=OptionDialogTitlebarpage@4t-min.hlp
+3 Behavior page=OptionDialogBehaviorPage@4t-min.hlp
+3 Keyboard page=OptionDialogKeyboardPage@4t-min.hlp
+2 Favorite's options
+3 Overview=FavoritesOverview@4t-min.hlp
+3 General page=FavoritesGeneral@4t-min.hlp
+3 Behavior page=FavoritesBehavior@4t-min.hlp
+3 Hiding page=FavoritesHiding@4t-min.hlp
+3 Launching page=FavoritesLaunching@4t-min.hlp
+3 Keyboard page=FavoritesKeyboard@4t-min.hlp
+1 Favorite's advanced options=FavoriteAdvancedDialog@4t-min.hlp
+1 Quick Tutorial
+2 Overview=QTOverview@4t-min.hlp
+2 Step 1. Starting minimizing applications to tray=QTStep1@4t-min.hlp
+2 Step 2. Customizing your favorite application (MS Outlook)=QTStep2@4t-min.hlp
+2 Step 3. Customizing your favorite application (MS Internet Explorer)=QTStep3@4t-min.hlp
+1 Technical support
+2 4t Niagara Software=4t_Niagara_Softw@4t-min.hlp
