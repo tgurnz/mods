@@ -38,7 +38,7 @@ set "ARGS=%*"
 :::) 
 
 
-title %ARGS%
+::title %ARGS%
 echo  %PYTHON% %BINWALK% %ARGS%  1>&2
 echo.
 call  %PYTHON% %BINWALK% %ARGS%
