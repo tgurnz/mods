@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://orbit/locale/orbit.dtd">
+
+<overlay id="orbitdownload" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<script type="application/x-javascript" src="chrome://global/content/nsUserSettings.js" />
+<script type="application/x-javascript" src="common.js"/>
+<script type="application/x-javascript" src="download.js"/>
+	<radiogroup id="mode">
+		<vbox insertbefore="save" id="OrbitDownloaderContainer" collapsed="true" flex="1">
+			<radio id="OrbitDownloader" label="Orbit Downloader" />
+		</vbox>
+	</radiogroup>
+</overlay>

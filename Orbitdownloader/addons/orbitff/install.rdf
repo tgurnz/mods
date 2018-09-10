@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+		xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>orbit_ffext@orbitdownloader</em:id>
+    <em:name>Orbit Downloader Firefox Integration</em:name>
+    <em:version>2.0.2</em:version>
+    <em:type>2</em:type>
+
+    <em:description>Download files,social music,video and streaming media easy and fast.</em:description>
+    <em:creator>Orbit Team</em:creator>
+    <em:homepageURL>http://www.orbitdownloader.com/</em:homepageURL>
+    <em:iconURL>chrome://orbit/content/orbit.png</em:iconURL>
+    <em:aboutURL>chrome://orbit/content/about.xul</em:aboutURL>
+		
+    <em:file>
+      <Description about="urn:mozilla:extension:file:orbit.jar">
+        <em:package>content/</em:package>
+        <em:locale>locale/en-US/orbit/</em:locale>
+        <em:locale>locale/zh-CN/orbit/</em:locale>
+        <em:locale>locale/uk-UA/orbit/</em:locale>
+        <em:locale>locale/uk-TW/orbit/</em:locale>
+        <em:locale>locale/pt-BR/orbit/</em:locale>
+        <em:locale>locale/ar-sa/orbit/</em:locale>
+        <em:locale>locale/sk-SK/orbit/</em:locale>
+        <em:locale>locale/fa-IR/orbit/</em:locale>
+      </Description>
+    </em:file>
+
+   
+    
+    <!-- Firefox -->
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>1.0</em:minVersion>
+        <em:maxVersion>*.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+
+  
+    
+  </Description>      
+</RDF>

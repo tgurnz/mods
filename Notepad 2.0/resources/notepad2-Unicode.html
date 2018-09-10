@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Windows (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="MSSmartTagsPreventParsing" content="TRUE" />
+
+  <title>Notepad2 - Converting to a native Win32 Unicode application</title>
+</head>
+
+<body>
+  <h1>Notepad2 ― Converting to a native Win32 Unicode application</h1>
+
+  <p>As of April 2008, Notepad2 was still an MBCS (multi byte character set) or ANSI application, internally. This was simply determined by the development history: parts of the Notepad2 source code originate from my "Textview" program, and are more than 10 years old (from around 1995 to 1996). At that time, I didn't care about Unicode: I was happy when my programs were running smoothly on Windows 95 (Windows NT was just for rich professionals, anyway), and there was no such thing like Unicode in the Turbo Pascal for DOS world, where I made my first programming steps (a word to the wise: in return, I'm glad I didn't learn PHP, first, so at least I have a basic idea of what's a memory pointer).</p>
+
+  <p>Recently, I've been taking upon myself the adventure of converting Notepad2 to a native Win32 Unicode application (after Windows 9x support has already been dropped some time ago, for other reasons). I have already been creating Win32 Unicode applications from scratch, but porting more than 20'000 lines of C code to Unicode was a special challenge, indeed. All this was even made more complicated by the fact that the Scintilla editing component used by Notepad2 is working with MBCS strings, as well internally as with the APIs exposed to clients.</p>
+
+  <p>A Unicode version of Notepad2 is working with the native system encoding of the Windows NT platform, so it is able to handle Unicode file names, and the editor window and the dialog boxes accept Unicode input. However, case-insensitive text search for non-ASCII characters is not possible, still. This is due to a current limitation of the Scintilla editing component. I don't want to maintain my own branch of the Scintilla source code with extensions to the character matching engine to bypass this limitation, as I think it has much more favorable effects using the default Scintilla distribution and being able to update quickly.</p>
+
+  <h2>Under the hood</h2>
+
+  <p>Following is a summary of some points worth mentioning I have come across when converting Notepad2 from an MBCS to a native Win32 Unicode application. This is not intended to be a complete, professional guide for porting applications to Unicode, yet it may illustrate some details for those who are interested.</p>
+
+  <h3>What exactly means "Unicode" in the Win32 world?</h3>
+
+  <p><em>UTF-16 little-endian is the encoding standard at Microsoft (and in the Windows operating system).</em>¹</p>
+
+  <p>¹ <a href="http://www.microsoft.com/globaldev/getwr/steps/wrg_unicode.mspx">Globalization Step-by-Step - Unicode Enabled</a></p>
+
+  <h3>Building a Unicode Application</h3>
+
+  <p>There's two compile-time flags (preprocessor definitions): <tt>UNICODE</tt> for Win32 and <tt>_UNICODE</tt> for the C Runtime Library. They both need to be enabled.</p>
+
+  <h3>Using <tt>WCHAR</tt> or <tt>TCHAR</tt>?</h3>
+
+  <p>Replacing all variables of type <tt>char</tt> with <tt>TCHAR</tt> (or <tt>LPTSTR</tt> and <tt>LPCTSTR</tt>, as appropriate) and using the <tt>TEXT()</tt> macro both for single and double quoted strings is the best way to go. However, Notepad2 doesn't support Windows 9x any more, and I don't want to maintain an MBCS version any longer, so I decided to use <tt>WCHAR</tt> (and <tt>LPWSTR</tt>, <tt>LPCWSTR</tt>) along with <tt>L"Unicode"</tt> strings, directly.</p>
+
+  <p>The code that deals with Scintilla text is still using <tt>char</tt>. I favored using Win32 API string functions above the C Runtime Library, thus the "A" functions have to be called directly (like <tt>lstrlenA()</tt> instead of <tt>strlen()</tt>).</p>
+
+  <h3>String pointer arithmetics</h3>
+
+  <p>Fortunately, string pointer arithmetics are the same for <tt>char</tt> and <tt>WCHAR</tt>. This means a macro like</p>
+
+  <blockquote>
+    <pre>
+#define StrEnd(pStart) (pStart + lstrlen(pStart))
+</pre>
+  </blockquote>
+
+  <p>returns a pointer to the terminating zero for both MBCS and Unicode strings.</p>
+
+  <h3>Calculating string sizes</h3>
+
+  <p>Most Win32 API functions that copy results into a string buffer interpret the buffer size as number of bytes for the MBCS version, and number of characters for the Unicode version. Using something like</p>
+
+  <blockquote>
+    <pre>
+WCHAR wch[256];
+DWORD cch = sizeof(wch) / sizeof(wch[0]);
+</pre>
+  </blockquote>
+
+  <p>to specify the buffer size is okay for MBCS and Unicode.</p>
+
+  <p>Adjustments are necessary when memory for strings is dynamically allocated. The size to be allocated is usually specified in bytes, so it has to be calculated as follows:</p>
+
+  <blockquote>
+    <pre>
+WCHAR *wch = LocalAlloc(LPTR, sizeof(WCHAR) * (cch)); // or (cch + 1) with null terminator
+</pre>
+  </blockquote>
+
+  <p>This affects <tt>malloc()</tt> and family, <tt>LocalAlloc()</tt>, <tt>GlobalAlloc()</tt>, but also <tt>CopyMemory()</tt>, <tt>MoveMemory()</tt> and <tt>ZeroMemory()</tt>!</p>
+
+  <p>Calculating the buffer size in characters to pass an allocated string to a Win32 API function works just the other way round:</p>
+
+  <blockquote>
+    <pre>
+DWORD cch = LocalSize(wch) / sizeof(WCHAR);
+</pre>
+  </blockquote>
+
+  <p>A safe and easy way to get a copy of a string is using <tt>StrDup()</tt> from the Shell Lightweight Utility Functions (SHLWAPI).</p>
+
+  <h3>The Command Line</h3>
+
+  <p>For the <tt>WinMain()</tt> function, the <tt>lpCmdLine</tt> parameter is always of type <tt>LPSTR</tt>. <tt>GetCommandLine()</tt> (or <tt>CommandLineToArgvW()</tt>) could be used to retrieve a Unicode string of the command line. However, <tt>lpCmdLine</tt> does not include the very first command argument (the module name), but the other functions do. I got this one quickly when the Unicode version of Notepad2 was always loading Notepad2.exe on startup...</p>
+
+  <h3>Ini-File Encoding</h3>
+
+  <p>For the ini-file encoding, there's the following rules: both the "A" and "W" functions of <tt>GetPrivateProfileString()</tt> &amp; Co. (set and get functions) do not change the encoding of an existing ini-file. Calling <tt>SetPrivateProfileStringW()</tt> with a non-Unicode ini-file causes conversion of the data string, and may cause lo?? of data. To force non-existent ini-files being saved as Unicode, a UTF-16 little-endian byte-order-mark (<tt>FF FE</tt>) could be written to an empty file before calling any of the ini-file management functions.</p>
+
+  <p>Despite a minimal loss of performance on <em>very slow</em> drives and a few extra kilobytes (as most of the Notepad2 configuration data is just plain ASCII, resulting in a very compact file when saving as UTF-8) I decided to use UTF-16 as the ini-file encoding, for best compatibility with the Win32 ini-file manipulation APIs.</p>
+
+  <h3>Details...</h3>
+
+  <p>Don't forget checking the <tt>GetClipboardData()</tt>, <tt>SetClipboardData()</tt>, etc. function calls: you may need to change <tt>CF_TEXT</tt> to <tt>CF_UNICODETEXT</tt>.</p>
+
+  <p>And, I noticed a difference between the "A" and "W" versions of a function: <tt>SearchPathA()</tt> does not touch the output buffer if the function fails, whereas <tt>SearchPathW()</tt> sets it to an empty string. But if your code is cleaner than mine, you won't even notice!</p>
+  <hr />
+
+  <address>
+    <small>© <a href="http://www.flos-freeware.ch">Florian Balmer</a> 1996-2010<br />
+    Page last modified: November 06, 2008</small>
+  </address>
+</body>
+</html>

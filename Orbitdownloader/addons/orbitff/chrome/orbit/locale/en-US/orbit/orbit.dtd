@@ -1,0 +1,4 @@
+<!ENTITY orbit.label    "Orbit">
+<!ENTITY orbit.dialog.label "Download by Orbit">
+<!ENTITY orbit.dialog.labelall  "Download all by Orbit">
+<!ENTITY orbit.dialog.labelgrab "Grab video by Orbit">

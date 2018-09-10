@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="orbitmenuitems.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://orbit/locale/orbit.dtd">
+
+<overlay id="orbitmain"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+    <script type="application/x-javascript" src="common.js"/>
+    <script type="application/x-javascript" src="main.js"/>
+    <popup id="contentAreaContextMenu" onpopupshowing="gContextMenu = new nsContextMenu(this, window.getBrowser()); OnOrbitContextMenu(event); return gContextMenu.shouldDisplay;">
+    <menuseparator id="OrbitDownloadUp" insertbefore="context-sep-properties"/>
+    <menuitem id="OrbitDownload" label="&orbit.dialog.label;" accesskey="X" insertbefore="context-sep-properties" oncommand="OnOrbitDownload(event);" class="menuitem-iconic orbit-icon-dwnl"/>
+    <menuitem id="OrbitDownloadAll" label="&orbit.dialog.labelall;" accesskey="Q" insertbefore="context-sep-properties" oncommand="OnOrbitDownloadAll(event);" class="menuitem-iconic orbit-icon-dwnlall"/>
+    <menuitem id="OrbitDownloadGrab" label="&orbit.dialog.labelgrab;" accesskey="G" insertbefore="context-sep-properties" oncommand="OnOrbitDownloadGrabVideo(event);" class="menuitem-iconic orbit-icon-dwnlgrab"/>
+    </popup>
+</overlay>

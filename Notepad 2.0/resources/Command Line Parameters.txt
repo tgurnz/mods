@@ -1,0 +1,21 @@
+Command Line Parameters
+
+  Notepad2.exe [/g ln[,col]] [/n] [/s id] [/t] [/h] [/x] [/c]
+               [/p x,y,cx,cy[,max]] [/i] [/?] [file]
+
+    file: File to open, can be a relative pathname, or a shell link.
+          This must be the last argument, quotes are not necessary.
+    /g:   Jump to specified position, a line of -1 means end of file.
+    /n:   Always open a new Notepad2 window, even if the "reuse-window"
+          option is on.
+    /s:   Select specified syntax scheme ("id" is the zero-based index,
+          0 = Default, 1 = Web, 2 = XML, 3 = CSS, 4 = JavaScript, ...).
+    /t:   Select default text scheme.
+    /h:   Select Web Source Code scheme.
+    /x:   Select XML Document scheme.
+    /c:   Open a new Notepad2 window and paste the clipboard contents.
+    /b:   Open a new Notepad2 paste board to collect clipboard entries.
+    /p:   Set window position to x,y with size cx,cy, optional value
+          max set to nonzero to maximize window.
+    /i:   Start as tray icon.
+    /?:   Display a brief summary about command line parameters.

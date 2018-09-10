@@ -1,0 +1,11 @@
+overlay	chrome://browser/content/browser.xul	chrome://orbit/content/main.xul
+overlay 	chrome://mozapps/content/downloads/unknownContentType.xul chrome://orbit/content/download.xul
+content	orbit 	 jar:chrome/orbit.jar!/content/ xpcnativewrappers=yes
+locale	orbit	en-US	jar:chrome/orbit.jar!/locale/en-US/orbit/
+locale	orbit	zh-CN	jar:chrome/orbit.jar!/locale/zh-CN/orbit/
+locale	orbit	uk-UA	jar:chrome/orbit.jar!/locale/uk-UA/orbit/
+locale	orbit	pt-BR	jar:chrome/orbit.jar!/locale/pt-BR/orbit/
+locale	orbit	zh-TW	jar:chrome/orbit.jar!/locale/zh-TW/orbit/
+locale	orbit	ar-sa	jar:chrome/orbit.jar!/locale/ar-sa/orbit/
+locale	orbit	sk-SK	jar:chrome/orbit.jar!/locale/sk-SK/orbit/
+locale	orbit	fa-IR	jar:chrome/orbit.jar!/locale/fa-IR/orbit/

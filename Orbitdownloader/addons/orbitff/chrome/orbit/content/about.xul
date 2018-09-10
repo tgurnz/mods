@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?> 
+<?xml-stylesheet href="chrome://mozapps/skin/extensions/about.css" type="text/css"?> 
+
+<!DOCTYPE dialog SYSTEM "chrome://mozapps/locale/extensions/about.dtd">
+
+<dialog id="genericAbout" 
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        buttons="accept" onload="init();" onaccept="close();">
+
+  <script type="application/x-javascript" src="about.js"/>
+  <script type="application/x-javascript" src="chrome://global/content/contentAreaUtils.js"/>
+  
+  <stringbundleset id="stringbundleset">  
+  	<stringbundle id="myextensionsStrings" src="chrome://mozapps/locale/extensions/extensions.properties"/>
+  </stringbundleset>
+
+  <vbox id="clientBox" flex="1">
+    <label id="extensionName" crop="right">Orbit Downloader</label>
+    <label id="extensionVersion" crop="right">Version: 2.02</label>
+    <description id="extensionDescription" class="indent">Orbit Downloader, leader of download manager revolution, is devoted to new generation web(web2.0) downloading, such as video/music/files from Myspace, YouTube, Imeem, Pandora, Rapidshare. And to make general downloading easier and faster.</description>
+
+    <label id="extensionCreatorLabel" class="sectionTitle">&creator.label;</label>
+    <hbox id="creatorBox" class="indent">
+      	<label id="extensionCreator" flex="1" crop="right">Orbitdownloader.com</label>
+       	<label id="extensionHomepage" onclick="loadHomepage(event);"
+             class="text-link" value="&homepage.label;"/>
+    </hbox>      
+    <label id="extensionContributors" class="sectionTitle">&contributors.label;</label>
+    <vbox flex="1" id="contributorsBox" class="indent">
+    	<label id="contributors" crop="right">Nelson</label>
+    </vbox>
+  </vbox>
+    
+  <separator id="groove" class="groove"/>
+
+</dialog>
+
+        
