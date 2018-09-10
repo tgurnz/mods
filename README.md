@@ -51,7 +51,7 @@ or improve it, download <a href="https://github.com/eladkarako/manifest/">github
 <a href="KatMouse/"          ><img width="24" height="24" alt="" src="KatMouse/resources/icon.png"          />&nbsp;KatMouse/</a><br/>
 <a href="Locate32/"          ><img width="24" height="24" alt="" src="Locate32/resources/icon.png"          />&nbsp;Locate32/</a><br/>
 <a href="Orbitdownloader/"   ><img width="24" height="24" alt="" src="Orbitdownloader/resources/icon.png"   />&nbsp;Orbitdownloader/</a><br/>
-<a href="PaintNet4/"         ><img width="24" height="24" alt="" src="PaintNet4/resources/icon.png"         />&nbsp;PaintNet4/</a><br/>
+<a href="PaintNet/"          ><img width="24" height="24" alt="" src="PaintNet/resources/icon.png"          />&nbsp;PaintNet/</a> <sub><em>(both versions 3 and 4)</em></sub><br/>
 <a href="PeerBlock/"         ><img width="24" height="24" alt="" src="PeerBlock/resources/icon.png"         />&nbsp;PeerBlock/</a><br/>
 <a href="PosteRazor/"        ><img width="24" height="24" alt="" src="PosteRazor/resources/icon.png"        />&nbsp;PosteRazor/</a><br/>
 <a href="ProcessExplorer/"   ><img width="24" height="24" alt="" src="ProcessExplorer/resources/icon.png"   />&nbsp;ProcessExplorer/</a><br/>
