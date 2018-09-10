@@ -4,3 +4,7 @@
 
 /FSCapture/fsrec.*
 
+/PeerBlock/*.conf
+
+/PeerBlock/*.js
+

@@ -1,0 +1,8 @@
+Antigua and Barbuda:69.50.64.0-69.50.79.255
+Antigua and Barbuda:69.57.224.0-69.57.255.255
+Antigua and Barbuda:76.76.160.0-76.76.191.255
+Antigua and Barbuda:199.48.204.0-199.48.207.255
+Antigua and Barbuda:205.217.224.0-205.217.255.255
+Antigua and Barbuda:206.214.0.0-206.214.31.255
+Antigua and Barbuda:208.83.80.0-208.83.87.255
+Antigua and Barbuda:209.59.64.0-209.59.127.255

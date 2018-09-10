@@ -1,0 +1,38 @@
+Palestinian Territory- Mada ALArab LTD:5.43.192.0-5.43.223.255
+Palestinian Territory- Super Link Communications Co. Ltd:5.102.96.0-5.102.127.255
+Palestinian Territory- City Net Informatics, Internet and Communication Technologies and General Trade Ltd.:31.223.176.0-31.223.191.255
+Palestinian Territory- Hadara Technologies Private Shareholding Company:37.8.0.0-37.8.127.255
+Palestinian Territory- Super Link Communications Co. Ltd:37.34.80.0-37.34.95.255
+Palestinian Territory- Mada ALArab LTD:37.76.192.0-37.76.223.255
+Palestinian Territory- Super Link Communications Co. Ltd:37.218.208.0-37.218.223.255
+Palestinian Territory- Super Link Communications Co. Ltd:46.20.208.0-46.20.223.255
+Palestinian Territory- Call U Communications Ltd.:46.32.192.0-46.32.223.255
+Palestinian Territory- Mada ALArab LTD:46.43.64.0-46.43.127.255
+Palestinian Territory- AL Zaytona Company For Communication Ltd.:46.60.0.0-46.60.127.255
+Palestinian Territory- Mada ALArab LTD:46.244.64.0-46.244.95.255
+Palestinian Territory- ZONE Technologies Ltd:46.253.80.0-46.253.95.255
+Palestinian Territory- Hadara Technologies Private Shareholding Company:82.102.192.0-82.102.255.255
+Palestinian Territory- Hadara Technologies Private Shareholding Company:82.205.0.0-82.205.127.255
+Palestinian Territory- Palestine Telecommunications Company (PALTEL):82.213.0.0-82.213.63.255
+Palestinian Territory- Palestine Telecommunications Company (PALTEL):83.244.0.0-83.244.127.255
+Palestinian Territory- Hadara Technologies Private Shareholding Company:85.113.96.0-85.113.127.255
+Palestinian Territory- fusion services:85.114.96.0-85.114.127.255
+Palestinian Territory- BCI Telecommunication & Advanced Technology Company:93.184.0.0-93.184.15.255
+Palestinian Territory- GlobalCom Telecommunications PLC:109.73.240.0-109.73.255.255
+Palestinian Territory- NetStream Technology Joint-Stock Private Ltd.:176.58.64.0-176.58.79.255
+Palestinian Territory- Jinan modern Techniques and communication Ltd.:176.65.0.0-176.65.15.255
+Palestinian Territory- Mada ALArab LTD:176.65.16.0-176.65.31.255
+Palestinian Territory- Mada ALArab LTD:176.67.96.0-176.67.127.255
+Palestinian Territory- Mada ALArab LTD:178.214.64.0-178.214.95.255
+Palestinian Territory- Mada ALArab LTD:178.215.208.0-178.215.223.255
+Palestinian Territory- Palestine Telecommunications Company (PALTEL):188.161.0.0-188.161.255.255
+Palestinian Territory- Coolnet New Communication Provider:188.225.128.0-188.225.255.255
+Palestinian Territory- Palestine Telecommunications Company (PALTEL):212.14.224.0-212.14.255.255
+Palestinian Territory- Hadara Technologies Private Shareholding Company:212.33.96.0-212.33.127.255
+Palestinian Territory- Hadara Technologies Private Shareholding Company:212.106.64.0-212.106.95.255
+Palestinian Territory- Palestine Telecommunications Company (PALTEL):213.6.0.0-213.6.255.255
+Palestinian Territory- Palestine Telecommunications Company (PALTEL):213.244.64.0-213.244.127.255
+Palestinian Territory- Hadara Technologies Private Shareholding Company:217.21.0.0-217.21.15.255
+Palestinian Territory- Hadara Technologies Private Shareholding Company:217.66.224.0-217.66.239.255
+Palestinian Territory- Hadara Technologies Private Shareholding Company:217.66.240.0-217.66.255.255
+Palestinian Territory- Hadara Technologies Private Shareholding Company:217.78.48.0-217.78.63.255
