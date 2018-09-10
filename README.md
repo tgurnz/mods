@@ -36,6 +36,7 @@ or improve it, download <a href="https://github.com/eladkarako/manifest/">github
 <a href="F.lux/"             ><img width="24" height="24" alt="" src="F.lux/resources/icon.png"             />&nbsp;F.lux/</a><br/>
 <a href="Cygwin/"            ><img width="24" height="24" alt="" src="Cygwin/resources/icon.png"            />&nbsp;Cygwin/</a><br/>
 <a href="DependencyWalker/"  ><img width="24" height="24" alt="" src="DependencyWalker/resources/icon.png"  />&nbsp;DependencyWalker/</a>  <sub><em>(Depends)</em></sub><br/>
+<a href="DiffMerge/"         ><img width="24" height="24" alt="" src="DiffMerge/resources/icon.png"         />&nbsp;DiffMerge/</a><br/>
 <a href="DOSBox/"            ><img width="24" height="24" alt="" src="DOSBox/resources/icon.png"            />&nbsp;DOSBox/</a><br/>
 <a href="ffmpeg/"            ><img width="24" height="24" alt="" src="ffmpeg/resources/icon.png"            />&nbsp;ffmpeg/</a><br/>
 <a href="Fiddler/"           ><img width="24" height="24" alt="" src="Fiddler/resources/icon.png"           />&nbsp;Fiddler/</a><br/>
