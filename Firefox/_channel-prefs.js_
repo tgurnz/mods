@@ -1,0 +1,4 @@
+//=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= DO NOT DELETE THIS LINE.
+pref("app.update.channel", "nightly");
+pref("general.config.obscure_value", 0);
+pref("general.config.filename", "mozilla.cfg");

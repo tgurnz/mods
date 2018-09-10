@@ -1,0 +1,7 @@
+*.js_       text     eol=crlf
+*.cfg_      text     eol=crlf
+*.cmd       text     eol=crlf
+README.md            eol=crlf
+
+#reduced diff.
+/firefox/*  binary
