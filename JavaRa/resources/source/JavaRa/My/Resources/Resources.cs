@@ -1,0 +1,61 @@
+﻿namespace JavaRa.My.Resources
+{
+    using Microsoft.VisualBasic;
+    using Microsoft.VisualBasic.CompilerServices;
+    using System;
+    using System.CodeDom.Compiler;
+    using System.ComponentModel;
+    using System.Diagnostics;
+    using System.Drawing;
+    using System.Globalization;
+    using System.Resources;
+    using System.Runtime.CompilerServices;
+
+    [StandardModule, HideModuleName, CompilerGenerated, GeneratedCode("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0"), DebuggerNonUserCode]
+    internal sealed class Resources
+    {
+        private static CultureInfo resourceCulture;
+        private static System.Resources.ResourceManager resourceMan;
+
+        internal static Bitmap clear =>
+            ((Bitmap) RuntimeHelpers.GetObjectValue(ResourceManager.GetObject("clear", resourceCulture)));
+
+        [EditorBrowsable(EditorBrowsableState.Advanced)]
+        internal static CultureInfo Culture
+        {
+            get => 
+                resourceCulture;
+            set
+            {
+                resourceCulture = value;
+            }
+        }
+
+        internal static Bitmap download =>
+            ((Bitmap) RuntimeHelpers.GetObjectValue(ResourceManager.GetObject("download", resourceCulture)));
+
+        [EditorBrowsable(EditorBrowsableState.Advanced)]
+        internal static System.Resources.ResourceManager ResourceManager
+        {
+            get
+            {
+                if (object.ReferenceEquals(resourceMan, null))
+                {
+                    System.Resources.ResourceManager manager2 = new System.Resources.ResourceManager("JavaRa.Resources", typeof(JavaRa.My.Resources.Resources).Assembly);
+                    resourceMan = manager2;
+                }
+                return resourceMan;
+            }
+        }
+
+        internal static Bitmap security =>
+            ((Bitmap) RuntimeHelpers.GetObjectValue(ResourceManager.GetObject("security", resourceCulture)));
+
+        internal static Bitmap tools =>
+            ((Bitmap) RuntimeHelpers.GetObjectValue(ResourceManager.GetObject("tools", resourceCulture)));
+
+        internal static Bitmap update =>
+            ((Bitmap) RuntimeHelpers.GetObjectValue(ResourceManager.GetObject("update", resourceCulture)));
+    }
+}
+

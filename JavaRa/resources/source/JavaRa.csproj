@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>3fc4a075-faf3-49ae-a24d-ea953886f6ad</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>JavaRa</AssemblyName>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="JavaRa\My\MyApplication.cs" />
+    <Compile Include="JavaRa\My\MyComputer.cs" />
+    <Compile Include="JavaRa\My\MyProject.cs" />
+    <Compile Include="JavaRa\Functions.cs" />
+    <Compile Include="JavaRa\JREInstallObject.cs" />
+    <Compile Include="JavaRa\My\Resources\Resources.cs" />
+    <Compile Include="JavaRa\My\MySettings.cs" />
+    <Compile Include="JavaRa\routines_interface.cs" />
+    <Compile Include="JavaRa\routines_locales.cs" />
+    <Compile Include="JavaRa\routines_registry.cs" />
+    <Compile Include="JavaRa\UI.cs" />
+    <EmbeddedResource Include="JavaRa.Resources.resources" />
+    <EmbeddedResource Include="JavaRa.UI.resources" />
+  </ItemGroup>
+</Project>
