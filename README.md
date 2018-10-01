@@ -27,6 +27,8 @@ or improve it, download <a href="https://github.com/eladkarako/manifest/">github
 <a href="BusyBox/"           ><img width="24" height="24" alt="" src="BusyBox/resources/icon.png"           />&nbsp;BusyBox/</a><br/>
 <a href="CCleaner/"          ><img width="24" height="24" alt="" src="CCleaner/resources/icon.png"          />&nbsp;CCleaner/</a><br/>
 <a href="Matrix_ks/"         ><img width="24" height="24" alt="" src="Matrix_ks/resources/icon.png"         />&nbsp;Matrix_ks/</a><br/>
+<a href="mkBootIMG/"         ><img width="24" height="24" alt="" src="mkBootIMG/resources/icon.png"         />&nbsp;mkBootIMG/</a><br/>
+<a href="NetCat/"            ><img width="24" height="24" alt="" src="NetCat/resources/icon.png"            />&nbsp;NetCat/</a><br/>
 <a href="NetLimiter/"        ><img width="24" height="24" alt="" src="NetLimiter/resources/icon.png"        />&nbsp;NetLimiter/</a><br/>
 <a href="Babylon/"           ><img width="24" height="24" alt="" src="Babylon/resources/icon.png"           />&nbsp;Babylon/</a><br/>
 <a href="chromium/"          ><img width="24" height="24" alt="" src="chromium/resources/icon.png"          />&nbsp;chromium/</a><br/>
@@ -40,15 +42,19 @@ or improve it, download <a href="https://github.com/eladkarako/manifest/">github
 <a href="DOSBox/"            ><img width="24" height="24" alt="" src="DOSBox/resources/icon.png"            />&nbsp;DOSBox/</a><br/>
 <a href="ffmpeg/"            ><img width="24" height="24" alt="" src="ffmpeg/resources/icon.png"            />&nbsp;ffmpeg/</a><br/>
 <a href="Fiddler/"           ><img width="24" height="24" alt="" src="Fiddler/resources/icon.png"           />&nbsp;Fiddler/</a><br/>
+<a href="FileShredder/"      ><img width="24" height="24" alt="" src="FileShredder/resources/icon.png"      />&nbsp;FileShredder/</a><br/>
 <a href="Firefox/"           ><img width="24" height="24" alt="" src="Firefox/resources/icon.png"           />&nbsp;Firefox/</a><br/>
 <a href="Foxit/"             ><img width="24" height="24" alt="" src="Foxit/resources/icon.png"             />&nbsp;Foxit/</a><br/>
 <a href="FreeRAMXPPro/"      ><img width="24" height="24" alt="" src="FreeRAMXPPro/resources/icon.png"      />&nbsp;FreeRAMXPPro/</a><br/>
 <a href="FSCapture/"         ><img width="24" height="24" alt="" src="FSCapture/resources/icon.png"         />&nbsp;FSCapture/</a><br/>
 <a href="FxCop/"             ><img width="24" height="24" alt="" src="FxCop/resources/icon.png"             />&nbsp;FxCop/</a><br/>
+<a href="GifSicle/"          ><img width="24" height="24" alt="" src="GifSicle/resources/icon.png"          />&nbsp;GifSicle/</a><br/>
 <a href="GnuWin32/"          ><img width="24" height="24" alt="" src="GnuWin32/resources/icon.png"          />&nbsp;GnuWin32/</a><br/>
+<a href="Grub4DOS/"          ><img width="24" height="24" alt="" src="Grub4DOS/resources/icon.png"          />&nbsp;Grub4DOS/</a><br/>
 <a href="HeimdallSuite/"     ><img width="24" height="24" alt="" src="HeimdallSuite/resources/icon.png"     />&nbsp;Heimdall Suite/</a> <sub><em>(and Zadig)</em></sub><br/>
 <a href="HPUSBFW/"           ><img width="24" height="24" alt="" src="HPUSBFW/resources/icon.png"           />&nbsp;HPUSBFW/</a> <sub><em>(HP USB Disk Storage Format Tool)</em></sub><br/>
 <a href="JavaRa/"            ><img width="24" height="24" alt="" src="JavaRa/resources/icon.png"            />&nbsp;JavaRa/</a><br/>
+<a href="JkDefrag/"          ><img width="24" height="24" alt="" src="JkDefrag/resources/icon.png"          />&nbsp;JkDefrag/</a><br/>
 <a href="KatMouse/"          ><img width="24" height="24" alt="" src="KatMouse/resources/icon.png"          />&nbsp;KatMouse/</a><br/>
 <a href="Locate32/"          ><img width="24" height="24" alt="" src="Locate32/resources/icon.png"          />&nbsp;Locate32/</a><br/>
 <a href="Orbitdownloader/"   ><img width="24" height="24" alt="" src="Orbitdownloader/resources/icon.png"   />&nbsp;Orbitdownloader/</a><br/>
@@ -57,7 +63,10 @@ or improve it, download <a href="https://github.com/eladkarako/manifest/">github
 <a href="PosteRazor/"        ><img width="24" height="24" alt="" src="PosteRazor/resources/icon.png"        />&nbsp;PosteRazor/</a><br/>
 <a href="ProcessExplorer/"   ><img width="24" height="24" alt="" src="ProcessExplorer/resources/icon.png"   />&nbsp;ProcessExplorer/</a><br/>
 <a href="PuTTY/"             ><img width="24" height="24" alt="" src="PuTTY/resources/icon.png"             />&nbsp;PuTTY/</a><br/>
+<a href="PyGlossary/"        ><img width="24" height="24" alt="" src="PyGlossary/resources/icon.png"        />&nbsp;PyGlossary/</a><br/>
+<a href="qtFastStart/"       ><img width="24" height="24" alt="" src="qtFastStart/resources/icon.png"       />&nbsp;qtFastStart/</a><br/>
 <a href="ResourceHacker/"    ><img width="24" height="24" alt="" src="ResourceHacker/resources/icon.png"    />&nbsp;ResourceHacker/</a> <sub><em>(a.k.a reshack)</em></sub><br/>
+<a href="RocketDock/"        ><img width="24" height="24" alt="" src="RocketDock/resources/icon.png"        />&nbsp;RocketDock/</a><br/>
 <a href="Rufus/"             ><img width="24" height="24" alt="" src="Rufus/resources/icon.png"             />&nbsp;Rufus/</a> <sub><em>(Rufus, to create USB drives - Portable + UnUPX)</em></sub><br/>
 <a href="SQLite/"            ><img width="24" height="24" alt="" src="SQLite/resources/icon.png"            />&nbsp;SQLite/</a> <sub><em>(sqlite3.exe+sqldiff.exe+sqlite3_analyzer.exe)</em></sub><br/>
 <a href="StyleCop/"          ><img width="24" height="24" alt="" src="StyleCop/resources/icon.png"          />&nbsp;StyleCop/</a><br/>
@@ -67,12 +76,15 @@ or improve it, download <a href="https://github.com/eladkarako/manifest/">github
 <a href="ThinkPadUtilities/" ><img width="24" height="24" alt="" src="ThinkPadUtilities/resources/icon.png" />&nbsp;IBM/Lenovo ThinkPad - Utilities/</a><br/>
 <a href="TrayMinimizer/"     ><img width="24" height="24" alt="" src="TrayMinimizer/resources/icon.png"     />&nbsp;TrayMinimizer/</a><br/>
 <a href="Unlocker/"          ><img width="24" height="24" alt="" src="Unlocker/resources/icon.png"          />&nbsp;Unlocker/</a><br/>
+<a href="VirtualDub2/"       ><img width="24" height="24" alt="" src="VirtualDub2/resources/icon.png"       />&nbsp;VirtualDub2/</a><br/>
 <a href="WinDirState/"       ><img width="24" height="24" alt="" src="WinDirState/resources/icon.png"       />&nbsp;WinDirState/</a><br/>
-<a href="WinImage/"          ><img width="24" height="24" alt="" src="WinImage/resources/icon.png"          />&nbsp;WinImage/</a><br/>
-<a href="WinKeyLegacy/"      ><img width="24" height="24" alt="" src="WinKeyLegacy/resources/icon.png"      />&nbsp;WinKey/</a> <sub><em>(WinKey-Legacy)</em></sub><br/>
-<a href="WinSCP/"            ><img width="24" height="24" alt="" src="WinSCP/resources/icon.png"            />&nbsp;WinSCP/</a><br/>
-<a href="woff2/"             ><img width="24" height="24" alt="" src="woff2/resources/icon.png"             />&nbsp;woff2/</a><br/>
-<a href="YouTube-DL/"        ><img width="24" height="24" alt="" src="YouTube-DL/resources/icon.png"        />&nbsp;YouTube-DL/</a>  <sub><em>(with true-parallel tweaks)</em></sub><br/>
+<a href="WinImage/"              ><img width="24" height="24" alt="" src="WinImage/resources/icon.png"                  />&nbsp;WinImage/</a><br/>
+<a href="WinInstaller-Cleanup/"  ><img width="24" height="24" alt="" src="WinInstaller-Cleanup/resources/icon.png"      />&nbsp;WinInstaller-Cleanup/</a><br/>
+<a href="WinKeyLegacy/"          ><img width="24" height="24" alt="" src="WinKeyLegacy/resources/icon.png"              />&nbsp;WinKey/</a> <sub><em>(WinKey-Legacy)</em></sub><br/>
+<a href="WinMerge/"              ><img width="24" height="24" alt="" src="WinMerge/resources/icon.png"                  />&nbsp;WinMerge/</a></a><br/>
+<a href="WinSCP/"                ><img width="24" height="24" alt="" src="WinSCP/resources/icon.png"                    />&nbsp;WinSCP/</a><br/>
+<a href="woff2/"                 ><img width="24" height="24" alt="" src="woff2/resources/icon.png"                     />&nbsp;woff2/</a><br/>
+<a href="YouTube-DL/"            ><img width="24" height="24" alt="" src="YouTube-DL/resources/icon.png"                />&nbsp;YouTube-DL/</a>  <sub><em>(with true-parallel tweaks)</em></sub><br/>
 
 
 <br/>
