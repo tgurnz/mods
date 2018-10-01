@@ -1,0 +1,157 @@
+Windows Registry Editor Version 5.00
+[-HKEY_CLASSES_ROOT\.asa]
+[-HKEY_CLASSES_ROOT\.cdx]
+[-HKEY_CLASSES_ROOT\.htm\OpenWithList\Excel.exe]
+[-HKEY_CLASSES_ROOT\.htm\OpenWithList\Microsoft Office Excel]
+[-HKEY_CLASSES_ROOT\.htm\OpenWithList\Microsoft Office FrontPage]
+[-HKEY_CLASSES_ROOT\.htm\OpenWithList\Microsoft Office Publisher]
+[-HKEY_CLASSES_ROOT\.htm\OpenWithList\Microsoft Office Word]
+[-HKEY_CLASSES_ROOT\.htm\OpenWithList\MSPub.exe]
+[-HKEY_CLASSES_ROOT\.htm\OpenWithList\WinWord.exe]
+[-HKEY_CLASSES_ROOT\.html\OpenWithList\Excel.exe]
+[-HKEY_CLASSES_ROOT\.html\OpenWithList\Microsoft Office Excel]
+[-HKEY_CLASSES_ROOT\.html\OpenWithList\Microsoft Office FrontPage]
+[-HKEY_CLASSES_ROOT\.html\OpenWithList\Microsoft Office Publisher]
+[-HKEY_CLASSES_ROOT\.html\OpenWithList\Microsoft Office Word]
+[-HKEY_CLASSES_ROOT\.html\OpenWithList\MSPub.exe]
+[-HKEY_CLASSES_ROOT\.html\OpenWithList\WinWord.exe]
+[-HKEY_CLASSES_ROOT\.mht\OpenWithList\Excel.exe]
+[-HKEY_CLASSES_ROOT\.mht\OpenWithList\Microsoft Office Excel]
+[-HKEY_CLASSES_ROOT\.mht\OpenWithList\Microsoft Office FrontPage]
+[-HKEY_CLASSES_ROOT\.mht\OpenWithList\Microsoft Office Publisher]
+[-HKEY_CLASSES_ROOT\.mht\OpenWithList\Microsoft Office Word]
+[-HKEY_CLASSES_ROOT\.mht\OpenWithList\MSPub.exe]
+[-HKEY_CLASSES_ROOT\.mht\OpenWithList\WinWord.exe]
+[-HKEY_CLASSES_ROOT\.vss]
+[-HKEY_CLASSES_ROOT\.vst]
+[-HKEY_CLASSES_ROOT\Access.ADEFile.11]
+[-HKEY_CLASSES_ROOT\Access.Application.11]
+[-HKEY_CLASSES_ROOT\Access.Extension.11]
+[-HKEY_CLASSES_ROOT\Access.MDEFile.11]
+[-HKEY_CLASSES_ROOT\Access.Project.11]
+[-HKEY_CLASSES_ROOT\Applications\PROTOC~1.EXE]
+[-HKEY_CLASSES_ROOT\callto]
+[-HKEY_CLASSES_ROOT\CLSID\{97e467b4-98c6-4f19-9588-161b7773d6f6}]
+[-HKEY_CLASSES_ROOT\CLSID\{98de59a0-d175-11cd-a7bd-00006b827d94}]
+[-HKEY_CLASSES_ROOT\conf]
+[-HKEY_CLASSES_ROOT\Excel.Application.11]
+[-HKEY_CLASSES_ROOT\Excel.DIF]
+[-HKEY_CLASSES_ROOT\Excel.Sheet.8]
+[-HKEY_CLASSES_ROOT\Excel.Sheet]
+[-HKEY_CLASSES_ROOT\Excel.Template.8]
+[-HKEY_CLASSES_ROOT\Excel.Template]
+[-HKEY_CLASSES_ROOT\Excel.TemplateMacroEnabled]
+[-HKEY_CLASSES_ROOT\Excel.VBAModule]
+[-HKEY_CLASSES_ROOT\Excel]
+[-HKEY_CLASSES_ROOT\Installer\Products\11E257201772F99419EE2F3FDF0F5A0A]
+[-HKEY_CLASSES_ROOT\Interface\{000C03A0-0000-0000-C000-000000000046}]
+[-HKEY_CLASSES_ROOT\Interface\{000C1530-0000-0000-C000-000000000046}]
+[-HKEY_CLASSES_ROOT\Interface\{B7EA2226-F876-4BE4-B478-76EBAE2A668A}]
+[-HKEY_CLASSES_ROOT\Microsoft Outlook.Url.Mailto]
+[-HKEY_CLASSES_ROOT\Microsoft.Lync.15TelProtocol.1]
+[-HKEY_CLASSES_ROOT\ocsmeet_auto_file]
+[-HKEY_CLASSES_ROOT\OfficeCompatible.Application.x86.1]
+[-HKEY_CLASSES_ROOT\OfficeCompatible.Application.x86.l]
+[-HKEY_CLASSES_ROOT\OfficeCompatible.Application.x86]
+[-HKEY_CLASSES_ROOT\OneIndex15]
+[-HKEY_CLASSES_ROOT\PowerPoint.Application.11]
+[-HKEY_CLASSES_ROOT\Publisher.Application.11]
+[-HKEY_CLASSES_ROOT\Publisher.Document.11]
+[-HKEY_CLASSES_ROOT\sip]
+[-HKEY_CLASSES_ROOT\skypecast15]
+[-HKEY_CLASSES_ROOT\Software\Microsoft\Office]
+[-HKEY_CURRENT_USER\Software\Microsoft\Office]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office]
+[-HKEY_CLASSES_ROOT\tel]
+[-HKEY_CLASSES_ROOT\TypeLib\{00024517-0000-0000-C000-000000000046}]
+[-HKEY_CLASSES_ROOT\TypeLib\{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}]
+[-HKEY_CLASSES_ROOT\TypeLib\{73720002-33A0-11E4-9B9A-00155D152105}]
+[-HKEY_CLASSES_ROOT\TypeLib\{A5CF7763-9769-4540-B101-9DC5426D0B22}]
+[-HKEY_CLASSES_ROOT\TypeLib\{F310F027-15CB-4A7F-B10D-3A4AFB5013A5}]
+[-HKEY_CLASSES_ROOT\Word.Application.11]
+[-HKEY_CLASSES_ROOT\Word.Document.8]
+[-HKEY_CLASSES_ROOT\Word.Document]
+[-HKEY_CLASSES_ROOT\Word]
+[-HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\MenuExt\&יצא ל- Microsoft Excel]
+[-HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\MenuExt\E&xport to Microsoft Excel]
+[-HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\MenuExt\Se&nd to OneNote]
+[-HKEY_CURRENT_USER\Software\Microsoft\Office]
+[-HKEY_CURRENT_USER\Software\Microsoft\Shared Tools\Outlook]
+[-HKEY_CURRENT_USER\Software\Microsoft\Shared Tools\Proofing Tools]
+[-HKEY_CURRENT_USER\Software\Microsoft\Terminal Server Client\Default\AddIns\RDPDR\Microsoft XPS Document Writer]
+[-HKEY_CURRENT_USER\Software\Microsoft\Tracing\AppSharingMediaProvider\Lync]
+[-HKEY_CURRENT_USER\Software\Microsoft\Tracing\UccApi\Lync]
+[-HKEY_CURRENT_USER\Software\Microsoft\Tracing\UcClient\Lync]
+[-HKEY_CURRENT_USER\Software\Microsoft\Tracing\WPPMediaPerApp\lync]
+[-HKEY_CURRENT_USER\Software\Microsoft\UCCPlatform\Lync]
+[-HKEY_CURRENT_USER\Software\Microsoft\Web Service Providers\FreeBusy\office.microsoft.com]
+[-HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.docm]
+[-HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.dotm]
+[-HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.dotx]
+[-HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.msg]
+[-HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.obd]
+[-HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.obt]
+[-HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.potx]
+[-HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.ppam]
+[-HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.ppsm]
+[-HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.ppsx]
+[-HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.pub]
+[-HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.rst]
+[-HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.vsd]
+[-HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.vsto]
+[-HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.xlsb]
+[-HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.xlsm]
+[-HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\PhotoPrintingWizard\Microsoft XPS Document Writer]
+[-HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\PhotoPrintingWizard\Send To OneNote 2013]
+[-HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\UnreadMail]
+[-HKEY_CURRENT_USER\Software\Policies\Microsoft\Office]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OfficeSoftwareProtectionPlatform]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Visio]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\Microsoft\Office]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\Handlers\WIA_{923EAF93-92C4-40B3-A637-C03DEDB012FB}]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Components\05318DF9BF21D1148B91C7570BCC07FC]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Components\073F14BD8407E244B82F4031E9F8F410]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Components\1268A37130464D115AF3000972A8B18B]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Components\2188A37130464D115AF3000972A8B18B]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Components\27565133D93D9544595AEC69E110286F]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Components\2EFA5F45099907F4AB74588FD815D1D4]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Components\39C2DDA87B8C1D11C97600008FF1B183]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Components\5188A37130464D115AF3000972A8B18B]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Components\69C2DDA87B8C1D11C97600008FF1B183]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Components\7DB9B1F1B2EC6F448912C7C832C91B94]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Components\889B5BC613547ED4DA744D2084E6C12C]
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Components\89C2DDA87B8C1D11C97600008FF1B183]
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Folders]
+"C:\\Program Files (x86)\\Microsoft Office\\OFFICE11\\"=-
+"C:\\Program Files (x86)\\Microsoft Office\\"=-
+"C:\\Program Files (x86)\\Microsoft Office\\OFFICE11\\1037\\011\\"=-
+"C:\\Program Files (x86)\\Microsoft Office\\OFFICE11\\1037\\"=-
+"C:\\Program Files (x86)\\Microsoft Office\\Templates\\Presentation Designs\\"=-
+"C:\\Program Files (x86)\\Microsoft Office\\Templates\\"=-
+"C:\\Program Files (x86)\\Microsoft Office\\OFFICE11\\STARTUP\\"=-
+"C:\\Program Files (x86)\\Microsoft Office 2013\\"=-
+"C:\\Program Files (x86)\\Microsoft Office 2013\\Templates\\"=-
+"C:\\Program Files (x86)\\Microsoft Office 2013\\Templates\\1037\\"=-
+"C:\\Users\\Elad\\AppData\\Local\\Microsoft\\OFFICE\"=-
+"C:\\Program Files (x86)\\Microsoft Office\\Templates\\Presentation Designs\\"=-
+"C:\\Program Files\\Microsoft Office\\Office15\\1033\\"=-
+"C:\\Program Files\\Microsoft Office\\Office15\\"=-
+"C:\\Program Files\\Microsoft Office\\"=-
+
+
+[HKEY_CURRENT_USER\Software\Microsoft\Shared]
+"OfficeUILanguage"=-
+
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Extensions]
+"mda"=-
+"mdb"=-
+"xlsx"=-
+"dot"=-
+"docm"=-
+"dotx"=-
+"dotm"=-
+"xls"=-
