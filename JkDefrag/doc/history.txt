@@ -1,0 +1,557 @@
+JkDefrag v3.36 (August 31, 2008)
+Changes:
+- Reverted back to an old Microsoft Screensaver library. The 2008 compiler has a
+  library that is incompatible with Windows XP ("The procedure entry point
+  ChangeWindowMessageFilter could not be located in the dynamic link library
+  USER32.dll").
+- Fixed a problem with extremely long path names.
+
+JkDefrag v3.35 (August 27, 2008)
+Changes:
+- Upgraded to the Microsoft Visual Studio 2008 compiler.
+- Logfile is now written in UTF-8, it used to be ANSI.
+- Changed the default font into a smaller font.
+- A change in the display code to respond faster to multiple redraw requests, for
+  example when the users resizes the window.
+- Rewrite of the subroutine that finds combinations of files to fill a gap, to
+  make it faster.
+- Changed the algorithm for "-a 6" (move to end of disk) to better fill gaps.
+- Changed the way disks are accessed to accomodate special kinds of disks, such
+  as virtual and encrypted disks.
+- Bugfix in the screensaver for very long commandlines.
+- Change in the disk analyzation code to fix a "zero bytes per cluster" problem.
+
+
+JkDefrag v3.34 (February 1, 2008)
+Changes:
+- Re-fixed the "DisableDefaults" bug.
+- Partial undo of the change that uses the mountpoint of a volume. It was causing
+  problems during the automatic scanning for disks to be defragmented.
+- Pushed the "Zone calculation" messages down to debug level 4.
+- Fixed the VisualC example project.
+
+
+JkDefrag v3.33 (December 23, 2007)
+Changes:
+- Fixed a bug in the Windows version that for some users caused the display of
+  the diskmap to get stuck.
+- Fixed a bug in the forced-fill optimization that caused the program to skip
+  fragments that were left by filling a gap with a part of the fragment.
+- If the volumename of a disk cannot be determined then the program will now
+  fallback to using the mountpoint of a volume to open a handle.
+- If the user specifies a short input mask without a wildcard, for example "C:"
+  or "C:\", then the input mask is rewritten as "C:\*".
+- Fixed a bug where the special "DisableDefaults" spacehogs mask only disabled
+  the masks, but not the "Files bigger than 50 megabytes"" and "Files not
+  accessed in the last month" criteria.
+- Bundled some language-specific SpaceHogs masks into
+  "?:\\*\\Installshield Installation Information\\*".
+- Moved the "Volume ID" message for FAT disks from debug level zero to 6.
+
+
+JkDefrag v3.32 (December 3, 2007)
+Changes:
+- Fixed a bug in the FAT scanner that caused the program to crash on volume
+  names shorter than 9 characters.
+- Simplified the rules that automatically change the mask that selects which
+  disk/folders/files must be processed. It now simple prepends and appends an
+  asterisk if there is no asterisk yet.
+- Some small changes in the graphics code.
+- Fixed a bug in the commandline version that showed zone numbers 0...2,
+  instead of 1...3.
+
+
+JkDefrag v3.31 (December 2, 2007)
+Changes:
+- Fixed a problem in the Windows version, it now redraws the diskmap when the
+  user changes the size of the window.
+- Added special cases to the exclude masks to recognise a drive letter
+  without an asterisk, for example "c", "c:", or "c:\".
+
+
+JkDefrag v3.30 (November 30, 2007)
+Changes:
+- FAT disks are now analysed by directly reading the FAT from disk. This is a lot
+  faster, and finds more system files.
+- Changes to the graphics routines in the Windows and screensaver versions.
+  The screen is now updated faster and more efficiently.
+- Added the "average begin-end distance" statistic to the report.
+- The commandline is now scanned for the "-l" logfile option before anything
+  is written to the logfile.
+- Changed the progress counter for the Fixup phase.
+- Added a second fixup phase after optimizing "-a 3" to catch files that could not
+  be moved the first time.
+- Bugfix for automatic processing of volumes that are mounted on a directory
+  instead of a drive letter.
+
+
+JkDefrag v3.29 (November 16, 2007)
+Changes:
+- Total rewrite of the "-a 7"..."-a 11" sorted optimizations.
+- Total rewrite of the code that calculates the begin of the zones.
+- Excluded files are no longer listed in the "These items could not be moved"
+  report.
+- Bugfix in the Windows version for very long filenames.
+- Added exception to ignore the Symantec GoBack configuration files.
+- Added protection against defragging hybernated disks.
+- Added to the list of build-in spacehogs:
+  ?:\\windows.old\\*
+  *.dvr-ms
+  *.wmv
+
+
+JkDefrag v3.28 (November 2, 2007)
+Changes:
+- Restored the manifest file. I did not notice that the compiler had overwritten
+  the manifest file, causing JkDefrag not to start on Windows XP.
+
+
+JkDefrag v3.27 (November 1, 2007)
+Changes:
+- Changed action "-a 2" into defragment only (no fixup), and moved the "fixup"
+  for "-a 3" to phase 3.
+- If the program detects that directories cannot be moved (on FAT disks) then
+  messages about unmovable directories are suppressed in the status report.
+- Added code to the screensaver that instructs Windows not to go into power
+  saver mode while the program is running.
+- Changed the percentage progress counter for "fixup".
+- The program will now always exit with return code zero (success), instead of
+  1 (error).
+- Bugfix for infinite loop in the "-a 5" action (force together).
+- Removed the extraneous "already has a list of fragments" error message in
+  the logfile.
+- Added the special exception to ignore the DriveCrypt "?:\\BootAuth?.sys"
+  files to the NTFS scanner.
+- Bugfix for a memory leak in the NTFS scanner.
+- Bugfix in the status report for the number of fragmented files.
+
+
+JkDefrag v3.26 (September 19, 2007)
+Changes:
+- Undo of one of the changes from v3.25 in the graphics code, screensaver only.
+  The changes worked fine for the Windows version, but showed a completely black
+  screen in the screensaver....
+
+
+JkDefrag v3.25 (September 16, 2007)
+Changes:
+- Fix for reading the "$MFT::$BITMAP". In some very special cases the bitmap
+  would only be partially read, causing files on disk to be ignored.
+- Fix for the "::$SECURITY_DESCRIPTOR" problem. Directories with a special
+  security attribute would get this string appended to their name, making them
+  unmovable.
+- Reorganised the code for the out-of-sequence fix (see previous releases).
+- Two fixes in the graphics subroutines. Some users reported that the display
+  sometimes froze during normal operation.
+- Excluded items are no longer listed in the "These items could not be moved"
+  and "These items are still fragmented" reports.
+- The error message "Cannot find volume name for mountpoint: %s" was changed
+  into "Ignoring volume '%s' because it is not a harddisk.".
+- Added "?:\WINDOWS\system32\dllcache\*" to the default list of SpaceHogs.
+For programmers:
+- Addedd message 57 to the messages.
+
+
+JkDefrag v3.24 (September 3, 2007)
+Changes:
+- A final fix for the out-of-sequence problem. Beta tests by users show that the
+  problem is now finally fixed.
+- Bugfix for missing parameter in status message that caused JkDefrag to crash
+  when it wanted to display the "Cannot find volume name for mountpoint" message.
+  This message can happen when scanning the system for disks and a special volume
+  is encountered such as a "subst" volume.
+- The "25 largest items on disk" list in the statusreport is now sorted by (used)
+  clusters instead of by (allocated) bytes.
+- Fixed the progress percentage during analysis of NTFS volumes. It was counting
+  too fast and reached 100% before analysis was complete.
+- The "unmovable", "still fragmented", and "largest 25" lists in the report are now
+  suppressed if empty.
+- Directories on FAT disks cannot be moved, this is a known limitation of the
+  Microsoft defragmentation API and not a bug in JkDefrag. To speed up things the
+  program will now count the number of failed tries to move directories, and when
+  it reaches 20 will ignore all directories.
+
+
+JkDefrag v3.23 (August 31, 2007)
+Changes:
+- Sigh. Yet another fix of the out-of-sequence problem that keeps plaguing a small
+  set of users. I have deleted the previous fixes and added code that will delay the
+  processing of the AttributeList in the MFT until the Data attribute has been
+  processed.
+- Fixed the test for the NtfsDisableLastAccessUpdate registry key (see v3.19). If
+  the key is not available the program defaulted to ignoring the LastAccessTime.
+
+
+JkDefrag v3.22 (August 30, 2007)
+Changes:
+- Yet another fix of the fix. The out-of-sequence rundata on these a-typical disks
+  caused yet another error. If have now made a special exception for the MFT to
+  accept even out-of-sequence rundata.
+
+
+JkDefrag v3.21 (August 30, 2007)
+Changes:
+- Fixed the fix in v3.20 for the problem that caused the NTFS analysis code to
+  malfunction on a-typical NTFS disks. The fix only worked on disks with a cluster
+  size of 4096 bytes, it now works on all disks.
+
+
+JkDefrag v3.20 (August 29, 2007)
+Changes:
+- The NTFS analysis code now also interprets Inodes 12 to 23.
+- Fixed a problem that caused the NTFS analysis code to malfunction on a-typical
+  NTFS disks.
+- The icon now also shows in the taskbar and the upper-left-hand corner of
+  JkDefrag's window.
+- Softened the messages generated by the NTFS analysis code.
+
+
+JkDefrag v3.19 (August 27, 2007)
+Changes:
+- Fixed a bug that caused the program to crash at various places during execution,
+  mostly on Windows XP.
+- If the NtfsDisableLastAccessUpdate registry key is set then the program will
+  not look at the LastAccessTime when testing if a file is a SpaceHog.
+- Added to the default list of spacehogs:
+  ?:\I386\*
+  *.old
+  *.bak
+
+
+JkDefrag v3.18 (August 26, 2007)
+Changes:
+- The icon now has a transparant background.
+- Icon added to the X64 JkDefrag and JkDefragCmd binaries.
+- Bugfix in the calculation of the begin of the zone's. The old method did not
+  take excluded files into account.
+- Changed two buffers from being allocated with "new" into "malloc". I hope this
+  fixes the weird "ModName: ntdll.dll ModVer: 5.1.2600.2180" crash that some users
+  are experiencing on XP.
+
+
+JkDefrag v3.17 (August 24, 2007)
+Changes:
+- NTFS disks are now analysed by directly reading the MFT from disk. This is a lot
+  faster, and finds more system files.
+- NTFS streams are now supported and will be defragged and optimized.
+- Added an icon.
+- Added a version info resource to the executables.
+- Added a manifest so Vista will always run JkDefrag with administrator privileges.
+- Added support for short filenames. The masks now also work for short names, for
+  example "PROGRA~1" (instead of "Program Files").
+- Spacehogs are now shown in dark-green, regular files in light-green. Allocated
+  space is now shown in grey, instead of black.
+- Bugfix in redrawing the diskmap, to properly handle redraw-requests while
+  redrawing.
+- Files larger than 1 gigabyte are now closed and re-opened at 1 gigabyte intervals.
+- Change in the fast optimize algorithm. When a gap cannot be perfectly filled
+  the program now takes the highest file on disk that will fit, instead of the
+  largest file. This reduces the amount of data moved and optimization will finish
+  quicker.
+- Added a special exception for the "?:\\BootAuth?.sys" files used by DriveCrypt.
+- Added a few extra lines to the status report.
+- The logfile now shows which command line options were used.
+- Added to the default list of spacehogs:
+  ?:\RECYCLED\*                 (FAT on 2K/XP)
+  ?:\$RECYCLE.BIN\*             (Vista)
+  ?:\WINDOWS\Ehome\*
+  ?:\WINDOWS\Fonts\*
+  ?:\WINDOWS\Help\*
+  ?:\WINDOWS\IME\*
+  ?:\WINDOWS\Speech\*
+  ?:\WINDOWS\Symbols\*
+  *.chm
+  *.mp3
+  *.pdf
+  *.bup
+  *.ifo
+  *.vob
+  *.avi
+  *.log
+For programmers:
+- All instances of CHAR changed into WCHAR. This has widespread implications in
+  many locations. I am hoping the change will fix the problem that some users
+  have reported on weird filenames.
+- Renamed "JkDefrag.cpp" into "JkDefragLib.cpp"
+- Renamed "JkDefrag.h" into "JkDefragLib.h"
+- Renamed "JkDefragWindows.cpp" into "JkDefrag.cpp"
+- Added "ScanNtfs.cpp" and "ScanNtfs.h"
+- Several changes in the DefragDataStruct.
+- Several changes in the "Makefile" to facilitate debugging.
+
+
+JkDefrag v3.16 (June 22, 2007)
+Changes:
+- Changed the message in the docs about the screensaver under Vista, it works if
+  User Account Control is turned off.
+- Bugfix in "-a 3" (fast optimize). It would not use Perfect Fit for gaps that were
+  larger than all the data already processed.
+- Bugfix in "-a 6" (move to end of disk). Files in zone 1 would not be moved.
+- Added some translations of "Program Files" to the build-in list of SpaceHogs:
+  Archivos de programa   Spanish
+  Arquivos de programas  Brazilian Portuguese
+  Ohjelmatiedostot       Finnish
+  Program Files          All others
+  Program                Swedish
+  Programas              Portuguese
+  ProgramFiler           Norwegian
+  Programme              German
+  Programmer             Danish
+  Programmes             French
+  Programmi              Italian
+- Fixed a typo in the "System Volume Information" string in the SpaceHogs.
+- Fixed the displaying of the zone number, should have been + 1.
+For programmers:
+- Changed the "makefile.bat" script, "JkDefrag.exe" does not need to be linked
+  with "JkDefragScreenSaver.res".
+
+
+JkDefrag v3.15 (June 14, 2007)
+Changes:
+- Added extra breakpoints so the program will quit faster.
+- Added special exception for Acronis OS Selector files.
+- Changes to facilitate Delphi programmers. All callbacks are now CDECL.
+- Added a Pascal example program.
+
+
+JkDefrag v3.14 (June 9, 2007)
+Changes:
+- Bugfix for the "-u" commandline option. All the "-u" masks were accidentally
+  also processed as "items".
+- Files are now classed as a SpaceHog when their last access time is more than
+  30 days ago.
+- Deleted the "full" optimization ("-a 4"). For backward compatibility the
+  program still accepts the option, but does exactly the same as for "-a 3".
+- The screensaver will now not start if it detects that the computer is running
+  on battery power.
+- Deleted the code that disables the Windows display idle timer (screen saver) and
+  system idle timer (power saver) in the commandline and screensaver versions.
+For programmers:
+- Deleted message 57 from the message array.
+- Changed the meaning of the "Data->Phase" variable used by the ShowStatus()
+  callback.
+- The ShowStatus() callback is now executed once for every zone in the "-a 3"
+  and "-a 7"..."-a 11" optimizations.
+
+
+JkDefrag v3.13
+- Version number skipped for superstitious reasons.
+
+
+JkDefrag v3.12 (June 6, 2007)
+Changes:
+- Bugfix for the X64 versions.
+
+
+JkDefrag v3.11 (June 5, 2007)
+Changes:
+- Fixed a bug that caused files to be classified in the wrong zone, causing
+  several problems.
+- Fixed a bug where the list of files was not cleared between disks.
+- Re-applied "The versions now also detect if another version is running"
+  change from v3.9 that was accidentaly deleted in version 3.10.
+- Reduced the size where huge files are treated in segments to 1Gb, in a further
+  attempt to work around a suspected bug in the Microsoft defragmentation api.
+For programmers:
+- Added strings 48...57 to the array of textstrings.
+
+
+JkDefrag v3.10 (June 4, 2007)
+Changes:
+- Bugfix for infinite loop in "Phase 2: Fixup"
+
+
+JkDefrag v3.9 (May 30, 2007)
+Changes:
+- Added optimization methods for sorting files on disk by name, size, last
+  access, last change, and creation time.
+- Reduced the number of steps from 6 to 3.
+- Added zoning to the Fast and Full optimization methods. Files are now placed
+  in 3 zones with a free space between: directories, regular files, and space hogs.
+- Added "-u" commandline option to add custom masks to the list of build-in
+  SpaceHogs masks.
+- Added a top-25 of largest files to the status report.
+- Huge files (>4Gb) are now treated in segments.
+- The versions now also detect if another version is running (windows,
+  command line, screen saver).
+- The Windows display idle timer (screen saver) and system idle timer (power saver)
+  are disabled while JkDefrag is running.
+For programmers:
+- Many changes in the sources.
+- Added an example Visual project.
+- Library sources are now compatible with the UNICODE compiler setting.
+- Changes to facilitate multithreading.
+- Renamed the sources. There is now a JkDefrag.cpp and JkDefrag.h file for easy
+  inclusion into a project.
+- Integrated the DefragInitialize function into the RunDefrag function.
+- Changed the StopProcessing subroutine, it now accepts a timeout.
+
+
+JkDefrag v3.8 (April 20, 2007)
+Changes:
+- Fix for the "infinite worm" problem in the full optimization.
+- Added "-q" commandline option to the Windows version to exit the program when
+  it has finished.
+- Changed the "-e" exclude option to support multiple wildcards. Previously
+  a matching subdirectory would be skipped, now all files in those directories
+  will be scanned.
+- Changed the "-e" exclude option to support the excluding of complete disks.
+- Fixed a problem in the screensaver that prevented it from finding alternate
+  screensavers in the Windows directory.
+- Added special exception for the "bcldr.bin" file used by the BestCrypt software
+  by "http://www.jetico.com/".
+- Fixed a buffer size calculation in the AnalyzeVolume subroutine. It allocated
+  too much memory.
+- Enlarged a buffer for writing to the logfile. Very long filenames could result
+  in an empty message.
+- For library developers: added error message 47.
+
+
+JkDefrag v3.7 (Feb 24, 2007)
+Changes:
+- Commandline options are now accepted with and without a space between the
+  option and the value, for example "-a3" and "-a 3".
+- New "-e" commandline option to exclude files/directories.
+- New "-f" commandline option to specify a size for the free area.
+- New optimization method 6: Analyze, defragment, and move to end of disk.
+- New setting in the screensaver for the status bar not to display filenames
+  or not to display the status bar altogether.
+- The logfile now shows a list of files in the status report that could not be
+  moved, and a list of files that are (still) fragmented.
+- The logfile now shows the date only once at the top of the file, no loner on
+  every line.
+- Fixed a bug for the "-l" commandline option that specifies a different location
+  for the logfile, where the Windows version of the program would create a
+  logfile at the default location containing only 1 line with "Starting, please
+  wait...".
+- Changed the screensaver's "Do not defrag if last run was less than" radio
+  buttons into a pull-down list.
+- Fixed a bug in the screensaver wrapper that made the preview window very slow.
+- Fixed a bug in the screensaver wrapper that prevented screensaver with a space
+  in their filename to run.
+- Added code to the screensaver to prevent multiple copies running simultaneously.
+- Added more code to the screensaver so it will not include itself in the list
+  of alternate screensavers.
+- Fixed a bug that would display the wrong name for screensavers that do not
+  have a name.
+- Removed the "2003" check when listing screensavers, the wrapper makes it
+  possible to use non-standard screensavers.
+- Added a test to quickly stop optimizing when there is nothing more to do.
+- Enlarged a buffer to speed up the fragment analyzation.
+- Small change in the code that reduces the number of fragments in huge files
+  that cannot be fully defragmented.
+- Changed the debug level of the "FSCTL_GET_RETRIEVAL_POINTERS error: Infinite
+  loop" from zero to 2, so it won't always be displayed.
+- Changed the debug level of the "Skipping gap, cannot fill: %I64d[%I64d]"
+  from 3 to 5.
+Changes in the DLL library:
+- 2 extra parameters in the RunDefrag() call.
+
+
+JkDefrag v3.6 (Jan 20, 2007)
+Changes:
+- Added a wrapper program to the screensaver. The alternate screensaver would not start for some users and this will hopefully fix the problem.
+- Action 5 "Force together" added. This mode will move all files to the beginning of the disk, even if it means fragmenting them. It fills all the gaps with fragments taken from the highest files.
+- A change in the code that determines if a file is fragmented, to reduce the number of files that are uneccesarily moved.
+- Debug mode 5 has been split into mode 5 "Detailed gap-filling messages" and mode 6 "Detailed gap-finding messages".
+- Fixed a bug that caused a logfile to be created with a single line of text (the version info) when the "-l" commandline option was used.
+
+JkDefrag v3.5 (Jan 07, 2007)
+Changes:
+- Different method of starting the alternate screensaver, in the hope it will work for more users.
+- Added the "%SystemRoot%" folder to scan for screensavers.
+- Added a "2003" test to filter out non-standard screensavers.
+- Added zero to the choices in the "do not defrag if last run was less than ... hours ago" in the screensaver configuration window.
+- Bugfix: if more than one disk was specified on the commandline, and the program was stopped by the user during any but the last disk, then the program would close the window, finish the current file, and start processing the next disk in the background. It will now close the window and finish the current file.
+- Different method for determining the LCN of a file, in the hope it will fix a looping problem with compressed files during optimization.
+- Made a change in the method used to defragment huge files to reduce the number of midway fails, and make it faster.
+- Added debug level 6 for detailed gap-finding messages.
+- The "Analyzing disk", "Starting defragmenter for", and "Finished" messages are now written to the logfile.
+- For DLL users: Added a parameter to the ShowMove() callback.
+- For DLL users: extra message 46.
+
+JkDefrag v3.4 (Dec 25, 2006)
+Changes:
+- The screensaver now has several settings. You can specify commandline options just like with the other versions, so you can control which disks will be defragged; you can specify another screensaver to run when JkDefrag has finished; and you can select a number of hours to wait before running again.
+- The screensaver now writes all the messages to a logfile, just like the other versions.
+- Added a bit of code that will find fragmented files at the end of a gap. It's not really necessary but makes certain warnings a bit less confusing.
+
+JkDefrag v3.3 (Dec 15, 2006)
+Changes:
+- Bugfix for the X64 versions. The program ran but couldn't find any files and therefore didn't do any work. I wish I had an X64 system to test new versions on! Anyone care to donate a computer?
+- Added a couple more files to the internal dollar-list of special system files.
+
+JkDefrag v3.2 (Dec 13, 2006)
+Changes:
+- Fixed a bug in the DLL that caused the name of the RunDefrag() subroutine to be mangled.
+- The distributions now include a 'doc' directory with a copy of the JkDefrag homepage.
+- Moved the .bat file to compile the X64 version to the main directory.
+- Small change in the code that rewrites input paths.
+- Suppressed "could not get volume bitmap" message at the end of the optimization phase.
+
+JkDefrag v3.1 (Dec 08, 2006)
+when running the program, "3.0" still appears at the top of the window.
+Only the version string was incorrect.
+
+JkDefrag v3.1 (Dec 07, 2006)
+Changes:
+- Managed to compile the screensaver and the DLL for X64.
+- Fixed a divide-by-zero error when the window is minimized.
+- Added a bit of code to get backup permissions, to gain access to special system files and folders such as the "System Volume Information" folder.
+- Added a maximum-loop counter to the code that finds out the size and location of file fragments, as a preventative measure for a suspected bug in the Windows defragmentation API.
+- The dollar special system files (such as "$Mft") are no longer analysed when the user has specified a file or a folder on the commandline, but only for full disks.
+
+JkDefrag v3.0 (Dec 03, 2006)
+Changes between version 2.27a and version 3.0:
+- I've changed the name from plain old "defrag" into "JkDefrag". The old name was really no name at all and made talking about it a little bit awkward. The "jk" are my initials. The change in name is reflected in the names of the executables and the sources, for example "windefrag.exe" is now "JkDefrag.exe".
+- The program and it's sources are now released under the GNU General Public License, and the DLL library under the GNU Lesser general public license. Previously the program was copyrighted freeware with published sources.
+- New to this release is the screen saver. You can use it just like any other screensaver, go to lunch and come back to a fully optimized harddisk.
+- Big changes in the DLL to give programmers access to a lot more data and to make the library completely thread-safe. The new library is not downwards compatible, although the structure and calls resemble the old library.
+Changes in the Windows version:
+- Name changed from "windefrag.exe" into "JkDefrag.exe".
+- Starts in a resizable window instead of full screen.
+- Shows a percentage counter of how much is left to do.
+Changes in the commandline version:
+- Name changed from "defrag.exe" into "JkDefragCmd.exe".
+- Prints a small report with some numbers when it has finished processing a disk. The windows version saves the report in the logfile, but does not show the numbers on the screen.
+- Options are now processed before processing items.
+- Ultra long paths are now supported. Previously the program was limited to a maximum pathlength of 259 characters, as advised by Microsoft, but there are cases where pathnames can grow longer than that. Most Microsoft programs cannot handle ultra long paths.
+- Switched to Unicode wide-character strings and system calls for filenames and paths, instead of 8-bit ANSI.
+- Replaced the commandline options "o", "o1", and "o2" with the "a" options. It is now possible to run the defragger in analyze-only mode.
+- It is now possible to specify individual files on the commandline.
+- It is now possible to defragment/optimize unmounted volumes by specifying them explicitly on the commandline.
+- Changed the way invisible system files are colorized.
+- Invisible system files can now be defragged/optimized when the utility is started from a read-only medium such as cd-rom.
+- Fixed a bug that could cause the program to loop when moving files using strategy 2.
+- Moved the already-running test from the library to the individual programs, so that the library can now process multiple disks simultaneaously.
+
+Defrag version 2.27 (Nov 16, 2006)
+Changes:
+- I have upgraded from "Microsoft Visual C++ Toolkit 2003" to "Visual C++ 2005 Express Edition", and from "Microsoft Platform SDK for Windows Server 2003 SP1" to "Microsoft Platform SDK for Windows Server 2003 R2". It required some minor changes in the sources.
+- I've included a small "make.bat" in the sources to compile the defragger, and a "x64/make.bat" to compile the x64 versions.
+
+Defrag version 2.27b (Nov 22, 2006)
+This is an in-between maintenance release to fix a compilation bug in the X64 executables.
+No changes in the regular Windows binaries, and 1 character changed in the sources.
+
+Defrag version 2.26 (Nov 07, 2006)
+Changes:
+- The defragger can now partially defragment. When it encounters a huge file for which there is no gap big enough, then it will defragment as much of the file as it can. Previously it would just skip the file.
+- Added a commandline option "-s" to slow down the defragger.
+- The program will now refuse to start if another instance is already running.
+
+Defrag version 2.25 (Oct 23, 2006)
+Changes:
+- Rewritten the code that draws (colorizes) files on the screen.
+- Reorganised the debug messages.
+- Fixed a bug that could cause the program to hang on startup.
+- Changes that prepare for future partial defrag of huge files.
+- Different strategy to retry moving a file.
+- Went back to freespace and MFT optimization of version 2.23.
+
+Defrag version 2.24 (Oct 13, 2006)
+Changes:
+- Further improvements in the algorithms to optimize the directories, the scratch-area, and the files in the MFT-zone.
+
+Defrag pre-versions 2.24 (Pre Oct, 2006)
+No history recorded.

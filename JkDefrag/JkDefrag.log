@@ -1,0 +1,120 @@
+﻿04:27:39 JkDefrag v3.36
+04:27:39 Date: 2017/08/05
+04:27:39 Windows version: v6.1 build 7601 Service Pack 1
+04:27:39 Commandline argument '-a' accepted, optimizemode = 5
+04:27:39 Commandline argument '-d' accepted, debug = 2
+04:27:39 Commandline argument '-f' accepted, freespace = 3.0%
+04:27:39 NtfsDisableLastAccessUpdate is inactive, using LastAccessTime for SpaceHogs.
+04:27:39 Processing 'D:'
+04:27:39 Opening volume '\\?\Volume{496b2df8-60b7-11e4-8852-60d819b7af69}' at mountpoint 'D:'
+04:27:39 Input mask: d:\*
+04:27:40 Phase 1: Analyze
+04:27:40 This is an NTFS disk.
+04:27:40   Disk cookie: 202020205346544E
+04:27:40   BytesPerSector: 512
+04:27:40   TotalSectors: 462780415
+04:27:40   SectorsPerCluster: 8
+04:27:40   SectorsPerTrack: 63
+04:27:40   NumberOfHeads: 255
+04:27:40   MftStartLcn: 43820672
+04:27:40   Mft2StartLcn: 2
+04:27:40   BytesPerMftRecord: 1024
+04:27:40   ClustersPerIndexRecord: 1
+04:27:40   MediaType: F8
+04:27:40   VolumeSerialNumber: 8488D7EF88D7DDAC
+04:27:56   Analysis speed: 21007 items per second
+04:28:01 Phase 3: ForcedFill
+04:48:11 Finished.
+04:48:11 - Total disk space: 236943568896 bytes (220.6709 gigabytes), 57847551 clusters
+04:48:11 - Bytes per cluster: 4096 bytes
+04:48:11 - Number of files: 305060
+04:48:11 - Number of directories: 22734
+04:48:11 - Total size of analyzed items: 96932614144 bytes (90.2755 gigabytes), 23665189 clusters
+04:48:11 - Number of fragmented items: 40 (0.0122% of all items)
+04:48:11 - Total size of fragmented items: 24967294976 bytes, 6095531 clusters, 25.7574% of all items, 10.5372% of disk
+04:48:11 - Free disk space: 139821383680 bytes, 34136080 clusters, 59.0104% of disk
+04:48:11 - Number of gaps: 6
+04:48:11 - Number of small gaps: 1 (16.6667% of all gaps)
+04:48:11 - Size of small gaps: 4096 bytes, 1 clusters, 0.0000% of free disk space
+04:48:11 - Number of big gaps: 5 (83.3333% of all gaps)
+04:48:11 - Size of big gaps: 139821379584 bytes, 34136079 clusters, 100.0000% of free disk space
+04:48:11 - Average gap size: 5689346.6667 clusters
+04:48:11 - Biggest gap: 82556850176 bytes, 20155481 clusters, 59.0445% of free disk space
+04:48:11 - Average end-begin distance: 2836083 clusters, 4.9027% of volume size
+04:48:11 These items could not be moved:
+04:48:11   Fragments       Bytes  Clusters Name
+04:48:11           1   346030080     84480 D:\$MFT
+04:48:11           2        4464         2 D:\Software\אייקונים חדשים\material-design-icons-master:$I30:$BITMAP
+04:48:11   --------- ----------- --------- -----
+04:48:11           3   346034544     84482 Total
+04:48:11 These items are still fragmented:
+04:48:11   Fragments       Bytes  Clusters Name
+04:48:11          10    18887770      4612 D:\Software\Locate32\db\d.dbs
+04:48:11           4   764956672    186757 D:\Software\All Security\Repair and Recover\_MyBootCD\MyHBCD.iso
+04:48:11           2    97923909     23908 D:\Software\IDEA\system\caches\content.dat.storageData
+04:48:11           3   605726682    147883 D:\Software\All Security\Repair and Recover\_Acronis True Image 2017 v20.0.5534 BootCD Full [SadeemPC].zip
+04:48:11           2   417207109    101858 D:\Dropbox\Camera Uploads\VID_20161016_201454_fixed.mp4
+04:48:11           2       44096        11 D:\$MFT::$BITMAP
+04:48:11           2      119722        30 D:\Software\Locate32\db\e.dbs
+04:48:11          10    28813306      7035 D:\Software\Locate32\db\c.dbs
+04:48:11           7    31149179      7605 D:\Software\Locate32\db\c_cygwin.dbs
+04:48:11           6      198525        49 D:\Software\All Security\Registry Workshop\undo.idx
+04:48:11           6     8794497      2148 D:\Software\All Security\Registry Workshop\undo.dat
+04:48:11          13    16128977      3938 D:\Software\Locate32\db\karakocom.dbs
+04:48:11           2  2049471256      8912 D:\$Extend\$UsnJrnl:$J:$DATA
+04:48:11          74   188299207     45972 D:\Software\Chromium\_res\Google-Chrome-Canary_57.0.2948.0_x64\chrome.7z
+04:48:11           2   519001854    126710 D:\Software\All Security\Repair and Recover\_Acronis True Image 2016 19.0.6571\Setup.rar
+04:48:11           3   546147326    133337 D:\Software\All Security\Repair and Recover\_Acronis True Image 2016 19.0.6571\BootCD.rar
+04:48:11           2        4384         2 D:\Software\אייקונים חדשים\icons:$I30:$BITMAP
+04:48:11          14  2013270205    491522 D:\Dropbox\Camera Uploads\20160515_0752371.mp4
+04:48:11          11  1566499561    382447 D:\Dropbox\Camera Uploads\הוצאת כבלים מיותרים ברכב\20160706_110154.mp4
+04:48:11           2   167861255     40982 D:\Dropbox\Camera Uploads\VID_20161008_140641.mp4
+04:48:11          14  3320903680    810768 D:\Software\ OnStart\en_windows_7_ultimate_with_sp1_x64_dvd_u_677332.iso
+04:48:11           6   623890432    152317 D:\Software\All Security\Repair and Recover\_Hirens.BootCD.15.2\Hiren's.BootCD.15.2.iso
+04:48:11           3   375842107     91759 D:\Software\All Security\Repair and Recover\_Kaspersky Rescue Disk 10.0.32.17  WindowsUnlocker 1.2.2  USB Rescue Disk Maker 1.0.0.7 (12.1.2014)\Kaspersky Rescue Disk 10.0.32.17  WindowsUnlocker 1.2.2  USB Rescue Disk Maker 1.0.0.7 (12.1.2014)~~.rar
+04:48:11           4   372113408     90848 D:\Software\All Security\Repair and Recover\_Macrium Reflect Technician’s USB v6.2.1502 (WinPE 10.0 x64 Server) [Androgalaxy]\Macrium Reflect Technician's USB v6.2 Build 1502 (WinPE 10.0 x64 Server).iso
+04:48:11           8  1887387263    460788 D:\Dropbox\Camera Uploads\SVR\2014-12-20 19-55-47.mp4
+04:48:11           3   746192896    182176 D:\Software\ OnStart\Windows XP Tablet PC Edition 2005 MSDN DVD SP3 - en_winxp_tablet_2005.iso
+04:48:11           2   336199680     82080 D:\Software\All Security\Repair and Recover\_Acronis Backup Advanced 11.7.50058 Incl Serial Key + BootCD [SadeemPC]\AcronisBackupAdvancedPC_11.7_50058_en-US_SadeemPC.com.iso
+04:48:11           6  1949075129    475849 D:\Software\All Security\Repair and Recover\_Acronis Backup Advanced 11.7.50058 Incl Serial Key + BootCD [SadeemPC]\Acronis Backup Advanced Workstation and Server 11.7.50058 + Serial Key [SadeemPC].zip
+04:48:11          19  2949614553    720121 D:\Dropbox\המסמכים שלי\201412111449ILicompile.zip
+04:48:11           3   492806443    120315 D:\Dropbox\Camera Uploads\2014-07-28 17-14-05.mp4
+04:48:11           2   514906475    125710 D:\Dropbox\Camera Uploads\SVR\2015-04-20 11-26-50.mp4
+04:48:11           2   256140331     62535 D:\Dropbox\Camera Uploads\היער השחור יוני 15\20150625_094940.mp4
+04:48:11           8  2564476928    626093 D:\Software\ OnStart\en_windows_7_ultimate_with_sp1_x86_dvd_u_677460.iso
+04:48:11           2   200813792     49027 D:\Software\VMware\ThinApp\Setup Capture.exe
+04:48:11           3   128917679     31475 D:\Dropbox\Camera Uploads\2015-06-15 19.06.13.mp4
+04:48:11           4   405106197     98903 D:\Dropbox\Camera Uploads\2016-03-29 12.00.39.mp4
+04:48:11           2   371137098     90610 D:\Dropbox\Camera Uploads\2015-06-27 05.30.49.mp4
+04:48:11           2   307503264     75075 D:\Software\VMware\Workstation\VMware-workstation-pro-full-12.1.0-3272444_x64bit.exe
+04:48:11           2   136649306     33362 D:\Dropbox\Camera Uploads\2015-12-12 20.51.26.mp4
+04:48:11           2        4464         2 D:\Software\אייקונים חדשים\material-design-icons-master:$I30:$BITMAP
+04:48:11   --------- ----------- --------- -----
+04:48:11         274 26980186617   6095531 Total
+04:48:11 The 25 largest items on disk:
+04:48:11   Fragments       Bytes  Clusters Name
+04:48:11          14  3320903680    810768 D:\Software\ OnStart\en_windows_7_ultimate_with_sp1_x64_dvd_u_677332.iso
+04:48:11          19  2949614553    720121 D:\Dropbox\המסמכים שלי\201412111449ILicompile.zip
+04:48:11           8  2564476928    626093 D:\Software\ OnStart\en_windows_7_ultimate_with_sp1_x86_dvd_u_677460.iso
+04:48:11          14  2013270205    491522 D:\Dropbox\Camera Uploads\20160515_0752371.mp4
+04:48:11           6  1949075129    475849 D:\Software\All Security\Repair and Recover\_Acronis Backup Advanced 11.7.50058 Incl Serial Key + BootCD [SadeemPC]\Acronis Backup Advanced Workstation and Server 11.7.50058 + Serial Key [SadeemPC].zip
+04:48:11           8  1887387263    460788 D:\Dropbox\Camera Uploads\SVR\2014-12-20 19-55-47.mp4
+04:48:11          11  1566499561    382447 D:\Dropbox\Camera Uploads\הוצאת כבלים מיותרים ברכב\20160706_110154.mp4
+04:48:11           1  1338974614    326899 D:\Dropbox\Camera Uploads\SVR\2015-03-11 19-40-19.mp4
+04:48:11           1  1262273024    308173 D:\Dropbox\Camera Uploads\SVR\2015-06-19 20-43-31.mp4
+04:48:11           1   992052763    242201 D:\Dropbox\Camera Uploads\היער השחור יוני 15\20150630_093524.mp4
+04:48:11           1   835395369    203954 D:\Software\ffmpeg\ffmpeg_pic_in_pic_pip\b.mkv
+04:48:11           4   764956672    186757 D:\Software\All Security\Repair and Recover\_MyBootCD\MyHBCD.iso
+04:48:11           3   746192896    182176 D:\Software\ OnStart\Windows XP Tablet PC Edition 2005 MSDN DVD SP3 - en_winxp_tablet_2005.iso
+04:48:11           1   637094297    155541 D:\Dropbox\Camera Uploads\2015-07-01 10.46.20.mp4
+04:48:11           1   637094297    155541 D:\Dropbox\Camera Uploads\היער השחור יוני 15\20150701_094120.mp4
+04:48:11           6   623890432    152317 D:\Software\All Security\Repair and Recover\_Hirens.BootCD.15.2\Hiren's.BootCD.15.2.iso
+04:48:11           1   617754624    150819 D:\Software\ OnStart\en_windows_xp_professional_with_service_pack_3_x86_cd_vl_x14-73974.iso
+04:48:11           1   615438931    150254 D:\Dropbox\Camera Uploads\2014-05-14 09.48.13.mp4
+04:48:11           1   610903570    149147 D:\Dropbox\Camera Uploads\2013-11-29 08.14.19.mp4
+04:48:11           1   610903570    149147 D:\Dropbox\Camera Uploads\בנייה שיפוץ\20131129_100930_יואל סלומון.mp4
+04:48:11           3   605726682    147883 D:\Software\All Security\Repair and Recover\_Acronis True Image 2017 v20.0.5534 BootCD Full [SadeemPC].zip
+04:48:11           1   585109486    142849 D:\Software\ffmpeg\ffmpeg_pic_in_pic_pip\b.mp4
+04:48:11           1   556625468    135895 D:\Dropbox\Camera Uploads\2015-07-01 11.11.54.mp4
+04:48:11           1   556625468    135895 D:\Dropbox\Camera Uploads\היער השחור יוני 15\20150701_100733.mp4
+04:48:11           3   546147326    133337 D:\Software\All Security\Repair and Recover\_Acronis True Image 2016 19.0.6571\BootCD.rar

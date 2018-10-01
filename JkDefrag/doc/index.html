@@ -1,0 +1,1382 @@
+<html>
+<head>
+<title>JkDefrag v3.36</title>
+<meta name="Description" content="Free disk defragmenter and optimizer for Windows 2000/2003/XP/Vista/2008/X64">
+<meta name="Keywords" content="General Public License,GNU,GPL,defrag,defragment,hard drive,disk,optimize,optimization,Kessels Defrag,Jeroen Kessels Defrag">
+<meta name="Author" content="Jeroen Kessels, jeroen@kessels.com">
+</head>
+<body bgcolor="#F7F1E2" text="#000000" link="#000000" vlink="#000000" alink="#000000">
+
+<center>
+<script type="text/javascript"><!--
+google_ad_client = "pub-2061310247152509";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text_image";
+//2007-12-01: JkDefrag
+google_ad_channel = "3309664755";
+//-->
+</script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</center>
+
+
+<center>
+<img src="images/Bar01.gif" width=462 height=20 border=0><br>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="+1" color="#000000"><b>JkDefrag v3.36</b></font><br>
+<img src="images/Bar02.gif" width=462 height=20 border=0><p>
+</center>
+
+<table border=3 cellspacing=0 cellpadding=10 width="100%" bgcolor="#FFFFFF"><tr><td><font face="Times New Roman, Times, serif">
+
+<table border=0 cellspacing=0 cellpadding=0>
+<tr>
+  <td align=left>
+    <img src="images/logo.gif" width=128 height=101 border=0>
+    </td>
+  <td align=left>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+  <td><font face="Times New Roman, Times, serif">
+    JkDefrag is a disk defragmenter and optimizer
+    for Windows 2000/2003/XP/Vista/2008/X64.
+    Completely automatic and very easy to use, fast, low overhead,
+    with several optimization strategies, and can handle floppies, USB
+    disks, memory sticks, and anything else that looks like a disk to Windows.
+    Included are a Windows version, a commandline version
+    (for scheduling by the task scheduler or for use from administrator scripts),
+    a screensaver version, a DLL library (for use from programming languages),
+    versions for Windows X64, and the complete sources.
+    </td>
+  <td align=center>
+    <a href="License gpl.txt"><img src="images/gnu-head-sm.jpg" width=129 height=122 border=0></a><br>
+    <font face="Times New Roman, Times, serif" size=2><b>Free GNU software</b></font>
+    </td>
+  </tr>
+</table>
+<p>
+
+</font></td></tr></table><p>
+
+
+
+
+<h2>Download</h2>
+<table border=3 cellspacing=0 cellpadding=10 width="100%" bgcolor="#FFFFFF"><tr><td><font face="Times New Roman, Times, serif">
+
+JkDefrag is completely free, no cost, no time limit.
+If you've payed for your copy then you've been scammed!
+The executables are released under the
+<a href="License gpl.txt"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="License gpl.txt"><b>GNU General Public License,</b></a>
+and the sources are released under the
+<a href="License lgpl.txt"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="License lgpl.txt"><b>GNU Lesser General Public License.</b></a>
+<p>
+
+<center>
+Release date: August 31, 2008<br>
+<table border=1 cellspacing=0 cellpadding=5>
+<tr>
+  <td><a href="http://www.kessels.com/JkDefrag/JkDefrag-3.36.zip"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="http://www.kessels.com/JkDefrag/JkDefrag-3.36.zip"><b>JkDefrag-3.36.zip</b></a>
+</td>
+  <td>Download for Windows 2000/2003/XP/Vista/2008</td>
+  <td>479kb</td>
+  </tr>
+<tr>
+  <td><a href="http://www.kessels.com/JkDefrag/JkDefrag64-3.36.zip"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="http://www.kessels.com/JkDefrag/JkDefrag64-3.36.zip"><b>JkDefrag64-3.36.zip</b></a>
+</td>
+  <td>Download for X64 versions of Windows 2003/XP/Vista/2008</td>
+  <td>488kb</td>
+  </tr>
+<tr>
+  <td><a href="http://www.kessels.com/JkDefrag/JkDefrag-src-3.36.zip"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="http://www.kessels.com/JkDefrag/JkDefrag-src-3.36.zip"><b>JkDefrag-src-3.36.zip</b></a>
+</td>
+  <td>Download sources for Microsoft Visual C++ 2005</td>
+  <td>446kb</td>
+  </tr>
+</table>
+</center>
+<p>
+
+<b>Tip:</b> For translated versions see the "Contributed by other people" chapter
+  at the end of this page.<br>
+<b>Tip:</b> Don't know how to unpack a zip file?
+  Use <a href="http://www.7-zip.org/"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="http://www.7-zip.org/"><b>7-zip.</b></a>
+<br>
+<b>Tip:</b> Check out the
+  <a href="http://www.kessels.com/forum/index.php"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="http://www.kessels.com/forum/index.php"><b>JkDefrag forum</b></a>
+  for the latest news!
+
+
+</font></td></tr></table><p>
+
+
+
+
+<h2>Install</h2>
+<table border=3 cellspacing=0 cellpadding=10 width="100%" bgcolor="#FFFFFF"><tr><td><font face="Times New Roman, Times, serif">
+There is no "setup" or "install" and no configuration file.
+All you have to do is download the zip and unpack anywhere you like.
+The programs are ready to run, even from memory stick or cdrom.
+The zip contains the following 3 programs:<p>
+
+<dl>
+<dt><b>JkDefrag.exe</b>
+<dd>Windows version. This is what most people will use. No installation
+  or configuration necessary, it's ready to run and will automatically
+  process all the mounted, writable, fixed volumes on your computer
+<dt><b>JkDefragCmd.exe</b>
+<dd>Commandline version. Specially designed to be run automatically in
+  the background, or from administrator scripts.
+  See the "Commandline" chapter below for a list of commandline options,
+  and the "Frequently Asked Questions" on how to run it automatically
+  with the Windows Scheduler.
+<dt><b>JkDefragScreenSaver.scr</b> + <b>JkDefragScreenSaver.exe</b>
+<dd>Screen saver version.
+  Move (or copy) these two files to the "windows" folder on your harddisk (usually
+  "c:\Windows\" or "c:\Winnt\"). It will automatically become
+  visible in the list of screen savers as "JkDefrag screensaver" and can be used
+  just like any other screensaver (right-click somewhere on your desktop
+  and select Properties/Personalize, then select the Screen Saver tab).<br>
+  <b>Note:</b> on Vista the screensaver only works with User Account Control
+    turned off (see Control Panel, User Accounts, Turn User Account Control
+    on or off).<br>
+  <b>Note:</b> screen savers do not lengthen the life span of CRT and LCD monitors,
+    contrary to popular belief. It is better to let the monitor be turned
+    off by the Windows energy saving settings.
+<p>
+
+<dt> Permissions
+<dd> JkDefrag needs "full control" permissions to all files and disks that it must
+  defragment/optimize. On a default Windows system the "administrator" userid has
+  full permissions to all files and disks. Users can also run JkDefrag, but then it
+  can only defragment/optimize the files and disks for which the user has
+  "full control".<br>
+  <b>Note:</b> On Vista right-click the JkDefrag program and select "run as administrator".
+<dt> Stopping
+<dd> All versions of JkDefrag can be stopped safely at any time, there is no
+  risk of losing data or corrupting your disk.
+  You can use all the usual ways to stop a Windows program, such as pressing ALT-F4,
+  clicking the 'x' in the top-right corner, via the pull-down menu in the
+  taskbar, or by killing the program via the task manager or another utility.
+  The commandline program can be stopped the same way, plus by pressing
+  CTRL-C, or BREAK. It may take a bit of time for the program to actually stop,
+  JkDefrag will finish the current file in the background.
+<dt> Logfile
+<dd> JkDefrag writes all messages to a logfile called "JkDefrag.log", or
+  "JkDefragCmd.log", or "JkDefragScreenSaver.log",
+  depending on which version you are using. You can inspect
+  the logfile if you want, it's a flat-text file.
+  The logfile is automatically cleared when the program starts, it does not
+  grow to infinity. <br>
+  Tip: you can use environment variables in the name of
+  the logfile, for example "-l %COMPUTERNAME%.log".
+</dl>
+
+
+The Windows version of JkDefrag shows a high-detail map of the harddisk,
+refreshed 3 times per second. Bottom-left of the window is the beginning of
+the harddisk. The colors used are:
+
+<ul>
+<li> Black: empty
+<li> Green: regular files, unfragmented
+<li> Dark green: spacehogs, unfragmented
+<li> Yellow: fragmented
+<li> Red: unmovable
+<li> White: busy
+<li> Pink: MFT reserved zone (NTFS only)
+<li> Gray: in use by unknown data
+</ul>
+
+<center>
+<img src="images/Snapshot.gif" width=600 height=400><br>
+Snapshot of JkDefrag in action. The program is completely automatic,<br>
+there are no buttons and no pull-down menu's.
+</center>
+<p>
+
+<b>Tip</b>: Cleanup old junk from your harddisk before running JkDefrag,
+  for example with "Start -> Programs -> Accessories -> System Tools ->
+  Disk Cleanup", or with something like the freeware
+  <a href="http://www.ccleaner.com/"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="http://www.ccleaner.com/"><b>CCleaner</b></a>
+  program.<p>
+
+<b>Tip</b>: Reboot before running JkDefrag. This will release files that are in use,
+  so they can be defragmented. You can also run JkDefrag in Windows safe mode (press
+  F8 while booting) to defrag even more files.
+  <p>
+
+<b>Tip</b>: Stop your real time virus scanner before running JkDefrag. Virus
+  scanners check all disk activity, making defragmentation and optimization
+  very slow.<p>
+
+<b>Tip</b>: Move the swap file to another volume, reboot, defragment, and move the
+  swap file back.
+  If you don't have a second volume then temporarily make the swap file small,
+  for example 100Mb.<p>
+
+<b>Tip</b>: If an application (for example a database) prevents certain files from
+  being defragmented then stop the application, run JkDefrag for the particular
+  data directory only, and restart the application.
+  <p>
+
+<b>Tip:</b> Package unused files with a packager such as
+  <a href="http://www.7-zip.org/"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="http://www.7-zip.org/"><b>7-zip</b></a>
+.
+  The packagefile not only takes less harddisk space, but will also
+  defragment and optimize much faster than the individual files.
+  <b>Note</b>: This does not apply to Windows NTFS compression, which will actually
+  make defragmentation and optimization a lot slower.
+  <p>
+
+<b>Tip:</b> Buy the biggest harddisk you can afford. Investing in a bigger harddisk
+  gives more speed-per-dollar than investing in a faster CPU or more memory.
+  <p>
+
+<b>Tip:</b> The first partition on a harddisk is significantly faster than
+  other partitions. Try to use other partitions only for "SpaceHog" data (see
+  "What are SpaceHogs?").
+  <p>
+
+<b>Tip:</b> If you have 2 physical harddisks (of the same speed), then place the
+  pagefile on the first partition of the second harddisk.
+  <p>
+
+</font></td></tr></table><p>
+
+
+
+
+
+<h2>How it works</h2>
+<table border=3 cellspacing=0 cellpadding=10 width="100%" bgcolor="#FFFFFF"><tr><td><font face="Times New Roman, Times, serif">
+
+JkDefrag is based on the standard defragmentation API by Microsoft,
+a system library that is included in Windows 2000, 2003, XP, Vista, and 2008.
+Most defragmenters are based on this API, including the free defragmenter that
+comes with Windows and many commercial defragmenters.
+Basically all JkDefrag does is send "move this file to that location" commands
+to the API. JkDefrag does not modify the disk by itself, and is therefore extremely
+solid.
+<p>
+
+Defragmentation and optimizing will not only make a harddisk faster, but also
+lengthen it's life span. The disk will have less work to do and therefore have
+less wear and tear.
+Secondly, the sorting optimization strategies (see the "-a" option) will
+refresh all the magnetic data on your harddisk.
+However, defragmenting and optimizing is work, so
+excessive defragmenting and optimizing can actually cause more wear and tear
+than it prevents.
+JkDefrag is therefore set for "fast" optimization by default, intended to be
+used on a daily basis. The other optimizations should only be used occasionally.
+<p>
+
+<dl>
+<dt> <b>Phase 1: Analyze</b>
+<dd> JkDefrag has to scan all the files on the disk to determine if they are
+  fragmented and where they are. A second step inside this phase will apply
+  the exclude masks and determine which files are SpaceHogs.
+<dt> <b>Phase 2: Defragment</b>
+<dd> All fragmented files are defragmented, simply by moving them to the first
+  gap on the disk that is big enough. If there is no gap
+  big enough then the defragmenter will reduce the number of fragments
+  in the file by moving as much of the file as possible into the largest gaps
+  available.
+<dt> <b>Phase 3: Optimize</b>
+<dd>
+  <ul>
+  <li> On most harddisks the beginning of the harddisk is considerably faster than the
+    end, sometimes by as much as 200 percent! See the link to "HD Tune"
+    in the "See Also" chapter for a nice little free program to measure your disk.
+    The default JkDefrag optimization strategy therefore moves all files to the
+    beginning of the volume. It is intended for daily use and will simply
+    fill gaps with files from above, very quick and with very little data movement.
+  <li> JkDefrag classifies files into 3 zones: directories (zone 1), regular files (zone 2),
+    and SpaceHogs (zone 3).
+    Directories are perhaps the most accessed data on disk, so zone 1 is
+    placed at the beginning of the harddisk. After the directories comes a
+    free area (see below), then zone 2 with regular files, another free area,
+    and then zone 3 with SpaceHogs (less important files that take up a lot of space).
+    The beginning and end of the zones is determined automatically,
+    see the "-f" option.
+  <li> A running computer will create and delete temporary files like there is no
+    tomorrow. If the harddisk were completely optimized then the only place for
+    new temporary files would be behind all the other data. Which is rather slow.
+    So JkDefrag maintains a free space of 1% of the total disk space between
+    zone 1 (directories) and zone 2 (regular files), and between zone 2 and zone 3
+    (SpaceHogs).
+  <li> Sorting the files on your disk can give you even more speed. There are several
+    sorting strategies to choose from (see the "-a" options). These are all very slow
+    and intended for occasional use only.
+  <li> Windows reserves a percentage of the disk for the MFT (Master File Table),
+    but can place normal files there if the rest of the disk is full.
+    The files will remain there, even when there is enough space again.
+    JkDefrag looks for files in the MFT reserved space and moves them to
+    normal diskspace, making the reserved space available again for the MFT.
+  </ul>
+</dl>
+
+
+When JkDefrag is running you will see lot's of messages zipping by
+showing you exactly what is happening. The messages are also stored in the
+logfile ("JkDefrag.log" or "JkDefragCmd.log") for later inspection.
+The logfile may also contain warning messages, for example when a file
+could not be moved. This is normal, no need to worry. Windows has many
+system files that cannot be moved while Windows is running.<br>
+
+</font></td></tr></table><p>
+
+
+
+
+<h2>Commandline</h2>
+<table border=3 cellspacing=0 cellpadding=10 width="100%" bgcolor="#FFFFFF"><tr><td><font face="Times New Roman, Times, serif">
+
+<center><h3>JkDefrag is completely automatic.<br>
+The commandline options are not needed for normal use.</h3></center>
+
+JkDefrag is ready to run, just click the "JkDefrag" program.
+Default behavior is to automatically process all the
+mounted, writable, fixed volumes on your computer.
+You can change this behavior with the following commandline options:
+<p>
+
+<center>
+<table cellspacing=0 cellpadding=2 border=0 width="80%">
+<tr>
+  <td nowrap><font face="Arial, Helvetica, sans-serif">For example:</font></td>
+  <td>&nbsp;&nbsp;&nbsp;</td>
+  <td><font face="Arial, Helvetica, sans-serif"><b>JkDefrag.exe -a 7 -d 2 -q c: d:</b></font></td>
+  </tr>
+<tr><td colspan=3 nowrap>&nbsp;</td></tr>
+<tr>
+  <td valign=top nowrap><font face="Arial, Helvetica, sans-serif">-a N</font></td>
+  <td>&nbsp;&nbsp;&nbsp;</td>
+  <td valign=top><font face="Arial, Helvetica, sans-serif">
+    The action to perform. N is a number from 1 to 11, default is 3:<br>
+    1 = Analyze, do not defragment and do not optimize.<br>
+    2 = Defragment only, do not optimize.<br>
+    3 = Defragment and fast optimize [recommended].<br>
+    5 = Force together.<br>
+    6 = Move to end of disk.<br>
+    7 = Optimize by sorting all files by name (folder + filename).<br>
+    8 = Optimize by sorting all files by size (smallest first).<br>
+    9 = Optimize by sorting all files by last access (newest first).<br>
+    10 = Optimize by sorting all files by last change (oldest first).<br>
+    11 = Optimize by sorting all files by creation time (oldest first).<br>
+    </font></td>
+  </tr>
+<tr>
+  <td valign=top nowrap><font face="Arial, Helvetica, sans-serif">-e "mask"</font></td>
+  <td>&nbsp;&nbsp;&nbsp;</td>
+  <td valign=top><font face="Arial, Helvetica, sans-serif">
+    Exclude files and/or directories that match the mask. The items will not be
+    defragmented and will not be moved.
+    Use wildcards '*' and '?' in the mask to match a set of files or directories.
+    If the mask contains a space then it must be enclosed in double-quotes.
+    Some examples:
+    <center>
+    <table bgcolor="#EEEEEE">
+    <tr><td><font face="Arial, Helvetica, sans-serif">JkDefrag -e *.avi -e *.zip -e *.log</font></td></tr>
+    <tr><td><font face="Arial, Helvetica, sans-serif">JkDefrag -e D:\MySQL\Data\*</font></td></tr>
+    </table>
+    </center>
+    </font></td>
+  </tr>
+<tr>
+  <td valign=top nowrap><font face="Arial, Helvetica, sans-serif">-u "mask"</font></td>
+  <td>&nbsp;&nbsp;&nbsp;</td>
+  <td valign=top><font face="Arial, Helvetica, sans-serif">
+    Files that match a mask will be moved to the SpaceHogs area.
+    The program has a built-in list
+    for all files bigger than 50 megabytes, files not accessed in the last month,
+    archives, files in the recycle bin,
+    service pack files, and some others. Disable this list by specifying the special
+    mask "DisableDefaults".
+    Use wildcards '*' and '?' in the mask to match a set of files or directories.
+    If the mask contains a space then it must be enclosed in double-quotes.
+    Some examples:
+    <center>
+    <table bgcolor="#EEEEEE">
+    <tr><td><font face="Arial, Helvetica, sans-serif">JkDefrag -u *.avi -u *.zip -u *.log</font></td></tr>
+    <tr><td><font face="Arial, Helvetica, sans-serif">JkDefrag -u D:\MySQL\Data\*</font></td></tr>
+    </table>
+    </center>
+    </font></td>
+  </tr>
+<tr>
+  <td valign=top nowrap><font face="Arial, Helvetica, sans-serif">-s N</font></td>
+  <td>&nbsp;&nbsp;&nbsp;</td>
+  <td valign=top><font face="Arial, Helvetica, sans-serif">
+    Slow down to N percent (1...100) of normal speed. Default is 100.
+    </font></td>
+  </tr>
+<tr>
+  <td valign=top nowrap><font face="Arial, Helvetica, sans-serif">-f N</font></td>
+  <td>&nbsp;&nbsp;&nbsp;</td>
+  <td valign=top><font face="Arial, Helvetica, sans-serif">
+    Set the size of the free spaces to N percent (0...100) of the size of the volume.
+    The free spaces are room on disk for temporary files. There are 2 free spaces,
+    between the 3 zones (directories, regular files, SpaceHogs).
+    Default is 1% (per free space).
+    </font></td>
+  </tr>
+<tr>
+  <td valign=top nowrap><font face="Arial, Helvetica, sans-serif">-d N</font></td>
+  <td>&nbsp;&nbsp;&nbsp;</td>
+  <td valign=top><font face="Arial, Helvetica, sans-serif">
+    Select a debug level, controlling the messages that will be written to the logfile.
+    The number N is a value from 0 to 6, default is 1:<br>
+    0 = Fatal errors.<br>
+    1 = Warning messages [default].<br>
+    2 = General progress messages.<br>
+    3 = Detailed progress messages.<br>
+    4 = Detailed file information.<br>
+    5 = Detailed gap-filling messages.<br>
+    6 = Detailed gap-finding messages.
+    </font></td>
+  </tr>
+<tr>
+  <td valign=top nowrap><font face="Arial, Helvetica, sans-serif">-l "filename"</font></td>
+  <td>&nbsp;&nbsp;&nbsp;</td>
+  <td valign=top><font face="Arial, Helvetica, sans-serif">
+    Specify a filename for the logfile. Default is "JkDefrag.log" and
+    "JkDefragCmd.log".
+    Specify empty string "" (two double-quotes) to disable the logfile.
+    </font></td>
+  </tr>
+<tr>
+  <td valign=top nowrap><font face="Arial, Helvetica, sans-serif">-h</font></td>
+  <td>&nbsp;&nbsp;&nbsp;</td>
+  <td valign=top><font face="Arial, Helvetica, sans-serif">
+    [commandline version only] Show a short help text.
+    </font></td>
+  </tr>
+<tr>
+  <td valign=top nowrap><font face="Arial, Helvetica, sans-serif">-help</font></td>
+  <td>&nbsp;&nbsp;&nbsp;</td>
+  <td valign=top><font face="Arial, Helvetica, sans-serif">
+    [commandline version only] Show a short help text.
+    </font></td>
+  </tr>
+<tr>
+  <td valign=top nowrap><font face="Arial, Helvetica, sans-serif">--help</font></td>
+  <td>&nbsp;&nbsp;&nbsp;</td>
+  <td valign=top><font face="Arial, Helvetica, sans-serif">
+    [commandline version only] Show a short help text.
+    </font></td>
+  </tr>
+<tr>
+  <td valign=top nowrap><font face="Arial, Helvetica, sans-serif">/?</font></td>
+  <td>&nbsp;&nbsp;&nbsp;</td>
+  <td valign=top><font face="Arial, Helvetica, sans-serif">
+    [commandline version only] Show a short help text.
+    </font></td>
+  </tr>
+<tr>
+  <td valign=top nowrap><font face="Arial, Helvetica, sans-serif">-q</font></td>
+  <td>&nbsp;&nbsp;&nbsp;</td>
+  <td valign=top><font face="Arial, Helvetica, sans-serif">
+    [windows version only] Quit the program when it has finished.
+    </font></td>
+  </tr>
+<tr>
+  <td valign=top nowrap><font face="Arial, Helvetica, sans-serif">items</font></td>
+  <td>&nbsp;&nbsp;&nbsp;</td>
+  <td valign=top><font face="Arial, Helvetica, sans-serif">
+    The items to be defragmented and optimized, such as a file, directory,
+    disk, mount point, or volume, including removable media such as
+    floppies, USB disks, memory sticks, and other volumes that behave
+    like a harddisk.
+    Wildcards '*' and '?' are allowed to select a set of files.
+    If the item contains a space then it must be enclosed in double-quotes.
+    Some examples:
+    <center>
+    <table bgcolor="#EEEEEE">
+    <tr><td><font face="Arial, Helvetica, sans-serif">JkDefrag C: D:</font></td></tr>
+    <tr><td><font face="Arial, Helvetica, sans-serif">JkDefrag f:\*.log D:\MySQL\Data\*</font></td></tr>
+    </table>
+    </center>
+    </font></td>
+  </tr>
+</table>
+</center>
+<p>
+
+<dl>
+<dt> Fast optimization
+<dd> This optimization strategy is designed for every day use.
+  It moves a minimum of data on the harddisk and finishes very quickly,
+  but will not fill all the gaps on the disk.
+  The strategy scans for gaps on the disk and fills them with files from above.
+<dt> Sorted optimization
+<dd>
+  All the sorting optimizations <b>WILL CREATE FRAGMENTS</b>. This is by design, it is not a bug.
+  For more info see the Frequently Asked Questions.<br>
+  These sorting optimizations are for incidental use once in a while.
+  They take a lot of running time and data movement because they rewrite all
+  the data on the disk.
+  The strategies vacate a small area on disk and then fill it up again with the
+  files in the selected order.
+  <ul>
+  <li> Sort by name: very good for fast program starting. The files used by a
+    particular program will be very close together on disk.
+  <li> Sort by size: placing all the small files together at the beginning of the disk
+    will dramatically reduce the average file seek time.
+  <li> Sort by last access: files that have not been accessed in a while are
+    probably unimportant and are best sorted to the back.
+  <li> Sort by last change: placing files together that change a lot (for example
+    databases and log files) will speed up regular operation of the system.
+  <li> Sort by creation time: The oldest files on the disk are likely to be
+    important system files, for example used when Windows is booting.
+  </ul>
+  <b>Note:</b> If you want to sort by last access time then first make sure your virus
+    scanner (and other programs that scan all files on disk) do not change that time.
+<dt> Force together
+<dd> Intended for partition resizing. All movable files are moved to the beginning of the
+  disk, even if it means fragmenting them to fill gaps that cannot be filled
+  otherwise.
+<dt> Move to end of disk
+<dd> Move all the files to the end of the disk, making more room
+  at the beginning of the disk.
+  Intended for big and rarely used files such as log files, backup archives,
+  installation files, and such.
+</dl>
+<p>
+
+</font></td></tr></table><p>
+
+
+
+
+
+
+<h2>Frequently asked questions</h2>
+<table border=3 cellspacing=0 cellpadding=10 width="100%" bgcolor="#FFFFFF"><tr><td><font face="Times New Roman, Times, serif">
+
+I have set up a forum for JkDefrag, a place where you can ask
+questions, give feedback about features you would like, share your
+experiences, share code that uses the defragger library, and other
+things about JkDefrag.<p>
+<center>
+<a href="http://www.kessels.com/forum/index.php"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="http://www.kessels.com/forum/index.php"><b>Jump to JkDefrag forum</b></a>
+</center>
+
+
+<dl>
+
+<dt> <b>What is "disk fragmentation"?</b>
+<dd> Imagine a book split into several parts, some pages are over here, other
+  pages in another room on another floor altogether. You will have to walk a lot
+  when you need to read the book. It may sound silly, but this is exactly what happens to
+  files on your harddisk. Defragmentation will put all the parts (fragments)
+  back together, making your computer a lot faster.
+  <p>
+
+<dt> <b>What is "disk optimization"?</b>
+<dd> Imagine a big library with lot's of books, spread out all over the
+  building and not sorted whatsoever. There is an index telling you exactly where
+  every book is, but you will have to walk a lot when you need
+  several books. This is exactly what happens on your harddisk,
+  the files that belong to an application can be all over the place, anywhere
+  on the harddisk. Optimization will bring all the files together in one place,
+  leaving the rest of the harddisk empty, and will sort the files, for example
+  alphabetically.
+  <p>
+
+<dt> <b>How safe is it?</b>
+<dd> JkDefrag is based on the standard defragmentation API by Microsoft,
+  a system library that is included in Windows 2000, 2003, XP, Vista, and 2008.
+  Most defragmenters are based on this API, including commercial defragmenters.
+  Basically all JkDefrag does is send "move this file to that location" commands
+  to the API. It does not touch the disk by itself, and is therefore extremely
+  solid. If your disks use NTFS then you're even safe
+  when the computer crashes in the middle of defragmenting.
+  Nevertheless, it's still a good idea to backup before defragmenting,
+  just like with other defragmenters, because the heavy use of the
+  harddisk may trigger a hardware fault (disk crash), and/or overheating
+  (disk, power supply, controller chipset, etc.).
+  <p>
+
+<dt> <b>Do I have to "checkdisk" before running JkDefrag?</b>
+<dd> Feel free to do so, but it's not necessary. JkDefrag is totally solid and cannot
+  get confused by a corrupted disk. And even if it could then nothing bad can happen,
+  because JkDefrag does not write to
+  disk itself. Everything is done through the Windows defragmentation API, and
+  Windows is quite smart about handling corrupted disks.
+  <p>
+
+<dt> <b>How do I specify an option, or select a single disk (or folder or file)?</b>
+<dd>
+  If you don't know how to use the Windows commandline, then take a look at the GUI
+  wrappers, see the "Contributed by other people" chapter.
+  Another way is to create a shortcut to "JkDefrag.exe", open the properties
+  of the shortcut, and add the desired commandline options (for example "-a 7")
+  or the name(s) of the disk/folder/file (for example "C:") to the end of the
+  "target" line. For example:
+  <center>
+  <table bgcolor="#EEEEEE">
+  <tr><td><font face="Arial, Helvetica, sans-serif">"C:\JkDefrag\JkDefrag.exe" -a 7</font></td></tr>
+  <tr><td><font face="Arial, Helvetica, sans-serif">"C:\JkDefrag\JkDefrag.exe" D:</font></td></tr>
+  </table>
+  </center>
+  <b>Tip:</b> In the same properties window you can select "minimized".<br>
+  <b>Tip:</b> See the JkDefrag "-q" option to exit automatically when finished.<br>
+  <p>
+
+<dt> <b>Where is the Stop button?</b>
+<dd>
+  All versions of JkDefrag can be stopped safely at any time, there is no
+  risk of losing data or corrupting your disk.
+  You can use all the usual ways to stop a Windows program, such as pressing ALT-F4,
+  clicking the 'x' in the top-right corner, via the pull-down menu in the
+  taskbar, or by killing the program via the task manager or another utility.
+  The commandline program can be stopped the same way, plus by pressing
+  CTRL-C, or BREAK. It may take a bit of time for the program to actually stop,
+  JkDefrag will finish the current file in the background.
+  <p>
+
+<dt> <b>What are the colors on the diskmap?</b>
+<dd> See the list in the "Install" chapter, just above the snapshot.<br>
+  <b>Note:</b> Unmovable files are only colored in red after JkDefrag has unsuccesfully
+  tried to move them.
+  <p>
+
+<dt> <b>Does JkDefrag support RAID Disks, USB disks, floppies, memory sticks?</b>
+<dd>
+  Yes, no problem whatsoever. JkDefrag does not know anything about the underlying
+  hardware, it leaves that up to Windows. It can therefore defragment and optimize
+  anything and everything that behaves like a disk.<br>
+  <b>Note:</b> Removable media (for example floppies) are not processed by default,
+    only when you specify the disk on the commandline (for example "jkdefrag G:").
+  <p>
+
+<dt> <b>Are striped RAID volumes faster at the beginning?</b>
+<dd> Yes. Striped raid volumes are mapped onto physical drives in blocks (usually
+  64 kilobyte). The first block in the stripe set is the first block on the first
+  drive, the second striped block is the first block on the second drive. If there
+  are only 2 drives then the third striped block is the second block on the first
+  drive. So, striped raid volumes have the same characteristics as the underlying
+  physical drives - fast at the beginning and slow at the end. You can test
+  the speed with the HDTune utility, see the link in the "see also" chapter.
+  <p>
+
+<dt> <b>What is the best defragmentation/optimization strategy for me?</b>
+<dd> My advice for all computers is to run JkDefrag once with the "-a 7" optimization
+  (sort by name), and from then on automatically every day with the default "-a 3"
+  fast-optimize option.
+  <br>
+  <b>Note:</b> The "-a 9" optimization (sort by last access time) only works as expected
+    if you do not use programs that scan all files on disk (such as virus scanners and
+    backup programs), causing Windows to update all the last access times.
+  <p>
+
+<dt> <b>How can I run JkDefrag automatically every day?</b>
+<dd> It's a great idea to run JkDefrag automatically every day by
+  adding it to the Windows scheduler, like this:
+  <ul>
+  <li> Start -> Control Panel -> Scheduled Tasks -> Add Scheduled Task
+  <li> The wizard starts, click 'Next'.
+  <li> Use the 'browse' button to select the 'JkDefragCmd.exe' program.
+  <li> Select 'daily', next, select a time, next.
+  <li> Enter a userid/password with administrator privileges, click 'Finish'.
+  </ul>
+  <b>Note:</b> The commandline version of JkDefrag ("jkdefragcmd.exe") will exit
+    automatically when finished. See the "-q" option to do the same for the Windows
+    version.<br>
+  <b>Tip:</b> See the "Settings" of the scheduled task to run only when the computer
+    is idle.<br>
+  <b>Tip:</b> To start the task minimized, in the settings of the task change the
+    commandline into "start /min JkDefragCmd.exe".<br>
+  <b>Tip:</b> Use the windows version of JkDefrag ("jkdefrag.exe") to prevent Windows
+    from switching to power-saving while JkDefrag is running.<br>
+  <p>
+
+<dt> <b>How do I use the screensaver?</b>
+<dd> See the instructions in the "Install" chapter. <p>
+
+<dt> <b>How to run JkDefrag at boot-time?</b>
+<dd> It's very easy to run JkDefrag automatically in the background when the
+  computer starts via the Windows Task Scheduler:
+  <ul>
+  <li> Start -> Control Panel -> Scheduled Tasks -> Add Scheduled Task
+  <li> The wizard starts, click 'Next'.
+  <li> Use the 'browse' button to select the 'JkDefragCmd.exe' program.
+  <li> Select 'When my computer starts', click next.
+  <li> Enter a userid/password with administrator privileges, click 'Finish'.
+  </ul>
+  <b>Note:</b> This will not defragment system files such as the page file. To do that
+  see the "see also" chapter for a link to Pagedefrag, a free utility by
+  Microsoft Technet (formerly SysInternals).
+  <p>
+
+<dt> <b>How to start minimized, or maximized?</b>
+<dd>
+  Make a shortcut to the "JkDefrag.exe" program, open the properties of
+  the shortcut, find the "run" setting, and select "minimized" or "maximized".
+  To run the commandline-version in a minimized window use "start /min jkdefragcmd.exe".
+  <p>
+
+<dt> <b>How to run with a lower priority?</b>
+<dd>
+  My advice is to use the JkDefrag "-s" commandline option to slow down the
+  program, but you can change the process priority like this:
+  <center>
+  <table bgcolor="#EEEEEE">
+  <tr><td><font face="Arial, Helvetica, sans-serif">cmd.exe /c start "JkDefrag" /BelowNormal "jkdefragCmd.exe"</font></td></tr>
+  </table>
+  </center>
+  <p>
+
+<dt> <b>How much minimum free disk space does JkDefrag require?</b>
+<dd>
+  JkDefrag does not require a minimum free disk space, unlike many other
+  defragmenters. But:
+  <ul>
+  <li> Windows reserves some space for expansion of the MFT, default is 12.5% of
+    the volume size.
+    This space is counted by Windows as free space because it can/will be used for
+    regular files when the rest of the volume is full. JkDefrag cannot move files
+    into this space, only out of ("reclaim MFT reserved space").
+  <li> A file can only be defragmented if there is a gap on disk big enough to hold
+    the entire file. There may be plenty of free space, but what is needed is a
+    single big gap. In these cases JkDefrag will try to reduce the number of
+    fragments in the file by using the biggest gaps available.
+  </ul>
+  <p>
+
+<dt> <b>Why is my disk not perfectly optimized?</b>
+<dd>
+  <ul>
+  <li> There are many files that cannot be moved while Windows is running,
+    because they are in use by an application, or by a service, or by Windows
+    itself. See the "-d" commandline options and the logfile for more information.
+    They can be anywhere on disk and are usually fragmented into microscopically
+    small segments.
+    In other words, the harddisk is not a big block of
+    space where files can be moved at will, but thousands of
+    little blocks bounded by unmovable data.<br>
+
+    A typical harddisk can easily contain tens of thousands of files,
+    all with different sizes. What is the optimum way to organize the files
+    into the blocks? The
+    number of permutations is astronomical, it boggles the mind.
+    JkDefrag doesn't even try to calculate them all.
+    It concerns itself with only one block at a time, trying to fit only
+    files from above the block, and limits itself to 0.5 seconds of
+    calculating time.<br>
+
+    So it's very unlikely, if not impossible, for JkDefrag to perfectly
+    optimize your disk, more's the pity.
+
+  <li> Gaps are only filled with files from above the gap (fast optimization).
+    If there are
+    no files that fit the gap (all files are bigger) then the gap cannot
+    be filled.
+  <li> Files can only be fully defragmented if there is a gap large enough to
+    hold the entire file. If no such gap is available then JkDefrag will
+    try to reduce the number of fragments by moving the file to the largest
+    gaps available.
+  <li> JkDefrag maintains a "free space" area between the directories
+    and the regular files, and between the regular files and the SpaceHogs.
+    This is by design. See the "-f" commandline option to control the size
+    of these free spaces.
+  </ul>
+  <p>
+
+<dt> <b>Why do the sorting optimizations create fragments?</b>
+<dd> The sorting optimizations will move all the data to the beginning of the
+  harddisk. But there may be some unmovable files in the way. Instead of leaving
+  gaps (if a file doesn't fit between the last file and the unmovable file),
+  the program will "wrap around" the unmovable files by splitting regular files
+  into fragments. This may seem strange for a
+  defragmenter, but the fragments are aligned and the impact on performance
+  is therefore very small. Gaps however would make all the files above the
+  gaps slower, because they would then be placed at a slightly slower part of
+  the harddisk than they need to be.
+  The fragments look terrible on the screen and in the statistics, but
+  are there to make your harddisk faster!
+  <p>
+
+<dt> <b>What speed can I expect?</b>
+<dd> It is impossible to predict how long a defragment/optimize will take. It depends
+  on things such as the optimization you have selected, the speed of your harddisk,
+  how big the files are, how much data is on the disk, and more.
+  Assuming a harddisk speed of 40 megabytes per second, then reading 100
+  gigabytes of data will take 100000 / 40 = 2500 seconds (42 minutes).
+  But JkDefrag has to do a lot more than just read the data, it also has to write
+  the data, and update the MFT/FAT. And it may have to move data out of the way
+  before it can place an item were it want's it to be. JkDefrag will do
+  things as efficiently as possible, with as little data movement as possible,
+  but it will take a long time nonetheless. If you are concerned about speed
+  then use the default "-a 3" (fast optimize) setting. It will produce very
+  good results in a minimum amount of time, especially if you use it every day.
+  <p>
+
+<dt> <b>What are SpaceHogs?</b>
+<dd> SpaceHogs are less important files that take up a lot of space.
+  JkDefrag moves them behind the directories and the regular files, to make
+  those faster. The internal list of SpaceHogs is (you can add more with the
+  "-u" commandline option):
+  <ul>
+  <li> Files bigger than 50 megabytes
+  <li> Files not accessed in the last month (see next question)
+  <li> ?:\$RECYCLE.BIN\*
+  <li> ?:\RECYCLED\*
+  <li> ?:\RECYCLER\*
+  <li> ?:\WINDOWS\$*
+  <li> ?:\WINDOWS\Downloaded Installations\*
+  <li> ?:\WINDOWS\Ehome\*
+  <li> ?:\WINDOWS\Fonts\*
+  <li> ?:\WINDOWS\Help\*
+  <li> ?:\WINDOWS\I386\*
+  <li> ?:\WINDOWS\IME\*
+  <li> ?:\WINDOWS\Installer\*
+  <li> ?:\WINDOWS\ServicePackFiles\*
+  <li> ?:\WINDOWS\SoftwareDistribution\*
+  <li> ?:\WINDOWS\Speech\*
+  <li> ?:\WINDOWS\Symbols\*
+  <li> ?:\WINDOWS\ie7updates\*
+  <li> ?:\WINDOWS\system32\dllcache\*
+  <li> ?:\WINNT\$*
+  <li> ?:\WINNT\Downloaded Installations\*
+  <li> ?:\WINNT\I386\*
+  <li> ?:\WINNT\Installer\*
+  <li> ?:\WINNT\ServicePackFiles\*
+  <li> ?:\WINNT\SoftwareDistribution\*
+  <li> ?:\WINNT\ie7updates\*
+  <li> ?:\*\Installshield Installation Information\*
+  <li> ?:\I386\*
+  <li> ?:\System Volume Information\*
+  <li> ?:\windows.old\*
+  <li> *.7z
+  <li> *.arj
+  <li> *.avi
+  <li> *.bak
+  <li> *.bup
+  <li> *.bz2
+  <li> *.cab
+  <li> *.chm
+  <li> *.dvr-ms
+  <li> *.gz
+  <li> *.ifo
+  <li> *.log
+  <li> *.lzh
+  <li> *.mp3
+  <li> *.msi
+  <li> *.old
+  <li> *.pdf
+  <li> *.rar
+  <li> *.rpm
+  <li> *.tar
+  <li> *.vob
+  <li> *.wmv
+  <li> *.z
+  <li> *.zip
+  </ul>
+  <b>Note:</b> Some virus scanners and other programs that scan all files on disk,
+    will change the last access time of all items on every run, effectively
+    disabling that particular SpaceHogs criterion. The other criteria still apply, though.
+  <p>
+
+<dt> <b>What is "NtfsDisableLastAccessUpdate"?</b>
+<dd> Windows can record the last time a file was accessed on NTFS disks.
+  It makes disks slower because Windows saves the access time on the disk itself, and does
+  this for each and every access.
+  But in combination with JkDefrag it can make your disk faster, because JkDefrag can use the
+  information to optimize your disk, by moving files to the back that have not been used
+  recently.
+  See the "-a 9" optimization and the "What are SpaceHogs" question.
+    <center>
+    <table>
+    <tr>
+      <td><font face="Arial, Helvetica, sans-serif">See current setting:</font></td>
+      <td bgcolor="#EEEEEE"><font face="Arial, Helvetica, sans-serif">fsutil behavior query disablelastaccess</font></td>
+      </tr>
+    <tr>
+      <td><font face="Arial, Helvetica, sans-serif">Enable recording of last access time:</font></td>
+      <td bgcolor="#EEEEEE"><font face="Arial, Helvetica, sans-serif">fsutil behavior set disablelastaccess 0</font></td>
+      </tr>
+    <tr>
+      <td><font face="Arial, Helvetica, sans-serif">Disable recording of last access time:</font></td>
+      <td bgcolor="#EEEEEE"><font face="Arial, Helvetica, sans-serif">fsutil behavior set disablelastaccess 1</font></td>
+      </tr>
+    </table>
+    </center>
+  <p>
+
+<dt> <b>Can I run JkDefrag outside Windows?</b>
+<dd> JkDefrag is based on the Windows defragmentation library, so Windows
+  must be started. JkDefrag can be run from a bootable Windows CD-rom
+  (such as
+  <a href="http://www.nu2.nu/pebuilder/intro/"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="http://www.nu2.nu/pebuilder/intro/"><b>Bart's Preinstalled Environment (BartPE)</b></a>
+  or
+  <a href="http://www.ubcd4win.com/"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="http://www.ubcd4win.com/"><b>Ultimate Boot CD for Windows</b></a>
+  ),
+  but cannot be run from a DOS bootable floppy or from Linux.<br>
+  <b>Tip:</b> Boot into Windows safe mode by pressing F8 when booting, and then run JkDefrag.
+    It will be slower (the Windows cache is off in safe mode), but you can defragment more
+    files.<br>
+  <b>Warning:</b> Do not hybernate your computer, boot with something else (such as BartPE),
+    and then change the hybernated disk in any way. This will corrupt the disk, a known
+    hybernation problem. JkDefrag refuses to process hybernated disks.
+  <p>
+
+<dt> <b>Can I run JkDefrag on Windows NT?</b>
+<dd> No. JkDefrag is based on the Microsoft defragmentation API, and Windows NT does
+  not have that API.
+  <p>
+
+<dt> <b>Will JkDefrag reduce the lifespan of my flash memory disk?</b>
+<dd>
+  Yes, all defragmentation/optimization will reduce the lifespan of flash memory disks
+  (USB memory sticks, Solid State Disks (SSD), and such).
+  Flash memory will get faster if defragmented, but does not gain much from optimization.
+  My advise therefore is to use "-a 2" only, and only incidentally (not every day).
+  JkDefrag does not usually process flash memory disks by default, only if you specify the
+  drive letter on the JkDefrag commandline (for example "jkdefrag h:"), because they are
+  usually seen by Windows as removable volumes.
+  <p>
+
+<dt> <b>Can JkDefrag do continuous background defragmenting?</b>
+<dd> In my opinion continuous background defragmenting and optimization is marketing
+  hype and a bad idea. There is considerable overhead (CPU, memory, disk) that may
+  actually make your computer slower instead of faster, and it will wear out and
+  shorten the life span of your harddisk. I advise defragmenting once a day (via the
+  Windows Task Scheduler) at the most.
+  <p>
+
+<dt> <b>What is the "Average end-begin distance"?</b>
+<dd> When Windows has finished reading a file then the harddisk heads will have to move
+  to the beginning of whatever file is needed next. JkDefrag calculates the average distance
+  from the end of every file to the beginning of every other file, and shows this number in the
+  report (see the logfile). A lower number means that the files are better packed together
+  and can be accessed more quickly.
+  <br>
+  <b>Note:</b> The lowest possible average distance can be achieved by sorting by filesize.
+  <p>
+
+<dt> <b>Can I "hide" the program from users?</b>
+<dd>
+  See the "How to start minimized, or maximized?" question.
+  Running completely invisible is a bit more difficult.
+  Create a special userid (for example "jkdefrag") with administrator permissions,
+  then add a schedule to the Windows Task Scheduler (see the "How can I run JkDefrag
+  automatically every day?" question) and specify that
+  userid when asked for. The task will then run on that userid and not show anything
+  on the user's screen. But I advise against it, I think it will needlessly worry the
+  user when he sees a lot of mysterious disk activity.
+  <p>
+
+<dt> <b>Why is JkDefrag so slow in Windows "safe" mode?</b>
+<dd> The Windows disk cache is off in "safe" mode, and the "safe" video drivers are very
+  slow.<br>
+  <b>Tip:</b> minimize the JkDefrag window, or use the commandline version of JkDefrag.
+  <p>
+
+<dt> <b>How do I disable the Windows built-in defragger?</b>
+<dd>
+  <dl>
+  <dt> Windows 2000 & 2003:
+  <dd> The built-in defragger is not started automatically.
+  <dt> Windows XP:
+  <dd><ol>
+    <li> Download the free
+      <a href="http://www.microsoft.com/windowsxp/downloads/powertoys/xppowertoys.mspx"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="http://www.microsoft.com/windowsxp/downloads/powertoys/xppowertoys.mspx"><b>Tweak UI</b></a>
+      utility from Micorosft.
+    <li> Click on 'General' and untick the 'Optimise hard disk when idle' box.
+    </ol>
+  <dt> Windows Vista:
+  <dd><ol>
+    <li> Start -> All Programs -> Accessories -> System Tools -> Disk Defragmenter
+    <li> Untick the "Run on a schedule (recommended)" box.
+    </ol>
+  </dl>
+  <p>
+
+<dt> <b>How do I defragment "c:\pagefile.sys"?</b>
+<dd>
+  One way is to download and install the free
+  <a href="http://www.microsoft.com/technet/sysinternals/FileAndDisk/PageDefrag.mspx"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="http://www.microsoft.com/technet/sysinternals/FileAndDisk/PageDefrag.mspx"><b>Pagedefrag</b></a>
+  utility by Microsoft TechNet (formerly Sysinternals),
+  it will automatically defragment the pagefile and some other system files
+  when the system is booting.
+  But even better is to set the pagefile to a fixed size, so it will never get
+  fragmented again. It's very easy to do:
+  <ol>
+  <li>
+    <b>Windows Vista:</b> Open the "Control Panel", classic view. Double click "system".
+      Select "Advanced system settings". Click the Performance "Settings" button.
+      Select the "Advanced" tab. Click the Virtual Memory "Change" button.<br>
+    <b>Windows 2000:</b> Open the "Control Panel". Double click "system".
+      Select the "advanced" tab. Click the "Performance Settings" button.
+      Click the Virtual Memory "Change" button.
+  <li> Write down the "Currently Allocated" number.
+  <li>
+    <b>Windows Vista:</b> Select "no paging file" for all disks.<br>
+    <b>Windows 2000:</b> Set the Initial Size and the Maximum Size numbers
+      for all disks to zero.
+  <li> Reboot.
+  <li> Run JkDefrag.
+  <li> Go back to the same panel and setup a pagefile with a "custom size" where
+    both the Initial Size and the Maximum Size are the number you wrote down.
+  <li> Reboot again. The pagefile should now be a single big unfragmented
+    file that will never get fragmented again.
+  </ol>
+  <p>
+
+<dt> <b>How do I defragment "C:\hiberfil.sys"?</b>
+<dd>
+  This huge file is used by the hibernation facility and cannot be defragmented on
+  a running system. You can only delete the file, like this:
+  <dl>
+  <dt> Windows Vista:
+  <dd><ol>
+    <li> Click Start -> All Programs -> Accessories, right click on "Command Prompt",
+      and then click "Run as Administrator". If User Account Control (UAC) asks you
+      for permission, permit the Command Prompt to run.
+    <li> Enter "powercfg -h off" (without the quotes).
+    <li> Reboot. The "hiberfil.sys" file will be automatically deleted.
+    <li> Repeat point 1
+    <li> Enter "powercfg -h on" (without the quotes).
+    <li> Reboot.
+    </ol>
+  <dt> Windows XP:
+  <dd><ol>
+    <li> Open the Control Panel
+    <li> Double-click Power Options
+    <li> Click the Hibernate tab, de-select the 'Enable hibernate support' check box,
+      and then click Apply.
+    <li> Reboot. The "hiberfil.sys" file will be automatically deleted.
+    <li> Go to the Windows Help & Support Center and search for 'enable hibernation'.
+      It should be the first result. The instructions detail some other steps you
+      may need to follow to reactivate the hibernation.
+    </ol>
+  </dl>
+  <p>
+
+<dt> <b>Why does JkDefrag delete my restore points?</b>
+<dd> It's not JkDefrag that is deleting your restore points.
+  Restore points use the Shadow Copy service to make snapshots of the disk. JkDefrag does not
+  change files (it only defragments or moves them), but it does change the disk (moving a file
+  is a change to the disk).
+  The Shadow Copy service remembers all these changes in big files in the
+  "C:\System Volume Information\...." folder. When the total amount of diskspace
+  used by shadow copies exceeds a threshold then the oldest snapshot (restore point) is
+  automatically deleted.
+  The threshold can be changed with the "vssadmin" command, see the
+  <a href="http://technet2.microsoft.com/windowsserver/en/library/89d2e411-6977-4808-9ad5-476c9eaecaa51033.mspx?mfr=true"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="http://technet2.microsoft.com/windowsserver/en/library/89d2e411-6977-4808-9ad5-476c9eaecaa51033.mspx?mfr=true"><b>vssadmin manpage.</b></a>
+  <p>
+
+<dt> <b>How do I defragment "C:\System Volume Information\...."?</b>
+<dd>
+  These huge files are used by the Shadow Copy service, which in turn is used by the
+  System Restore facility and by Windows backup.
+  The files can be defragmented on XP by stopping the Shadow Copy service ("srservice").
+  They cannot be defragmented on Vista. You can cleanup old shadow copies with
+  "Start -> Programs -> Accessories -> System Tools -> Disk Cleanup",
+  the "More Options" tab.
+  Or you can turn off System Restore altogether like this:
+  <dl>
+  <dt> Windows Vista:
+  <dd><ol>
+    <li> In Control Panel, click "System".
+    <li> Select "System Protection".
+    <li> If a disk has a checkmark then remove the checkmark.
+    </ol>
+  <dt> Windows XP:
+  <dd><ol>
+    <li> Open the properties of "My Computer".
+    <li> Select the "System Restore" tab. If you do not see the System Restore tab
+      then you are not logged on to Windows as an Administrator.
+    <li> Check "Turn off System Restore" or "Turn off System Restore on all drives".
+    </ol>
+  </dl>
+  <p>
+
+<dt> <b>How do I defragment "C:\$Extend\$UsnJrnl:$J:$DATA"?</b>
+<dd>
+  This huge file is used by Windows to track changes in other files and cannot be
+  defragmented. You can delete it by entering the following on the Run commandline
+  (Windows 2003/XP/Vista, not Windows 2000), it can take several minutes to finish:
+    <center>
+    <table bgcolor="#EEEEEE">
+    <tr><td><font face="Arial, Helvetica, sans-serif">fsutil usn deletejournal /n c:</font></td></tr>
+    </table>
+    </center>
+  <b>Note:</b> See   <a href="http://technet2.microsoft.com/windowsserver2008/en/library/213d36d1-f4ba-4390-93be-72e23df03a671033.mspx?mfr=true"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="http://technet2.microsoft.com/windowsserver2008/en/library/213d36d1-f4ba-4390-93be-72e23df03a671033.mspx?mfr=true"><b>fsutil manpage</b></a>
+<br>
+  <b>Note:</b> The "fsutil" command must be run as administrator. On Vista open a Command Prompt
+    with "Run As Administrator".<br>
+  <p>
+
+<dt> <b>How do I defragment unmounted volumes?</b>
+<dd>
+  Specify the VolumeName on the JkDefrag commandline. For example:
+    <center>
+    <table bgcolor="#EEEEEE">
+    <tr><td><font face="Arial, Helvetica, sans-serif">jkdefrag \\?\Volume{35683226-d2c4-11dc-9740-806e6f6e6963}\</font></td></tr>
+    </table>
+    </center>
+  <b>Note:</b> To get a list of all volumes on the computer enter "mountvol" in a command
+    prompt window.
+  <p>
+
+<dt> <b>Why use this defragger instead of the standard Windows defragger?</b>
+<dd>
+  <ul>
+  <li> Much faster.
+  <li> Totally automatic, extremely easy to use.
+  <li> Optimized for daily use.
+  <li> Disk optimization, several strategies.
+  <li> Directories are moved to the beginning of the disk.
+  <li> Reclaims MFT reserved space after disk-full.
+  <li> Maintains free spaces for temporary files.
+  <li> Can defragment very full harddisks.
+  <li> Can defragment very large files.
+  <li> Can defragment individual directories and files.
+  <li> Can be run automatically with the Windows Scheduler.
+  <li> Can be used from the commandline.
+  <li> Can be used as a screen saver.
+  <li> Can be run from cdrom or memory stick.
+  <li> Sources available, can be customized.
+  </ul>
+  <p>
+
+<dt> <b>Why use this defragger instead of a commercial or shareware defragger?</b>
+<dd>
+  <ul>
+  <li> It's free.
+  <li> Totally automatic, extremely easy to use.
+  <li> Optimized for daily use.
+  <li> Several optimization strategies.
+  <li> Directories are moved to the beginning of the disk.
+  <li> Reclaims MFT reserved space after disk-full.
+  <li> Maintains free spaces for temporary files.
+  <li> Can defragment individual directories and files.
+  <li> Can be used from the commandline.
+  <li> Can be used as a screen saver.
+  <li> Can be run from cdrom or memory stick.
+  <li> Sources available, guaranteed to be free of spyware, malware, nagware, and such.
+  </ul>
+  <p>
+
+
+</dl>
+
+<b>Tip:</b> See the <a href="http://www.kessels.com/forum/index.php"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="http://www.kessels.com/forum/index.php"><b>JkDefrag forum!!!</b></a>
+
+
+</font></td></tr></table><p>
+
+
+
+
+
+<h2>Known problems</h2>
+<table border=3 cellspacing=0 cellpadding=10 width="100%" bgcolor="#FFFFFF"><tr><td><font face="Times New Roman, Times, serif">
+
+<ul>
+<li> Some data on an NTFS partition may become corrupted after you restart a Windows
+  XP-based computer that uses a SATA hard disk drive. This is not a JkDefrag bug
+  but a Microsoft defragmentation API bug. Microsoft have fixed this is XP service
+  pack 3. Also see:
+  <a href="http://support.microsoft.com/kb/941715/en"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="http://support.microsoft.com/kb/941715/en"><b>Bugfix 941715</b></a>
+<li> Some kinds of external disks cannot be defragmented and optimized, especially
+  network disks that use their own internal operating system and special dedicated
+  filesystem. The drivers of these disks simply do not support it. This is not a
+  JkDefrag bug.
+<li> The "Prefetch\Layout.ini" file is not yet supported. This means that JkDefrag
+  will undo the boot optimization of the built-in XP and Vista defragger.
+<li> Files that are encrypted by Windows can be defragmented and optimized, but their
+  $EFS:$LOGGED_UTILITY_STREAM counterpart cannot. The Windows CreateFile() system
+  call refuses to open these files and I have not yet found a workaround.
+<li> The Microsoft defragmentation API on Vista can defragment and move the MFT, but
+  JkDefrag cannot use this capability yet.
+<!--
+<li> The display sometimes get's confused and can draw diagonal lines and text in
+  the diskmap. This is definitely not a JkDefrag bug, but a bug in the video
+  card drivers. I cannot repeat the problem and therefore cannot find a workaround.
+-->
+<li> The Windows defragmentation API refuses to move directories on FAT32
+  filesystems. This is a known FAT32 limitation and not a bug in JkDefrag.
+<li> The Windows defragmentation API on Windows 2000 does not work on disks that
+  were formatted with a clustersize greater than 4KB. This is a known API
+  limitation and not a bug in JkDefrag. There is no risk of losing data, the
+  API simply refuses to move files.
+<li> A user has reported that his computer freezes when Avira Antivir Professional
+  starts while the JkDefrag screensaver is active.
+<li> A user has sent me a message that HP advises against defragmentation
+  of the special "recovery" partition on their computers. My defragger uses
+  the standard Microsoft defragmentation API, so I think it is safe to use,
+  but I don't know for sure. I have not found any additional information about
+  this issue anywhere on the internet.
+<li> JkDefrag makes a special exception for files used by SafeBoot, Acronis OS
+  Selector, SecurStar DriveCrypt, and Symantec GoBack.
+  The files will never be moved. If you know of any other
+  software that needs a special exception then please let me know.
+</ul>
+<p>
+</font></td></tr></table><p>
+
+
+
+
+
+<h2>Contributed by other people</h2>
+<table border=3 cellspacing=0 cellpadding=10 width="100%" bgcolor="#FFFFFF"><tr><td><font face="Times New Roman, Times, serif">
+
+JkDefrag was designed to be fully automatic and is extremely easy to use.
+Most users can use the program as-is.
+If you need to change JkDefrag's default behaviour then take a look at the
+GUI wrappers described below, they are easier to use than the commandline options.
+<p>
+
+<dl>
+<dt> <a href="http://portableapps.com/apps/utilities/jkdefrag_portable"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="http://portableapps.com/apps/utilities/jkdefrag_portable"><b>JkDefrag Portable</b></a>
+<dd> Packaged as a portable app (runs from a CD, or a USB disk), with an easy to use GUI.
+<dt> <a href="http://donnedwards.openaccess.co.za/2007/09/great-defrag-shootout-winners.html"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="http://donnedwards.openaccess.co.za/2007/09/great-defrag-shootout-winners.html"><b>Donn's JkDefrag Installer</b></a>
+<dd> Installer (setup) program for JkDefrag by Donn Edwards (see the chapter about
+  JkDefrag). Includes several other utilities: NtRegOpt, PageDefrag, JkDefrag GUI, and Contig.
+<dt> <a href="http://fichier.partage.free.fr/JKDefrag/Installer/Latest/setup.exe"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="http://fichier.partage.free.fr/JKDefrag/Installer/Latest/setup.exe"><b>Myriades JkDefrag Installer</b></a>
+<dd> Installer (setup) program for JkDefrag by Myriades. Includes the 32 and 64 bits versions,
+  sources, licence. It creates a start menu shortcut for the program, project,
+  logfile, and uninstall.
+<dt> <a href="http://www.jkdefrag.fr/"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="http://www.jkdefrag.fr/"><b>French version</b></a>
+<dd> JkDefrag and all the docs translated into French
+  by <a href="http://www.trad-fr.com/">Sparad0x</a>. Included are a Setup program
+  and the sources, and a special version for U3 flash drives.
+<dt> <a href="http://jkdefrag.8qm.de/"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="http://jkdefrag.8qm.de/"><b>German version</b></a>
+<dd> JkDefrag and all the docs translated into German
+  by Markus Hörl. Also available is a Setup program and a GUI wrapper.
+<dt> <a href="http://web.tiscali.it/danilovic/jkdefrag.htm"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="http://web.tiscali.it/danilovic/jkdefrag.htm"><b>Italian version</b></a>
+<dd> All the docs (not the program itself) translated into Italian
+  by Danilo Angaroni.
+<dt> <a href="http://blog.xuite.net/itsuki/blue/11867095"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="http://blog.xuite.net/itsuki/blue/11867095"><b>Traditional Chinese version</b></a>
+<dd> JkDefrag (the program, not the docs) translated into Traditional Chinese by Eddy Guo. Also available is a
+  GUI. Sources included.
+<dt> <a href="http://www.emro.nl/freeware"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="http://www.emro.nl/freeware"><b>JkDefragGui</b></a>
+<dd> GUI program by Emiel Wieldraaijer. JkDefragGUI is available in the following languages:
+  Brazilian Portuguese, Bulgarian, Catalan, Czech, Dutch, Chinese (Traditional and Simplified),
+  English, French, German, Greek/Hellenic, Hebrew, Hungarian, Italian, Japanese, Swedish, Polish,
+  Portuguese, Romanian, Russian, Serbian, Slovak, Slovenian, Spanish and Valencian.
+  Also availiable an U3 Version and BartPe Plugin.
+<dt> <a href="http://www.paehl.com/open_source/?JGDefragGUI"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="http://www.paehl.com/open_source/?JGDefragGUI"><b>JkDefragGui</b></a>
+<dd> GUI program by Dirk Paehl. In English. Sources are included.
+<dt> <a href="http://www.thorsten-willert.de/Themen/Software,%20Windows/jKDefragTWGUI/index.html"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="http://www.thorsten-willert.de/Themen/Software,%20Windows/jKDefragTWGUI/index.html"><b>JkDefragTWGUI</b></a>
+<dd> GUI program by Thorsten Willert. Can handle multiple "jobs".
+  In English, although the homepage is in German.
+<dt> <a href="http://iransim.ir/simplex/"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="http://iransim.ir/simplex/"><b>Simplex Defragmenter</b></a>
+<dd> GUI program by Touradg Morassaei. Easy to use, in English.
+  Requires Microsoft .NET Framework 2.0.
+<dt> <a href="http://www.jkdefragstarter.de.vu/"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="http://www.jkdefragstarter.de.vu/"><b>JkDefragStarter</b></a>
+<dd> GUI program in German by Thomas Kolb. C++ sources are included.
+</dl>
+<p>
+</font></td></tr></table><p>
+
+
+
+
+
+<h2>See also</h2>
+<table border=3 cellspacing=0 cellpadding=10 width="100%" bgcolor="#FFFFFF"><tr><td><font face="Times New Roman, Times, serif">
+
+<dl>
+
+<dt> <a href="http://www.kessels.com/forum/index.php"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="http://www.kessels.com/forum/index.php"><b>JkDefrag forum</b></a>
+<dd> I have set up a forum for JkDefrag, a place where you can ask
+  questions, give feedback about features you would like, share your
+  experiences, share code that uses the defragger library, and other
+  things about JkDefrag.<p>
+
+<dt> <a href="http://en.wikipedia.org/wiki/Defragmentation"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="http://en.wikipedia.org/wiki/Defragmentation"><b>Defragmentation</b></a>
+<dd> Wikipedia page about defragmentation.<p>
+
+<dt><a href="http://www.microsoft.com/technet/sysinternals/FileAndDisk/PageDefrag.mspx"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="http://www.microsoft.com/technet/sysinternals/FileAndDisk/PageDefrag.mspx"><b>Pagedefrag</b></a>
+  by Microsoft TechNet (formerly Sysinternals)
+<dd> Paging files and registry hives cannot be defragmented on a running
+  system. This sweet little utility will automatically defragment those files when
+  the system is booting.
+  The counterpart of this utility is "Contig", a small defragger for use on
+  a running system, but my defragger is far superior.
+  <p>
+
+<dt> <a href="http://www.hdtune.com/"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="http://www.hdtune.com/"><b>HD Tune</b></a>
+<dd> Measure your harddisk and discover how much faster it is at the beginning than at
+  the end. Can also monitor the temperature of your harddisk and scan for surface errors.<p>
+<!--
+<dt> <a href="http://www.geocities.com/vgrinenko/DiskSpeed32/"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="http://www.geocities.com/vgrinenko/DiskSpeed32/"><b>DiskSpeed32</b></a>
+<dd> Measure the speed of your harddisk. Discover how much faster your harddisk
+  is at it's beginning than at it's end.<p>
+-->
+
+<dt> <a href="http://www.microsoft.com/technet/sysinternals/FileAndDisk/DiskView.mspx"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="http://www.microsoft.com/technet/sysinternals/FileAndDisk/DiskView.mspx"><b>DiskView</b></a>
+  by Microsoft TechNet (formerly Sysinternals)
+<dd> Small utility that shows which file is using a particular location on the
+  harddisk. Use this if you are wondering which file JkDefrag could not move.
+  The utility takes a while to start up, because it has to analyze
+  all files one by one, but it's a very nice little utility nevertheless.
+<dt> <a href="http://home.arcor-online.de/alexander.freudenberg/dev_en.htm#HDView"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="http://home.arcor-online.de/alexander.freudenberg/dev_en.htm#HDView"><b>HDview</b></a>
+<dd> Similar utility as DiskView, by Alexander Freudenberg. Much faster and for NTFS only.
+  <p>
+
+<dt> <a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=9D467A69-57FF-4AE7-96EE-B18C4790CFFD&displaylang=en"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=9D467A69-57FF-4AE7-96EE-B18C4790CFFD&displaylang=en"><b>Windows Server 2003 Resource Kit Tools</b></a>
+<dd> A free collection of tools from Microsoft. Amongst other things it contains
+  a "sleep.exe" utility that could be used to make a little .bat file to delay-start
+  JkDefrag when booting the computer.
+  <p>
+
+<!--
+<dt> <a href="http://www.blueorbsoft.com/scandefrag/"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="http://www.blueorbsoft.com/scandefrag/"><b>ScanDefrag</b></a>
+<dd> A very nice utility that will run maintenance programs as early as possible in the
+  Windows startup. My defragger is one of the supported programs, others are
+  for example Microsoft's Disk Cleanup, ScanDisk/Chkdsk, Norton's Disk Doctor,
+  and others.<p>
+-->
+
+<dt> <a href="http://www.microsoft.com/technet/sysinternals/ProcessesAndThreads/Autoruns.mspx"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="http://www.microsoft.com/technet/sysinternals/ProcessesAndThreads/Autoruns.mspx"><b>AutoRuns</b></a>
+  by Microsoft TechNet (formerly Sysinternals)
+<dd> Handy utility to discover all the things that are started when windows is
+  booting.
+  <p>
+
+<dt> <a href="http://www.kessels.com/JkDefrag/JkFragmenter-1.0.zip"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="http://www.kessels.com/JkDefrag/JkFragmenter-1.0.zip"><b>JkFragmenter</b></a>
+<dd> A small commandline tool to fragment existing files, to generate new fragmented
+  files with random data, or to list fragmentation information about files.
+  <p>
+
+<dt> <a href="http://www.raxco.com/support/windows/PD80/Tools.cfm"><img src="images/Bullit.gif" width=14 height=14 align=absmiddle border=0 alt=" * "></a>&nbsp;<a href="http://www.raxco.com/support/windows/PD80/Tools.cfm"><b>Scramble and FileAccessTimer</b></a>
+  by Raxco
+<dd> Scramble is a tool to create new fragmented files, or to fragment the existing files/free space
+  on a drive. FileAccessTimer is a tool to measure how long it takes to read a file from beginning to
+  end. Used to show that reading a fragmentated file takes longer than reading a defragmented file.
+  <p>
+
+
+</dl>
+
+</font></td></tr></table><p>
+
+
+
+<center>
+<script type="text/javascript"><!--
+google_ad_client = "pub-2061310247152509";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text_image";
+//2007-12-01: JkDefrag
+google_ad_channel = "3309664755";
+//-->
+</script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</center>
+
+</body>
+</html>
