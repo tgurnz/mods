@@ -1,0 +1,15 @@
+'Gifdiff' compares two GIF files (either images or animations) for identical
+visual appearance. An animation and an optimized version of the same animation
+should compare as the same. Gifdiff exits with status 0 if the images are
+the same, 1 if they're different, and 2 if there was some error.
+
+Usage: gifdiff.exe [OPTION]... FILE1 FILE2
+
+Options:
+  -q, --brief                   Don't report detailed differences.
+  -w, --ignore-redundancy       Ignore differences in redundant frames.
+  -B, --ignore-background       Ignore differences in background colors.
+  -h, --help                    Print this message and exit.
+  -v, --version                 Print version number and exit.
+
+Report bugs to <ekohler@gmail.com>.
