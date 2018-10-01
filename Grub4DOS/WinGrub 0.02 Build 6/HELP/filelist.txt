@@ -1,0 +1,14 @@
+Files:
+
+WINGRB.EXE: WinGrub GUI
+WINGRB.INI: Configuration file for wingrub
+FONTS: Chinese font file
+MEMDISK.GZ: Peter Anvin's memdisk
+
+Directories:
+
+GRUB: Grub files
+HELP: Readme and docs
+LOGO: Splash images
+PROF: Profiles
+

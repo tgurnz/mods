@@ -1,0 +1,85 @@
+# This is a sample menu.lst file. You should make some changes to it.
+# Added items for installing GRUB [ which is on your DOS drive C: ] to MBR
+
+color black/cyan yellow/cyan
+timeout 60
+default 0
+
+title DOS/Win9x/Me/NT/2K/XP on (hd0,0)
+root (hd0,0)
+chainloader +1
+
+title Mandrake Linux on (hd0,7)
+kernel (hd0,7)/boot/vmlinuz root=/dev/hda8 quiet devfs=mount acpi=ht vga=788
+initrd (hd0,7)/boot/initrd.img
+
+title Red Hat Linux on (hd0,8)
+kernel (hd0,8)/boot/vmlinuz root=/dev/hda9
+
+title floppy on (fd0)
+root (fd0)
+chainloader +1
+
+title DOS/Win9x on (hd1,0) -- Do not use this to start WinMe/2K or later
+pause Warning: drive map used. Press any key to start DOS/Win9x on (hd1,0)...
+root (hd1,0)
+map (hd1) (hd0)
+map (hd0) (hd1)
+makeactive
+chainloader +1
+
+title DOS/Win9x on (hd2,0) -- Do not use this to start WinMe/2K or later
+pause Warning: drive map used. Press any key to start DOS/Win9x on (hd2,0) ...
+root (hd2,0)
+map (hd2) (hd0)
+map (hd0) (hd2)
+makeactive
+chainloader +1
+
+title install GRUB on (hd0,0) to MBR (hd0) and reboot. Password: danger
+pause You requested to install GRUB onto MBR. We highly recommend you NOT to do so, basically for two reasons: 1. For some non-MS-compatible boot loaders(in case you might be using), the install is INDEED dangerous and may cause your whole disk(and all your operating systems on it) unaccessible. 2. Even if you are using(in MBR)an MS-compatible boot loader such as LILO and GRUB, you may encounter problems like hard-disk-boot-failure when you move or delete the /boot/grub/stage2 file, or even when disk defragmentation operations are made. Press any key to continue...
+pause A password prompt will confirm that you want the operation anyway. Press any key to continue...
+password danger
+pause This will install GRUB in (hd0,0)/boot/grub/ to MBR. Press any key to begin...
+root (hd0,0)
+setup (hd0)
+pause GRUB install OK! Press any key to reboot your machine...
+reboot
+
+title install GRUB on (hd0,1) to MBR (hd0) and reboot. Password: danger
+pause You requested to install GRUB onto MBR. We highly recommend you NOT to do so, basically for two reasons: 1. For some non-MS-compatible boot loaders(in case you might be using), the install is INDEED dangerous and may cause your whole disk(and all your operating systems on it) unaccessible. 2. Even if you are using(in MBR)an MS-compatible boot loader such as LILO and GRUB, you may encounter problems like hard-disk-boot-failure when you move or delete the /boot/grub/stage2 file, or even when disk defragmentation operations are made. Press any key to continue...
+pause A password prompt will confirm that you want the operation anyway. Press any key to continue...
+password danger
+pause This will install GRUB in (hd0,1)/boot/grub/ to MBR. Press any key to begin...
+root (hd0,1)
+setup (hd0)
+pause GRUB install OK! Press any key to reboot your machine...
+reboot
+
+title install GRUB on (hd0,2) to MBR (hd0) and reboot. Password: danger
+pause You requested to install GRUB onto MBR. We highly recommend you NOT to do so, basically for two reasons: 1. For some non-MS-compatible boot loaders(in case you might be using), the install is INDEED dangerous and may cause your whole disk(and all your operating systems on it) unaccessible. 2. Even if you are using(in MBR)an MS-compatible boot loader such as LILO and GRUB, you may encounter problems like hard-disk-boot-failure when you move or delete the /boot/grub/stage2 file, or even when disk defragmentation operations are made. Press any key to continue...
+pause A password prompt will confirm that you want the operation anyway. Press any key to continue...
+password danger
+pause This will install GRUB in (hd0,2)/boot/grub/ to MBR. Press any key to begin...
+root (hd0,2)
+setup (hd0)
+pause GRUB install OK! Press any key to reboot your machine...
+reboot
+
+title install GRUB on (hd0,3) to MBR (hd0) and reboot. Password: danger
+pause You requested to install GRUB onto MBR. We highly recommend you NOT to do so, basically for two reasons: 1. For some non-MS-compatible boot loaders(in case you might be using), the install is INDEED dangerous and may cause your whole disk(and all your operating systems on it) unaccessible. 2. Even if you are using(in MBR)an MS-compatible boot loader such as LILO and GRUB, you may encounter problems like hard-disk-boot-failure when you move or delete the /boot/grub/stage2 file, or even when disk defragmentation operations are made. Press any key to continue...
+pause A password prompt will confirm that you want the operation anyway. Press any key to continue...
+password danger
+pause This will install GRUB in (hd0,3)/boot/grub/ to MBR. Press any key to begin...
+root (hd0,3)
+setup (hd0)
+pause GRUB install OK! Press any key to reboot your machine...
+reboot
+
+title mandrake ISO install (using vmlinuz and all.rdz)
+pause Installing an OS is dangerous because it may overwrite all your disks(and partitions)! A password prompt will confirm that you want the operation anyway. Press any key to continue...
+password danger
+pause This will install Mandrake using iso files. Press any key to continue...
+kernel (hd0,0)/vmlinuz ramdisk_size=128000 root=/dev/ram3 automatic=method:disk acpi=ht vga=788
+initrd (hd0,0)/all.rdz
+

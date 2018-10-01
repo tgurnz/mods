@@ -1,0 +1,6 @@
+[General]
+CurrGrub=p12
+
+[GrubList]
+p12=p12 dsk eng (nsfS)
+p12_128=p12 128 eng (nsf)

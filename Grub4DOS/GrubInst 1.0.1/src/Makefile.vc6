@@ -1,0 +1,25 @@
+all: grubinst.exe grubinst_gui.exe
+
+grubinst.exe: grubinst.c grub_mbr.h
+	cl -DWIN32 grubinst.c
+
+grub_mbr.h: bin2h.exe grldr.mbr
+	bin2h grldr.mbr grub_mbr.h grub_mbr
+
+bin2h.exe: bin2h.c
+	cl bin2h.c
+
+grubinst_gui.exe: grubinst_gui.c resource.h grubinst_gui.res
+	cl grubinst_gui.c grubinst_gui.res user32.lib comdlg32.lib
+
+grubinst_gui.res: grubinst_gui.rc resource.h
+	rc -fo grubinst_gui.res grubinst_gui.rc
+
+clean:
+	del grubinst.exe
+	del grubinst.obj
+	del grubinst_gui.exe
+	del grubinst_gui.obj
+	del grubinst_gui.res
+	del bin2h.exe
+	del bin2h.obj

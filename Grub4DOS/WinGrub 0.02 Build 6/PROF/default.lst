@@ -1,0 +1,5 @@
+timeout 10
+
+title Windows at (hd0,0)
+root (hd0,0)
+chainloader +1

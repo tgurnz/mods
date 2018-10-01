@@ -1,0 +1,13 @@
+all: grubinst
+
+grubinst: grubinst.c grub_mbr.h
+	gcc -DLINUX -o grubinst grubinst.c
+
+grub_mbr.h: bin2h grldr.mbr
+	./bin2h grldr.mbr grub_mbr.h grub_mbr
+
+bin2h: bin2h.c
+	gcc -o bin2h bin2h.c
+
+clean:
+	rm -f grubinst bin2h

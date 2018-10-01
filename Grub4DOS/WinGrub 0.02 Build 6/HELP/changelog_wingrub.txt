@@ -1,0 +1,38 @@
+2004-10-04 Version 0.02 Build 6
+	Supports the installation of GRLDR in image files
+	Remove all but one splash images from the base system
+	Minor bug fix
+
+2004-09-23 Version 0.02 Build 5
+	Show error message when you try to use the same directory as source and destination in "GrubList Manager"
+	Scan \boot\grub as well as \grub for menu.lst file
+	Minor change in "Base Setup" dialog
+
+2004-09-20 Version 0.02 Build 4
+	Bug Fix
+	Name changed for some menu items
+
+2004-09-18 Version 0.02 Build 3
+	User can choose between multiple version of grub using "Grub Files Manager"
+	Context menu added, fucntion can be invoked by menu selection or shortcuts
+	Fontfile support included, hiddenmenu support removed due to limited layout space
+	Use WINGRB.INI instead of registry to store variables
+	Password (plain and md5) support included
+	"Read/Save Preset Menu" function added
+	Splashimage preview button inclued
+	Directory structure changed
+	New icon for WINGRB.EXE
+
+2004-09-04 Version 0.02 Build 2
+	Fix a bug that causes problem while writing GRLDR to MBR or BS
+	Include new splash image wingrub.xpm.gz
+
+2004-09-03 Version 0.02 Build 1
+	New user interface based on simplicity, major function invoked  by keystokes
+	using the latest version of grub4dos: grub4dos-pre12
+	Partition list and drive mapping function
+	PTED console mode program included
+	New version of diskio library
+
+2004-05-03 Version 0.01 Build 1
+	Initial release

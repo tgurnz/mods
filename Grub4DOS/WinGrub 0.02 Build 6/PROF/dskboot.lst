@@ -1,0 +1,16 @@
+default 0
+timeout 0
+fallback 1
+
+title load /boot/grub/menu.lst
+find --set-root /boot/grub/menu.lst
+configfile /boot/grub/menu.lst
+
+title load /grub/menu.lst
+fallback 2
+find --set-root /grub/menu.lst
+configfile /grub/menu.lst
+
+title load /menu.lst
+find --set-root /menu.lst
+configfile /menu.lst
