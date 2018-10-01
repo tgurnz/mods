@@ -73,6 +73,7 @@ or improve it, download <a href="https://github.com/eladkarako/manifest/">github
 <a href="Notepad%202.0/"     ><img width="24" height="24" alt="" src="Notepad%202.0/resources/icon.png"     />&nbsp;Notepad2.0/</a><br/>
 <a href="Notepad++/"         ><img width="24" height="24" alt="" src="Notepad++/resources/icon.png"         />&nbsp;Notepad++/</a><br/>
 <a href="Odin/"              ><img width="24" height="24" alt="" src="Odin/resources/icon.png"              />&nbsp;Odin/</a><br/>
+<a href="OfficeRemove/"      ><img width="24" height="24" alt="" src="OfficeRemove/resources/icon.png"      />&nbsp;OfficeRemove/</a><br/>
 <a href="ThinkPadUtilities/" ><img width="24" height="24" alt="" src="ThinkPadUtilities/resources/icon.png" />&nbsp;IBM/Lenovo ThinkPad - Utilities/</a><br/>
 <a href="TrayMinimizer/"     ><img width="24" height="24" alt="" src="TrayMinimizer/resources/icon.png"     />&nbsp;TrayMinimizer/</a><br/>
 <a href="Unlocker/"          ><img width="24" height="24" alt="" src="Unlocker/resources/icon.png"          />&nbsp;Unlocker/</a><br/>
