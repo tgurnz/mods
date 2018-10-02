@@ -1,1 +1,7 @@
-C:\Windows\System32\cscript.exe  //NOLOGO "C:\Users\Elad\Desktop\_res\office_remove\2013\OffScrub03.vbs"
+running a windows-VB script (.vbs)
+C:\Windows\System32\cscript.exe  //NOLOGO //T:300 "C:\Users\Elad\Desktop\_res\office_remove\2013\OffScrub03.vbs" 
+
+---------------------------------------------------------------
+
+running a powershell-script (.ps)
+powershell.exe -NoLogo -ExecutionPolicy Bypass "C:\Users\Elad\Desktop\_res\office_remove\2013\OffScrub03.vbs" 
