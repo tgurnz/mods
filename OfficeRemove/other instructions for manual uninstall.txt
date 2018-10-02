@@ -1,0 +1,232 @@
+https://support.office.com/en-us/article/manually-uninstall-office-4e2904ea-25c8-4544-99ee-17696bb3027b
+
+
+Manually uninstall Office
+Office 2016 Office 2007 Office 2010 Office 2013
+IMPORTANT: Before you start, you need to know removing Office manually is a long, complex process and might require that you reinstall the operating system if certain steps are done incorrectly.
+
+Select your version of Office from below.
+
+Newer VersionsOffice 2013Office 2010Office 2007
+Step 1 - Determine your installation type
+Before you begin the manual steps, determine your Office installation type so you can choose the correct way to uninstall it:
+
+Click-to-Run is a new way to install and update Office over the Internet and it works similarly to streaming video. By default, the latest version of Office which is included in Office 365, and most one-time purchases of Office 2016 products (such as Office Home & Student 2016 or Office Home & Business are installed by using Click-to-Run.
+
+MSI, (also known as the Microsoft Windows Installer), is the traditional way of installing Office via a local installation resource.
+
+To determine your installation type
+
+Open an Office application, such as Outlook or Word.
+
+Go to File > Account or Office Account.
+
+If you see an "Update Options" item, you have a Click-to-Run installation. If you don't see the "Update Options" item, you have an MSI-based install.
+
+CTR vs MSI
+Step 2 - Select the installation type you want to uninstall
+Manually remove a Click-to-Run installation of Office
+Manually remove an MSI installation of Office
+Before you uninstall Office 2016, you must be able to view hidden files and folders:
+
+View hidden files and folders
+
+To view hidden files and folders:
+
+Windows 10: Right-click Start, and then click Control Panel. (The keyboard shortcut Windows logo key + X also works to open the access menu.)
+
+Windows 8 or 8.1: Press the Windows key + X, then click Control Panel.
+
+Windows 7: Click Start > Control Panel.
+
+Press Alt to display the menu bar.
+
+Click Tools > Folder Options, and then click the View tab.
+
+In the Advanced settings pane, click Show hidden files and folders under Hidden files and folders.
+
+Clear the Hide extensions for known file types box.
+
+Click OK, and then close Windows Explorer.
+
+Step 1: Remove any remaining Windows Installer packages for Office
+
+Press Windows logo key + R to open the Run dialog box.
+
+Type installer, and then click OK to open the %windir%\Installer folder.
+
+Press Alt key to display the menu bar, if you don't already see it, and then do the following depending on your operating system.
+
+Windows 10: Click View, and then click Details in the Layout group.
+
+Windows 8 or 8.1: Click View, and then click Details in the Layout group.
+
+Windows 7: On the View menu, click Choose details.
+
+Change the column width depending on your operating system.
+
+Windows 10: Click View > Add columns in the Layout group > Choose columns, and then select Subject, and then type 340 in the Width of selected column (in pixels) box.
+
+Windows 8 or 8.1: Click View, and then click Details in the Layout group, and then type 340 in the Width of selected column (in pixels) box.
+
+Windows 7: On the View menu, click Choose details, and then type 340 in the Width of selected column (in pixels) box.
+
+Note: It may take several minutes for the subjects to appear next to each .msi file.
+
+Click OK.
+
+Click View > Sort By > Subject.
+
+If a User Account Control dialog box appears, click Allow to continue.
+
+Locate each .msi file that has "Microsoft Office <product name> 2016" as the subject, right-click the .msi file, and then click Uninstall.
+
+In this step, <product name> represents the actual name of the Office 2016 product.
+
+Step 2: Stop the Office Source Engine service
+
+Press Windows logo key + R to open the Run dialog box.
+
+Type services.msc, and then click OK.
+
+In the Services window, determine whether the Office Source Engine service is running. (If the service is running, "Started" appears in the Status column.) If this service is running, right-click Office Source Engine, and then click Stop.
+
+Close the Services window.
+
+Step 3: Delete any remaining Office installation folders
+
+Press Windows logo key + R to open the Run dialog box.
+
+Type %CommonProgramFiles%\Microsoft Shared, and then click OK.
+
+Note: On a computer that's running a 64-bit version of Windows, type %CommonProgramFiles(x86)%\Microsoft Shared, and then click OK.
+
+If the Office16 and Source Engine folders are present, delete them.
+
+Press Windows logo key + R to open the Run dialog box.
+
+Type %ProgramFiles%\Microsoft Office, and then click OK.
+
+Note: On a computer that's running a 64-bit version of Windows, type %ProgramFiles(x86)%\Microsoft Office, and then click OK.
+
+Delete the Office16 folder.
+
+On the root folder of each hard disk drive, open the MSOCache folder.
+
+Open the All Users folder in the MSOCache folder, and then delete every folder that contains "0FF1CE}- in the folder name.
+
+Notes:  This text contains "0" (zero) and "1" characters for the letters "O" and "I." For example, delete the folder that is named as follows:
+
+{90160000-001B-0409-0000-0000000FF1CE}-C
+
+Step 4: Delete any remaining Office installation files
+
+Press Windows logo key + R to open the Run dialog box.
+
+Type %appdata%\microsoft\templates, and then click OK.
+
+Delete the Normal.dotm and Welcome to Word.dotx files.
+
+Press Windows logo key + R to open the Run dialog box.
+
+Type %appdata%\microsoft\document building blocks, and then click OK.
+
+Open the subfolder under the Document Building Blocks folder, and then delete the Building blocks.dotx file.
+
+Note: The subfolder title will be a four-digit number that represents the language of the Microsoft Office suite.
+
+Close all programs before you follow the rest of the steps.
+
+Step 5: Delete the registry subkeys for the Office system
+
+Before you start, back up the registry for restoration in case problems occur.
+
+Warning: Serious problems may occur if you modify the registry incorrectly by using Registry Editor or by using another method. These problems might require that you reinstall the operating system. Microsoft cannot guarantee that these problems can be solved. Modify the registry at your own risk.
+
+Delete the Office 2016 registry subkeys
+
+Press Windows logo key + R to open the Run dialog box.
+
+Type regedit, and then click OK.
+
+Click the following registry subkey:
+
+HKEY_CURRENT_USER\Software\Microsoft\Office\16.0
+
+Click File > Export, type DeletedKey01, and then click Save.
+
+Click Edit > Delete, and then click Yes to confirm.
+
+Repeat steps 1 through 5 for each registry subkey in the following lists. Increment the name of the exported key by one for each subkey.
+
+For example: Type DeletedKey02 for the second key, type DeletedKey03 for the third key, and so on.
+
+Note:  In the following registry keys, the asterisk character (*) represents one or more characters in the subkey name.
+
+32-bit versions of Windows
+
+HKEY_CURRENT_USER\Software\Microsoft\Office\16.0
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\16.0
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\Delivery\SourceEngine\Downloads\*0FF1CE}-*
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\*0FF1CE*
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\Upgrade Codes\*F01FEC
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Installer\UserData\S-1-5-18\Products\*F01FEC
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ose
+
+HKEY_CLASSES_ROOT\Installer\Features\*F01FEC
+
+HKEY_CLASSES_ROOT\Installer\Products\*F01FEC
+
+HKEY_CLASSES_ROOT\Installer\UpgradeCodes\*F01FEC
+
+HKEY_CLASSES_ROOT\Installer\Win32Assemblies\*Office16*
+
+64-bit versions of Windows
+
+HKEY_CURRENT_USER\Software\Microsoft\Office\16.0
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Office\16.0
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Office\Delivery\SourceEngine\Downloads\*0FF1CE}-*
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*0FF1CE*
+
+HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\ose
+
+HKEY_CLASSES_ROOT\Installer\Features\*F01FEC
+
+HKEY_CLASSES_ROOT\Installer\Products\*F01FEC
+
+HKEY_CLASSES_ROOT\Installer\UpgradeCodes\*F01FEC
+
+HKEY_CLASSES_ROOT\Installer\Win32Asemblies\*Office16*
+
+Also delete the following registry subkeys
+
+Locate one of the following subkeys, depending on the version of Windows that you're running:
+
+32-bit: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall
+
+64-bit: HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall
+
+Click File > Export, type UninstallKey01, and then click Save.
+
+Under the Uninstall subkey that you located in step 1, click each subkey, and then determine whether the subkey has the following value assigned to it:
+
+Name: UninstallString
+
+Data: file_name path\Office Setup Controller\Setup.exe path
+
+In this example, file_name represents the actual name of an installation program, and path represents the actual file path.
+
+If the subkey contains the name and the data that are described in step 3, click Edit > Delete. Otherwise, go to step 5.
+
+Repeat steps 3 and 4 until you locate and delete every subkey that matches the name and data that are described in step 3.
+
+Close Registry Editor.
