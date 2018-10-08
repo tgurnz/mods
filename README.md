@@ -40,6 +40,7 @@ or improve it, download <a href="https://github.com/eladkarako/manifest/">github
 <a href="DependencyWalker/"  ><img width="24" height="24" alt="" src="DependencyWalker/resources/icon.png"  />&nbsp;DependencyWalker/</a>  <sub><em>(Depends)</em></sub><br/>
 <a href="DiffMerge/"         ><img width="24" height="24" alt="" src="DiffMerge/resources/icon.png"         />&nbsp;DiffMerge/</a><br/>
 <a href="DOSBox/"            ><img width="24" height="24" alt="" src="DOSBox/resources/icon.png"            />&nbsp;DOSBox/</a><br/>
+<a href="ExifTool/"          ><img width="24" height="24" alt="" src="ExifTool/resources/icon.png"          />&nbsp;ExifTool/</a><br/>
 <a href="ffmpeg/"            ><img width="24" height="24" alt="" src="ffmpeg/resources/icon.png"            />&nbsp;ffmpeg/</a><br/>
 <a href="Fiddler/"           ><img width="24" height="24" alt="" src="Fiddler/resources/icon.png"           />&nbsp;Fiddler/</a><br/>
 <a href="FileShredder/"      ><img width="24" height="24" alt="" src="FileShredder/resources/icon.png"      />&nbsp;FileShredder/</a><br/>
