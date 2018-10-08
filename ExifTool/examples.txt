@@ -1,0 +1,111 @@
+##purple to black
+D:\Software\ImageMagic\mogrify.exe  -format gif -opaque "#2800B8" -fill "#000000" -path .\result\   0_original.gif
+
+##black to brown
+D:\Software\ImageMagic\mogrify.exe  -format gif -opaque "#000000" -fill "#7F0037" -path .\result\   1_purple_to_black.gif
+
+##white to green
+D:\Software\ImageMagic\mogrify.exe  -format gif -transparent "#000000" -fill "#00FF00" -opaque "#FFFFFF"  -path .\result\   1_purple_to_black.gif
+
+
+
+
+xxxxxx convert 2_white_to_green.gif -background #000000 -fill white -background #000000 -pointsize 7 label:"icompile.eladkarako.com" -gravity Center -append output.gif
+
+
+convert 2_white_to_green.gif -coalesce -background #000000 -fill white -background #000000 -pointsize 7 label:"icompile.eladkarako.com" -gravity Center -layers Optimize output.gif
+convert 2_white_to_green.gif -coalesce -pointsize 14 -draw "gravity south fill white text 0,18 icompile.eladkarako.com" output2.gif
+
+
+convert 2_white_to_green.gif -coalesce -background #000000 -crop 240x240+48+20 -trim out11.gif
+
+
+convert 2_white_to_green.gif -coalesce -pointsize 18 -draw "gravity south fill white text 0,18 icompile.eladkarako.com" output15.gif
+
+
+exiftool.exe __a2.gif
+    ExifTool Version Number         : 10.11
+    File Name                       : __a2.gif
+    Directory                       : .
+    File Size                       : 53 kB
+    File Modification Date/Time     : 2016:03:15 23:17:33+02:00
+    File Access Date/Time           : 2016:03:15 23:17:32+02:00
+    File Creation Date/Time         : 2016:03:15 23:17:32+02:00
+    File Permissions                : rw-rw-rw-
+    File Type                       : GIF
+    File Type Extension             : gif
+    MIME Type                       : image/gif
+    GIF Version                     : 89a
+    Image Width                     : 500
+    Image Height                    : 258
+    Has Color Map                   : Yes
+    Color Resolution Depth          : 6
+    Bits Per Pixel                  : 6
+    Background Color                : 0
+    Image Size                      : 500x258
+    Megapixels                      : 0.129
+    
+d:
+cd D:\Software\ImageMagic
+exiftool.exe "icompile.eladkarako.com_green_ninja_logo.gif"
+    ExifTool Version Number         : 10.11
+    File Name                       : icompile.eladkarako.com_green_ninja_logo.gif
+    Directory                       : .
+    File Size                       : 512 kB
+    File Modification Date/Time     : 2016:02:27 00:26:54+02:00
+    File Access Date/Time           : 2016:02:27 01:01:21+02:00
+    File Creation Date/Time         : 2016:02:27 00:08:33+02:00
+    File Permissions                : rw-rw-rw-
+    File Type                       : GIF
+    File Type Extension             : gif
+    MIME Type                       : image/gif
+    GIF Version                     : 89a
+    Image Width                     : 220
+    Image Height                    : 220
+    Has Color Map                   : Yes
+    Color Resolution Depth          : 8
+    Bits Per Pixel                  : 8
+    Background Color                : 2
+    Animation Iterations            : Infinite
+    XMP Toolkit                     : Image::ExifTool 10.11
+    Artist                          : Elad Karako
+    Copyright                       : 2016 Elad Karako
+    Comment                         : 2016 Elad Karako - icompile.eladkarako.com GreenNinja Logo
+    Frame Count                     : 574
+    Duration                        : 34.44 s
+    Image Size                      : 220x220
+    Megapixels                      : 0.048
+    
+    
+
+ 
+exiftool -XMPToolkit="" -Artist="Elad Karako" -Copyright="2016 Elad Karako" -Comment="2016 Elad Karako - 404 image for eladkarako.com - arrrrr2d2 - not the droid you are looking for" __a2.gif
+    ExifTool Version Number         : 10.11
+    File Name                       : __a2 - Copy (2).gif
+    Directory                       : .
+    File Size                       : 56 kB
+    File Modification Date/Time     : 2016:03:15 23:42:07+02:00
+    File Access Date/Time           : 2016:03:15 23:42:07+02:00
+    File Creation Date/Time         : 2016:03:15 23:39:55+02:00
+    File Permissions                : rw-rw-rw-
+    File Type                       : GIF
+    File Type Extension             : gif
+    MIME Type                       : image/gif
+    GIF Version                     : 89a
+    Image Width                     : 500
+    Image Height                    : 258
+    Has Color Map                   : Yes
+    Color Resolution Depth          : 6
+    Bits Per Pixel                  : 6
+    Background Color                : 0
+    Comment                         : 2016 Elad Karako - 404 image for eladkarako.com - arrrrr2d2 - not the droid you are looking for
+    Artist                          : Elad Karako
+    Copyright                       : 2016 Elad Karako
+    Image Size                      : 500x258
+    Megapixels                      : 0.129
+    
+remove all meta-tags from all PNG and GIF files
+exiftool -XMPToolkit="" -all="" *.gif *.png *.jpg *.jpeg *.mp4 *.mp3 *.ico
+
+remove all meta-tags including preview image for some formats. Include progress for each file + verbose output.
+exiftool -progress -verbose -trailer:all="" -XMPToolkit="" -all="" *.gif *.png *.jpg *.jpeg *.mp4 *.avi *.mkv *.mp3 *.ico
